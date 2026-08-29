@@ -115,6 +115,7 @@ body {
   position: relative; border-bottom: 1px solid var(--line);
 }
 .card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.card-wide .card-img { aspect-ratio: 16/9; }
 .card:hover .card-img img { transform: scale(1.04); }
 .card-img-placeholder {
   width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
@@ -910,8 +911,10 @@ function renderGrid() {
   }
   grid.innerHTML = filtered.map((s, i) => {
     const imgHtml = s.image ? `<img src="${s.image}" alt="${s.name}" loading="lazy">` : `<div class="card-img-placeholder">${s.code}</div>`;
-    return `<div class="card cat-${s.cat}" style="--cat-color:${catColors[s.cat]};animation-delay:${Math.min(i*0.02,0.4)}s" data-code="${s.code}">
-      <div class="card-img">${imgHtml}</div>
+    const wideCls = s.code === 'SK28' ? ' card-wide' : '';
+    const cardImgStyle = s.code === 'SK28' ? ' style="aspect-ratio:16/9"' : '';
+    return `<div class="card cat-${s.cat}${wideCls}" style="--cat-color:${catColors[s.cat]};animation-delay:${Math.min(i*0.02,0.4)}s" data-code="${s.code}">
+      <div class="card-img"${cardImgStyle}>${imgHtml}</div>
       <div class="card-body">
         <div class="card-top"><span class="card-code">${s.code}</span><span class="card-cat-tag">${s.catLabel}</span></div>
         <div class="card-name">${s.name}</div>
