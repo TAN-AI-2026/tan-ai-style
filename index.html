@@ -639,9 +639,15 @@ body {
 
 
 <div style="max-width:1280px;margin:0 auto;padding:32px 32px 24px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;">
-  <div style="text-align:center;">
-    <img id="siteQrCode" alt="TAN-AI 风格库二维码" style="width:120px;height:120px;border:1px solid var(--line);border-radius:4px;">
-    <p style="font-family:var(--font-mono);font-size:10px;color:var(--ink-faint);margin-top:8px;letter-spacing:1px;">扫码访问</p>
+  <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap;justify-content:center;">
+    <div style="text-align:center;">
+      <img src="images/qr_logo.png" alt="TAN-AI 风格库二维码" style="width:128px;height:128px;border-radius:4px;">
+      <p style="font-family:var(--font-mono);font-size:10px;color:var(--ink-faint);margin-top:8px;letter-spacing:1px;">扫码访问网站</p>
+    </div>
+    <div style="text-align:center;">
+      <img src="images/qr_wechat.png" alt="微信二维码" style="width:128px;height:128px;border-radius:4px;">
+      <p style="font-family:var(--font-mono);font-size:10px;color:var(--ink-faint);margin-top:8px;letter-spacing:1px;">扫码加微信</p>
+    </div>
   </div>
   <div style="max-width:480px;">
     <p style="font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);letter-spacing:0.5px;line-height:1.8;">
@@ -932,17 +938,6 @@ renderGrid();
   }
 })();
 
-  // 动态生成站点二维码（基于当前访问地址）
-  (function genSiteQr() {
-    const qr = document.getElementById('siteQrCode');
-    if (!qr) return;
-    var url = window.location.href;
-    qr.src = 'https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=10&data=' + encodeURIComponent(url);
-    qr.onerror = function() {
-      // 备用：Google Chart API
-      this.src = 'https://chart.googleapis.com/chart?cht=qr&chs=240x240&chl=' + encodeURIComponent(url);
-    };
-  })();
 </script>
 </body>
 </html>
