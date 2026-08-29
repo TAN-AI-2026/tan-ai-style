@@ -346,6 +346,11 @@
       "negative_prompt": "watermark, earth yellow aged, red-gold national trend default, generic elements, no regional feature"
     },
     {
+      "name": "SK28 工业遗址人文水彩",
+      "prompt": "retro watercolor industrial heritage humanities park style, aged paper grain texture, low saturation retro tones, off-white paper background, preserving industrial heritage elements (old factory buildings, railway tracks, ship docks, iron anchors, cranes, gears, chimneys, rusted metal), soft outlines, no hardcore ruins feel, no dilapidated apocalyptic feel, transformed into warm humanities leisure park scene, citizens strolling and resting, children playing, waterfront walkway, surrounded by greenery and trees, soft water reflection, distant modern city skyline creating depth, soft natural light, light watercolor wash technique, hand-drawn sketch lines, overall warm and nostalgic, 8K ultra HD",
+      "negative_prompt": "watermark, high saturation, vivid colors, overexposed, hardcore ruins, dilapidated feel, apocalyptic feel, overly modern, photorealistic, dirty and messy, dark and depressing"
+    },
+    {
       "name": "C01 韩式冷峻犯罪",
       "prompt": "Korean crime film cinematography, low saturation cool tone, heavy shadow layering, 35-50mm lens, subtle film grain, calm documentary atmosphere, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",
       "negative_prompt": "high saturation, vivid, cartoon, watermark, corner marks, text, over-retouched skin"
