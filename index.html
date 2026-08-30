@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TAN-AI 风格库 · V2.94</title>
+<title>TAN-AI 风格库 · V2.95</title>
 
 <style>
 :root {
@@ -666,9 +666,9 @@ body {
     <h1 class="cover-title">TAN-<span>AI</span></h1>
     <div class="cover-subtitle">绘 画 风 格 完 整 库</div>
     <div class="cover-stats">
-      <div class="cover-stat"><span class="cover-stat-num">78</span><span class="cover-stat-label">风格</span></div>
+      <div class="cover-stat"><span class="cover-stat-num">79</span><span class="cover-stat-label">风格</span></div>
       <div class="cover-stat"><span class="cover-stat-num">04</span><span class="cover-stat-label">分区</span></div>
-      <div class="cover-stat"><span class="cover-stat-num">V2.94</span><span class="cover-stat-label">版本</span></div>
+      <div class="cover-stat"><span class="cover-stat-num">V2.95</span><span class="cover-stat-label">版本</span></div>
     </div>
     <button class="cover-enter" id="coverEnter">
       进入画廊
@@ -705,10 +705,10 @@ body {
     <a class="brand" href="#">
       <div class="brand-mark">T</div>
       <span class="brand-text">TAN-AI 风格库</span>
-      <span class="brand-version">V2.94</span>
+      <span class="brand-version">V2.95</span>
     </a>
     <div class="topbar-stats">
-      <span><b id="stat-total">78</b> 风格</span>
+      <span><b id="stat-total">79</b> 风格</span>
       <span><b>4</b> 分区</span>
       <span>更新 2026.08.28</span>
     </div>
@@ -717,14 +717,14 @@ body {
 
 <section class="hero">
   <div class="hero-eyebrow">Style Index &middot; Archive</div>
-  <h1 class="hero-title">78 种绘画风格<br>一座可检索的<em>视觉档案库</em></h1>
-    <div class="hero-title-en">78 Painting Styles<br>A Searchable Visual Archive</div>
+  <h1 class="hero-title">79 种绘画风格<br>一座可检索的<em>视觉档案库</em></h1>
+    <div class="hero-title-en">79 Painting Styles<br>A Searchable Visual Archive</div>
   <p class="hero-desc">从通用插画、建筑室内、创意重构到电影调色，每一种风格都有独立编号、参考图、完整提示词与适用场景。直接报编号即可调用，支持多风格叠加。</p>
   <p class="hero-desc-en">From general illustration, architecture & interior, creative reconstruction to cinema color grading — each style has an independent ID, reference image, complete prompts and use cases. Just call the code number, multi-style stacking supported.</p>
   <div class="hero-meta">
     <div class="hero-meta-item"><span class="hero-meta-num">38</span><span class="hero-meta-label">通用插画 / 海报 / 摄影</span></div>
     <div class="hero-meta-item"><span class="hero-meta-num">04</span><span class="hero-meta-label">建筑室内专项</span></div>
-    <div class="hero-meta-item"><span class="hero-meta-num">29</span><span class="hero-meta-label">创意 Skill 组</span></div>
+    <div class="hero-meta-item"><span class="hero-meta-num">30</span><span class="hero-meta-label">创意 Skill 组</span></div>
     <div class="hero-meta-item"><span class="hero-meta-num">07</span><span class="hero-meta-label">电影调色专项</span></div>
   </div>
 </section>
@@ -734,7 +734,7 @@ body {
     <button class="filter-btn active" data-cat="all">全部</button>
     <button class="filter-btn" data-cat="general"><span class="filter-dot" style="background:var(--cat-general)"></span>通用 01-38</button>
     <button class="filter-btn" data-cat="arch"><span class="filter-dot" style="background:var(--cat-arch)"></span>建筑 S01-S04</button>
-    <button class="filter-btn" data-cat="skill"><span class="filter-dot" style="background:var(--cat-skill)"></span>创意 SK01-SK29</button>
+    <button class="filter-btn" data-cat="skill"><span class="filter-dot" style="background:var(--cat-skill)"></span>创意 SK01-SK30</button>
     <button class="filter-btn" data-cat="cinema"><span class="filter-dot" style="background:var(--cat-cinema)"></span>电影 C01-C07</button>
   </div>
   <div class="search-box">
@@ -746,7 +746,7 @@ body {
 <main class="gallery">
   <div class="gallery-header">
     <h2 id="galleryTitle">全部风格</h2>
-    <span class="gallery-count" id="galleryCount">78 / 78</span>
+    <span class="gallery-count" id="galleryCount">79 / 79</span>
   </div>
   <div class="grid" id="styleGrid"></div>
 </main>
@@ -791,12 +791,12 @@ body {
         <span class="stat-divider">·</span>
         <span class="stat-item">访客 <span id="busuanzi_value_site_uv">--</span></span>
         <span class="stat-divider">·</span>
-        <span class="stat-item">78 风格数据可下载</span>
+        <span class="stat-item">79 风格数据可下载</span>
       </span>
     </p>
   </div>
 </div>
-<footer class="footer"><p>TAN-AI STYLE LIBRARY &middot; V2.94 &middot; 78 STYLES &middot; ARCHIVE EDITION</p></footer>
+<footer class="footer"><p>TAN-AI STYLE LIBRARY &middot; V2.95 &middot; 79 STYLES &middot; ARCHIVE EDITION</p></footer>
 
 <div class="overlay" id="overlay"></div>
 <aside class="drawer" id="drawer">
@@ -885,6 +885,7 @@ const STYLES = [
   {code:"SK27",cat:"skill",catLabel:"创意Skill",name:"regional-culture-poster 地域文化大字海报",nameEn:"Regional Culture Typography Poster",desc:"中国省域/城市/县域文化转译为克制当代大字海报，一个文化浓缩汉字为主视觉骨架",scene:"城市文化海报、省域视觉、地域系列海报、展览主视觉",image:"images/68.jpg",positive:"工作流：七维文化候选池（地理气候/建筑结构/材料颜色/历史文学/日常生活/当代状态/精神气质）→ 选定不可替换地方机制 → 主字变形（单字优先，变形须有文化来源）→ 视觉系统定义（主字+主文化结构+辅助元素+色彩+构图）→ 直接生成/分层生产 → 遮字识别检查（遮住文字后仍有地域文化证据）。双模式：MODE A 结构造字海报：汉字结构是主视觉，城市元素参与字形生长。MODE B 地域编辑海报：城市空间是主视觉，城市名是编辑锚点。色彩原则：从地域气候/材料/光提取，主色+1-2辅色+中性色，反乡土（避免土黄/做旧/红金国潮默认）。",positiveEn:"workflow: seven-dimensional culture candidate pool (geography climate / architecture structure / material color / history literature / daily life / contemporary state / spiritual temperament) then select irreplaceable local mechanism then main character deformation (single character preferred, deformation must have cultural origin) then visual system definition (main character plus main cultural structure plus auxiliary elements plus color plus composition) then direct generate or layered production then character occlusion recognition check (still has regional cultural evidence after covering text). Dual mode: MODE A structural character poster: Chinese character structure is main visual, city elements participate in character growth. MODE B regional editorial poster: city space is main visual, city name is editorial anchor. Color principle: extracted from regional climate material light, main color plus 1-2 auxiliary plus neutral, anti-rustic (avoid earth yellow aged red-gold national trend default).",negative:"水印, 土黄做旧, 红金国潮默认, 通用元素, 无地域特征",negativeEn:"watermark, earth yellow aged, red-gold national trend default, generic elements, no regional feature"},
     {code:"SK28",cat:"skill",catLabel:"创意Skill",name:"工业遗址人文水彩",nameEn:"Industrial Heritage Watercolor",desc:"复古水彩+旧纸颗粒，保留工业遗产记忆，弱描边不做废墟感，转成人文休闲公园场景",scene:"城市工业遗址公园、旧厂区改造、水岸码头公园、废弃工厂文创园、城市记忆文旅",image:"images/76.jpg",positive:"21:9电影宽幅全景构图，复古水彩工业遗址人文公园风格，超宽幅电影感画面，旧纸颗粒质感，低饱和复古色调，米白纸张底色，保留工业遗产元素（旧厂房、铁轨、船坞、铁锚、塔吊、齿轮、烟囱、锈蚀金属），弱描边，不做硬核废墟感，不做破败末日感，转成温暖人文休闲公园场景，市民休闲漫步休憩，儿童玩耍，水岸步道，绿植树木环绕，水面柔和反射，远景现代城市天际线拉开层次，柔和自然光，淡水彩晕染技法，手绘速写线条，整体温暖怀旧，电影感宽幅构图，8K高清",positiveEn:"21:9 cinematic widescreen panoramic composition, retro watercolor industrial heritage humanities park style, ultra-wide cinematic frame, aged paper grain texture, low saturation retro tones, off-white paper background, preserving industrial heritage elements (old factory buildings, railway tracks, ship docks, iron anchors, cranes, gears, chimneys, rusted metal), soft outlines, no hardcore ruins feel, no dilapidated apocalyptic feel, transformed into warm humanities leisure park scene, citizens strolling and resting, children playing, waterfront walkway, surrounded by greenery and trees, soft water reflection, distant modern city skyline creating depth, soft natural light, light watercolor wash technique, hand-drawn sketch lines, overall warm and nostalgic, cinematic widescreen composition, 8K ultra HD",negative:"水印, 高饱和, 艳丽色彩, 过曝, 硬核废墟, 破败感, 末日感, 现代感过强, 照片写实, 脏乱差, 阴暗压抑",negativeEn:"watermark, high saturation, vivid colors, overexposed, hardcore ruins, dilapidated feel, apocalyptic feel, overly modern, photorealistic, dirty and messy, dark and depressing"},
   {code:"SK29",cat:"skill",catLabel:"创意SKILL",name:"老街招牌记忆贴纸",nameEn:"Old Town Sign Sticker",desc:"左侧完整方形街景卡片忠实原图，右侧拆分独立模切贴纸，低饱和复古扁平插画",scene:"老街店铺、城市记忆、旅行手帐、贴纸素材、文创纪念品、旧照片转插画",image:"images/77.jpg",positive:"旅行手帐记忆贴纸卡片设计，左侧为完整方形老街街景插画卡片，尽量忠实原图构图，保留原始建筑立面、招牌位置、门窗结构、人物位置、车辆位置和街边细节，不重新设计场景，不美化，不裁切，不抠出主体，只做轻微手绘化处理；右侧将画面中的招牌、门窗、灯杆、人物、车辆、店铺元素、墙面纹理等拆分成多个独立贴纸，每个贴纸带有白色模切轮廓和轻微阴影，整齐排列；低饱和复古色调，旧纸颗粒质感，简约色块，扁平肌理插画，城市记忆感，旅行纪念品感，底部加入简短英文标签描述画面，不要写实照片",positiveEn:"travel journal memory sticker card design, left side complete square old street scene illustration card, faithfully following original composition, preserving building facades, sign positions, door/window structures, person positions, vehicle positions and street details, no scene redesign, no beautification, no cropping, no subject cutout, only slight hand-drawn processing; right side splits scene elements (signs, doors, windows, lamp posts, people, vehicles, shop elements, wall textures) into multiple independent stickers with white die-cut outline and subtle shadow, neatly arranged; low saturation retro tones, aged paper grain, simple color blocks, flat texture illustration, urban memory, travel souvenir, short English label at bottom, no photorealistic photos",negative:"写实照片，摄影质感，过度美化，重新设计场景，改变原构图，裁切主体，抠出主体，左侧单独物体抠图，复杂背景，高饱和颜色，强烈透视，夸张变形，多余物体，杂乱文字，水印，低清晰度",negativeEn:"photorealistic photos, photography texture, over-beautification, scene redesign, changing original composition, cropping subject, cutting out subject, left side single object cutout, complex background, high saturation colors, strong perspective, exaggerated deformation, extra objects, messy text, watermark, low clarity"},
+  {code:"SK30",cat:"skill",catLabel:"创意SKILL",name:"复古城市等轴旅行海报",nameEn:"Retro City Isometric Travel Poster",desc:"高空等轴鸟瞰城市全景，融合历史建筑与现代地标，顶部留白标题区，底部云雾虚化的复古旅行海报",scene:"城市旅行海报、手机竖屏壁纸、旅行清单封面、文创城市系列、复古旅行纪念品",image:"images/78.jpg",positive:"复古城市旅行海报，9:16竖版构图，顶部保留大面积米白留白标题区，画面主体为高空等轴鸟瞰城市全景，融合城市古老历史建筑、现代摩天大楼、代表性地标、河流、桥梁、道路、船只与城市绿植，底部做柔和云雾虚化过渡；整体为复古旅行海报插画，柔和3D插画质感，非写实照片，米黄旧纸底色，低暖饱和色调，细腻颗粒肌理，干净怀旧排版。顶部居中放置大号粗体无衬线城市英文名称，城市名下方小字为国家·大洲·国旗图标，文字只放在顶部留白区域，不遮挡城市主体",positiveEn:"retro city travel poster, 9:16 vertical composition, large creamy off-white blank title area at top, main scene high-angle isometric bird-eye panoramic city view, blending ancient historic architecture, modern skyscrapers, representative landmarks, rivers, bridges, roads, boats and urban greenery, soft hazy mist fade at bottom; retro travel poster illustration, soft 3D illustration texture, not photorealistic, creamy aged paper background, low warm saturation, delicate grain texture, clean nostalgic layout; large bold uppercase sans-serif city name centered at top, small subtitle below country continent flag icon, text only in top blank area, does not cover city subject",negative:"写实照片，摄影质感，文字压在建筑上，遮挡主体，建筑扭曲，地标变形，高饱和颜色，生硬阴影，杂乱元素，多余边框，水印，logo，低清晰度",negativeEn:"photorealistic photos, photography texture, text over buildings, covering subject, distorted architecture, deformed landmarks, high saturation colors, harsh shadows, messy elements, extra borders, watermark, logo, low clarity"},
 {code:"C01",cat:"cinema",catLabel:"电影调色",name:"韩式冷峻犯罪",nameEn:"Korean Noir Crime",desc:"韩国犯罪电影影像，低饱和冷调，暗部层次厚重",scene:"犯罪题材、都市冷峻氛围",image:"images/69.jpg",positive:"韩国犯罪电影影像，低饱和冷调，暗部层次厚重，35-50mm镜头，细微胶片颗粒，冷静纪实氛围感，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Korean crime film cinematography, low saturation cool tone, heavy shadow layering, 35-50mm lens, subtle film grain, calm documentary atmosphere, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"高饱和, 艳丽, 卡通, 水印, 角标, 文字, 过度磨皮",negativeEn:"high saturation, vivid, cartoon, watermark, corner marks, text, over-retouched skin"},
   {code:"C02",cat:"cinema",catLabel:"电影调色",name:"民国上海复古",nameEn:"Republic Shanghai Retro",desc:"民国都市复古电影，暖金钨丝灯光，酒红暗金色调",scene:"民国题材、复古都市",image:"images/70.jpg",positive:"民国都市复古电影，暖金钨丝灯光，酒红暗金色调，细腻胶片颗粒，轻微柔焦暖色光晕，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Republic of China Shanghai retro film, warm gold tungsten lighting, burgundy dark gold tone, fine film grain, slight soft focus warm glow, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"刺眼高饱和, 卡通, 水印, 角标, 文字, 过度磨皮",negativeEn:"harsh high saturation, cartoon, watermark, corner marks, text, over-retouched skin"},
   {code:"C03",cat:"cinema",catLabel:"电影调色",name:"西北乡土史诗",nameEn:"Northwest Rural Epic",desc:"西北乡土史诗电影，赭石土地厚重色调，粗颗粒35mm胶片",scene:"西北题材、乡土史诗",image:"images/71.jpg",positive:"西北乡土史诗电影，赭石土地厚重色调，24-35mm镜头，粗颗粒35mm胶片，沉稳纪实质感，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Northwest rural epic film, ochre earth heavy tone, 24-35mm lens, coarse grain 35mm film, steady documentary texture, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"马卡龙鲜亮色, 卡通, 水印, 角标, 文字, 塑料光滑质感",negativeEn:"macaron bright colors, cartoon, watermark, corner marks, text, plastic smooth texture"},
