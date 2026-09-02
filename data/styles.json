@@ -1,7 +1,7 @@
 {
   "name": "TAN-AI 风格库",
-  "version": "V3.02",
-  "count": 86,
+  "version": "V3.03",
+  "count": 89,
   "updated": "2026-09-02",
   "url": "https://tan-ai-2026.github.io/tan-ai-style/",
   "categories": {
@@ -476,7 +476,7 @@
     {
       "code": "SK01",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "scenes-gathered-zine 实景拼贴·拾景Zine",
       "description": "真摄影+抽象插画场域，撕纸边界，高饱和色彩结构",
       "scene": "城市人文、照片转Zine海报",
@@ -487,7 +487,7 @@
     {
       "code": "SK02",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "scene-distillation-zine 影像蒸馏Zine",
       "description": "照片完全重绘，不保留原图，支持单色块模式",
       "scene": "极简概念艺术海报",
@@ -498,7 +498,7 @@
     {
       "code": "SK03",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "morandi-cinematic-poster 莫兰迪电影海报",
       "description": "照片转电影key art，纯排版驱动，低饱和色调",
       "scene": "照片改造电影海报",
@@ -509,7 +509,7 @@
     {
       "code": "SK04",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "travel-memory-sticker-card 旅行手账记忆卡",
       "description": "大插画主体+6枚手账贴纸+3个英文关键词",
       "scene": "城市旅行、人文风景、打卡纪念海报",
@@ -520,7 +520,7 @@
     {
       "code": "SK05",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "travel-memory-card-duo 横版记忆卡变体",
       "description": "3:2横版卡片+独立透明PNG贴纸",
       "scene": "素材拆分、二次排版设计",
@@ -531,7 +531,7 @@
     {
       "code": "SK06",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "vinyl-image-generator 黑胶唱片套装",
       "description": "虚构AB面唱片+正反封套整套版式",
       "scene": "音乐封面、氛围概念设计",
@@ -542,7 +542,7 @@
     {
       "code": "SK07",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "image-words 三连艺术解析海报",
       "description": "3:4比例一次性生成三张情绪构图解析海报",
       "scene": "公众号配图、照片艺术改版",
@@ -553,7 +553,7 @@
     {
       "code": "SK08",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "create-pantone-photo-posters 潘通色卡相框海报",
       "description": "白相框、低饱和底色、自带专业色号标签",
       "scene": "极简静物、色彩展示海报",
@@ -564,7 +564,7 @@
     {
       "code": "SK09",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "photo-to-organic-knit 毛线针织艺术海报",
       "description": "钩针毛毡肌理、不规则毛边、毛线标题质感",
       "scene": "氛围感静物、人像改造",
@@ -575,7 +575,7 @@
     {
       "code": "SK10",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "crystalize 极简水晶插画",
       "description": "通透晶体切面、大量留白、极简标题",
       "scene": "景物抽象艺术重构",
@@ -586,7 +586,7 @@
     {
       "code": "SK11",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "photo-to-travel-sketch 旅行速写手绘",
       "description": "保留地标辨识度、手账速写纹理",
       "scene": "城市风光、古建筑手绘转绘",
@@ -597,7 +597,7 @@
     {
       "code": "SK12",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "handdrawn-photo-poster ZINE邮票海报",
       "description": "书本载体、居中手绘邮票、提取实物元素重构",
       "scene": "文艺杂志、纪念海报",
@@ -608,7 +608,7 @@
     {
       "code": "SK13",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "joy-calm-woodcut-zine 日系木刻ZINE",
       "description": "木刻线条、微光纸感、微型杂志排版",
       "scene": "复古人文刊物配图",
@@ -619,7 +619,7 @@
     {
       "code": "SK14",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "Eyer_Paint 油画质感画风",
       "description": "照片转印象派油画，颜料堆积肌理，锁定原图构图比例不改物体轮廓",
       "scene": "人像、风景艺术化转绘",
@@ -630,7 +630,7 @@
     {
       "code": "SK15",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "Eyer_淡彩风格",
       "description": "低饱和薄雾水彩晕染，轻盈梦幻氛围",
       "scene": "氛围感人像、风景调色",
@@ -641,7 +641,7 @@
     {
       "code": "SK16",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "Eyer_仿红外摄影",
       "description": "植物雪白、天空深蓝、超现实高对比风光",
       "scene": "户外、树林、自然场景",
@@ -652,7 +652,7 @@
     {
       "code": "SK17",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "Eyer_高级黑白胶片",
       "description": "银盐丰富灰阶、颗粒细腻、高光影对比",
       "scene": "纪实、人像、风光黑白创作",
@@ -663,7 +663,7 @@
     {
       "code": "SK18",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "Eyer_复古怀旧老照片",
       "description": "暖黄褪色、划痕暗角、岁月复古质感",
       "scene": "怀旧人像、老照片高级重构",
@@ -674,7 +674,7 @@
     {
       "code": "SK19",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "HongKong_尼康港风色彩",
       "description": "浓郁通透港风、高锐度、色彩分离强烈",
       "scene": "城市街景、都市人像",
@@ -685,7 +685,7 @@
     {
       "code": "SK20",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "Kevin_电影暗调人像",
       "description": "胶片低曝光、柔暖肤色、故事电影氛围",
       "scene": "写真、环境人像、情绪大片",
@@ -696,7 +696,7 @@
     {
       "code": "SK21",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "YamatoStyle 日式大和美学",
       "description": "淡雅和色、侘寂留白、静谧禅意",
       "scene": "静物、风景、日系人文画面",
@@ -707,7 +707,7 @@
     {
       "code": "SK22",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "reality-restaged 纪实记忆重演",
       "description": "优先完整保留原图人物、动作、服饰、文化细节、真实记忆；舞台化构图、大面积负空间、尺度重构",
       "scene": "旅行纪实、人文摄影、老照片高级重构",
@@ -718,7 +718,7 @@
     {
       "code": "SK23",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "老街城市记忆海报",
       "description": "老街旧墙、骑楼街巷、新旧高楼对比，复古胶片怀旧记忆氛围",
       "scene": "城市老街、旧街景、新旧建筑对比实拍转海报",
@@ -729,7 +729,7 @@
     {
       "code": "SK24",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "照片重构型旅行杂志封面模板",
       "description": "保留原图全部景物主体不篡改；左侧/上方米白复古纸张大留白，左上角大号黑色无衬线大写英文标题；右侧/下方完整保留原图照片主体；水墨撕裂毛边+泼墨过渡",
       "scene": "古建、塔、摩天轮、湖景、老街、各类旅行风景照片",
@@ -740,7 +740,7 @@
     {
       "code": "SK25",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "街拍转复古杂志封面v2.0",
       "description": "街拍照片生成复古杂志封面，自动生成英文大字锚点，重彩水彩胶片噪点",
       "scene": "街头纪实、城市街景",
@@ -751,7 +751,7 @@
     {
       "code": "SK26",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "双联老城木刻研究海报",
       "description": "竖版3:4，画面水平对半分割上下1:1等高；上半部分强制锁死输入原图；下半部分现代套色木刻版画转译",
       "scene": "老城街巷、骑楼、旧街人文记录",
@@ -762,7 +762,7 @@
     {
       "code": "SK27",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "regional-culture-poster 地域文化大字海报",
       "description": "中国省域/城市/县域文化转译为克制当代大字海报，一个文化浓缩汉字为主视觉骨架",
       "scene": "城市文化海报、省域视觉、地域系列海报、展览主视觉",
@@ -773,7 +773,7 @@
     {
       "code": "SK28",
       "category": "skill",
-      "categoryLabel": "创意Skill",
+      "categoryLabel": "创意 Skill 组",
       "name": "工业遗址人文水彩",
       "description": "复古水彩+旧纸颗粒，保留工业遗产记忆，弱描边不做废墟感，转成人文休闲公园场景",
       "scene": "城市工业遗址公园、旧厂区改造、水岸码头公园、废弃工厂文创园、城市记忆文旅",
@@ -784,7 +784,7 @@
     {
       "code": "SK29",
       "category": "skill",
-      "categoryLabel": "创意SKILL",
+      "categoryLabel": "创意 Skill 组",
       "name": "老街招牌记忆贴纸",
       "description": "左侧完整方形街景卡片忠实原图，右侧拆分独立模切贴纸，低饱和复古扁平插画",
       "scene": "老街店铺、城市记忆、旅行手帐、贴纸素材、文创纪念品、旧照片转插画",
@@ -795,7 +795,7 @@
     {
       "code": "SK30",
       "category": "skill",
-      "categoryLabel": "创意SKILL",
+      "categoryLabel": "创意 Skill 组",
       "name": "复古城市等轴旅行海报（双模式）",
       "description": "模式A海报版：9:16竖版，高空等轴鸟瞰城市全景，强制呈现城市专属地标，顶部留白标题区，底部云雾虚化的复古扁平插画；模式B车票版：复古中国旅行车票/票根形式，旧米黄纸张纹理+红色邮戳印章+竖版长票排版+编号+副券撕线+手绘风景插画",
       "scene": "城市旅行海报、手机竖屏壁纸、旅行清单封面、复古车票纪念、文旅票根设计",
@@ -806,7 +806,7 @@
     {
       "code": "SK31",
       "category": "skill",
-      "categoryLabel": "创意SKILL",
+      "categoryLabel": "创意 Skill 组",
       "name": "三重音色城市建筑矢量旅行海报（三模式）",
       "description": "模式A海报版：9:16竖版，城市建筑矢量艺术复古旅行海报，三重音色分色体系（固有色为主+窄边受光+蓝灰阴影），三层式构图，路牌标签填充真实文字；模式B分析图版：建筑矢量主体+左侧竖向色卡+淡色辅助轴线/尺寸标注/立面线稿+暖象牙色纸张背景+大留白，建筑分析海报风格；模式C城市剪影版：城市建筑轮廓剪影插画，扁平化大色块，3种子风格（日景剪影/夜景剪影/黄昏剪影），建筑天际线+前景剪影人物/车辆/树木，高对比色块，无渐变无描边",
       "scene": "城市旅行海报、手机竖屏壁纸、旅行清单封面、建筑分析图、设计作品集、方案汇报、城市剪影插画、城市文旅视觉",
@@ -817,7 +817,7 @@
     {
       "code": "SK32",
       "category": "skill",
-      "categoryLabel": "创意SKILL",
+      "categoryLabel": "创意 Skill 组",
       "name": "极简撕纸Zine风景海报",
       "description": "撕纸拼贴+纸张颗粒肌理+水平层叠地形+大面积天空留白+低饱和自然配色+极简主义",
       "scene": "旅行风景、户外徒步、自然山川、草原田园、极简海报、Zine杂志、孤独旅行感",
@@ -828,7 +828,7 @@
     {
       "code": "SK33",
       "category": "skill",
-      "categoryLabel": "创意SKILL",
+      "categoryLabel": "创意 Skill 组",
       "name": "单色印刷编辑海报",
       "description": "纯单色平面印刷海报，单一墨色+纸底，半色调网点/干净分色，25%-55%主动留白，大标题与主体物理碰撞，衬线+无衬线字体5-12倍对比，一个克制手动手势，无mockup无撕纸",
       "scene": "城市文旅海报、展览主视觉、杂志封面、zine内页、明信片、包装贴纸、社交封面、静物海报",
