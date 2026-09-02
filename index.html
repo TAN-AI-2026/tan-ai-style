@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TAN-AI 风格库 · V3.05</title>
+<title>TAN-AI 风格库 · V3.06</title>
 
 <style>
 :root {
@@ -666,9 +666,9 @@ body {
     <h1 class="cover-title">TAN-<span>AI</span></h1>
     <div class="cover-subtitle">绘 画 风 格 完 整 库</div>
     <div class="cover-stats">
-      <div class="cover-stat"><span class="cover-stat-num">90</span><span class="cover-stat-label">风格</span></div>
+      <div class="cover-stat"><span class="cover-stat-num">91</span><span class="cover-stat-label">风格</span></div>
       <div class="cover-stat"><span class="cover-stat-num">04</span><span class="cover-stat-label">分区</span></div>
-      <div class="cover-stat"><span class="cover-stat-num">V3.05</span><span class="cover-stat-label">版本</span></div>
+      <div class="cover-stat"><span class="cover-stat-num">V3.06</span><span class="cover-stat-label">版本</span></div>
     </div>
     <button class="cover-enter" id="coverEnter">
       进入画廊
@@ -705,7 +705,7 @@ body {
     <a class="brand" href="#">
       <div class="brand-mark">T</div>
       <span class="brand-text">TAN-AI 风格库</span>
-      <span class="brand-version">V3.05</span>
+      <span class="brand-version">V3.06</span>
     </a>
     <div class="topbar-stats">
       <span><b id="stat-total">85</b> 风格</span>
@@ -717,8 +717,8 @@ body {
 
 <section class="hero">
   <div class="hero-eyebrow">Style Index &middot; Archive</div>
-  <h1 class="hero-title">90 种绘画风格<br>一座可检索的<em>视觉档案库</em></h1>
-    <div class="hero-title-en">90 Painting Styles<br>A Searchable Visual Archive</div>
+  <h1 class="hero-title">91 种绘画风格<br>一座可检索的<em>视觉档案库</em></h1>
+    <div class="hero-title-en">91 Painting Styles<br>A Searchable Visual Archive</div>
   <p class="hero-desc">从通用插画、建筑室内、创意重构到电影调色，每一种风格都有独立编号、参考图、完整提示词与适用场景。直接报编号即可调用，支持多风格叠加。</p>
   <p class="hero-desc-en">From general illustration, architecture & interior, creative reconstruction to cinema color grading — each style has an independent ID, reference image, complete prompts and use cases. Just call the code number, multi-style stacking supported.</p>
   <div class="hero-meta">
@@ -734,7 +734,7 @@ body {
     <button class="filter-btn active" data-cat="all">全部</button>
     <button class="filter-btn" data-cat="general"><span class="filter-dot" style="background:var(--cat-general)"></span>通用 01-38</button>
     <button class="filter-btn" data-cat="arch"><span class="filter-dot" style="background:var(--cat-arch)"></span>建筑 S01-S04</button>
-    <button class="filter-btn" data-cat="skill"><span class="filter-dot" style="background:var(--cat-skill)"></span>创意 SK01-SK41</button>
+    <button class="filter-btn" data-cat="skill"><span class="filter-dot" style="background:var(--cat-skill)"></span>创意 SK01-SK42</button>
     <button class="filter-btn" data-cat="cinema"><span class="filter-dot" style="background:var(--cat-cinema)"></span>电影 C01-C07</button>
   </div>
   <div class="search-box">
@@ -746,7 +746,7 @@ body {
 <main class="gallery">
   <div class="gallery-header">
     <h2 id="galleryTitle">全部风格</h2>
-    <span class="gallery-count" id="galleryCount">90 / 90</span>
+    <span class="gallery-count" id="galleryCount">91 / 91</span>
   </div>
   <div class="grid" id="styleGrid"></div>
 </main>
@@ -796,7 +796,7 @@ body {
     </p>
   </div>
 </div>
-<footer class="footer"><p>TAN-AI STYLE LIBRARY &middot; V3.05 &middot; 90 STYLES &middot; ARCHIVE EDITION</p></footer>
+<footer class="footer"><p>TAN-AI STYLE LIBRARY &middot; V3.06 &middot; 91 STYLES &middot; ARCHIVE EDITION</p></footer>
 
 <div class="overlay" id="overlay"></div>
 <aside class="drawer" id="drawer">
@@ -896,6 +896,7 @@ const STYLES = [
     {code:"SK39",cat:"skill",catLabel:"创意SKILL",name:"梦幻动态杂志风",nameEn:"Dreamy Motion Editorial",desc:"从日常照片提取语义主体，重构成高级朦胧梦幻动态杂志风，Keep/Fade/Remove方法论，35-55%动态负空间，6种机制：人群漂移/花卉扩散/玻璃记忆/逆光晕染/低角度色场/掠过手势，三档强度",scene:"人像、街拍、生活照片、杂志封面、社媒海报、电影感创作、品牌视觉、青春主题",image:"images/90.jpg",positive:"SK39梦幻动态杂志风，从日常照片提取语义主体，重构成高级朦胧梦幻动态杂志风。方法论：Keep（保留1个主体+1个本质手势/物体+不超过2个上下文线索）/Fade（2-4个次要人物/花/织物/车辆/纸/植物/建筑边缘拉伸为大方向模糊块+半透明条纹+浅色轨迹）/Remove（仅移除微小杂物和竞争细节）。构图：35-55%动态负空间（大方向动态面纱）+15-30%安静色调区域，主体占25-40%，允许重新构图/不对称放置/主体重新定位/背景重构。6种机制选1主1辅：人群漂移/花卉扩散/玻璃记忆/逆光晕染/低角度色场/掠过手势。三档强度：克制高级（25-40%微妙动态）/梦幻朦胧（35-55%可见动态面纱，默认）/强烈实验（更强动态拖影/重影/折射/颜色污染）。风格：高级感+朦胧感+梦幻感+电影感+慢门拖影+柔焦+胶片感+诗意海报，主体清晰锚点周围环绕移动的半透明形式。",positiveEn:"SK39 Dreamy Motion Editorial, extract semantic hero from everyday photo and rebuild as premium hazy dreamlike motion editorial image. Methodology: Keep (1 hero + 1 essential gesture/object + max 2 contextual cues) / Fade (2-4 secondary people/flowers/fabric/vehicles/paper/plants/architecture edges stretched into large directional blur masses + translucent streaks + light-color trails) / Remove (only tiny clutter and competing details). Composition: 35-55% kinetic negative space (large directional motion veils) + 15-30% quiet tonal fields, hero occupies 25-40%, allow reframing/asymmetric placement/subject repositioning/background reconstruction. 6 mechanisms choose 1 primary + 1 support: crowd-drift/floral-diffusion/glass-memory/backlit-halation/low-angle-color-field/passing-gesture. 3 intensity levels: Restrained Premium (25-40% subtle motion) / Dream Haze (35-55% visible motion veils, default) / Experimental Memory (stronger motion drag/doubling/refraction/color contamination). Style: premium + hazy + dreamy + cinematic + slow shutter drag + soft focus + film grain + poetic poster, sharp hero anchor surrounded by moving translucent forms.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止全图均匀模糊、静态空背景无方向动态氛围；禁止每个背景物体同等清晰、字面全场景重建无层次；禁止擦除每个次要人物/物体而不是转化为动态块；禁止默认保留超过2个上下文线索；禁止用抽象梦幻魔法代替物理光学原因；禁止随机添加花/闪光/珠宝/服装/人物；禁止把主体美化为通用脸；禁止全图白雾覆盖；禁止所有机制堆叠在一个场景；禁止无菌8K HDR锐利+模拟柔焦组合；禁止极端蓝橙调色；禁止变成婚纱工作室/cosplay/赛博朋克/库存照片风格；禁止密集文字覆盖脸/手势/产品标签",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no uniform full-frame blur, static empty background without directional motion atmosphere; no every background object equally sharp, literal full-scene reconstruction without hierarchy; no erasing every secondary person/object instead of transforming into motion masses; no default keeping more than 2 contextual cues; no replacing physical optical causes with abstract dream magic; no random adding flowers/sparkles/jewelry/clothing/people; no beautifying subject into generic face; no full-frame white fog coverage; no all mechanisms stacked in one scene; no sterile 8K HDR sharpness + simulated soft focus combination; no extreme teal-orange grading; no becoming wedding studio/cosplay/cyberpunk/stock photo style; no dense text covering faces/gestures/product labels"},
     {code:"SK40",cat:"skill",catLabel:"创意SKILL",name:"静谧日常几何叙事插画",nameEn:"Quiet Domestic Geometry Illustration",desc:"厚重不透明水粉丙烯颜料质感，有明显颜料笔触和堆塑感，人物脸部通过明暗色块叠加表现立体感，全局覆盖细密统一旧纸张颗粒和印刷颗粒质感，绝对无轮廓勾线，低饱和柔和复古褪色调，直接手绘感，柔和自然形体",scene:"日常人物、家庭生活、城市街景、风景建筑、照片转插画、杂志叙事插画、儿童绘本、生活记录、人文场景、旅行记忆",image:"images/84.jpg",positive:"SK40静谧日常几何叙事插画（quiet-domestic-geometry-illustration）。厚重不透明水粉丙烯颜料质感，有明显颜料笔触和堆塑感，像直接画上去不用打底稿的手绘感，直线不是很直用色块表现线条感填图，不是明确锐利的直线。人物脸部通过明暗色块叠加表现立体感，鼻子、眼睛、脸颊、下巴都有体积感，五官通过色块变化自然表现不是描线勾勒。全局覆盖非常明显的细密统一旧纸张颗粒和印刷颗粒质感，颗粒在墙面、车厢、天空、地面等大面积色块区域特别突出。低饱和柔和复古褪色调，整体旧纸张米黄暖调像老画印刷品。色块自然柔和叠加有明暗层次，绝对没有任何轮廓勾线，物体边界完全靠不同颜色色块互相挤压自然形成。柔和自然的形体不是硬方块几何，保留原图人物姿态和构图，去掉照片式皮肤纹理皱纹和衣服细碎褶皱，简单色块表现明暗阴影无复杂渐变。",positiveEn:"SK40 Quiet Domestic Geometry Illustration (quiet-domestic-geometry-illustration). Heavy opaque gouache and acrylic paint texture with visible brush strokes and impasto feel, like directly painted without underdrawing, lines are not perfectly straight but expressed through color blocks filling, not sharp precise lines. Character faces show dimensionality through layered light and dark color blocks, nose, eyes, cheeks, chin all have volume, facial features naturally expressed through color block changes not outlined. Global coverage of very obvious fine uniform old paper grain and print grain texture, grain especially prominent in large color block areas like walls, train cars, sky, ground. Low saturation soft vintage faded tone, overall old paper beige warm tone like old printed artwork. Color blocks naturally and softly layered with light and shadow hierarchy, absolutely no contour outlines, object boundaries formed entirely by different color blocks pressing against each other naturally. Soft natural forms not hard square geometry, preserve original character poses and composition, remove photo-like skin texture wrinkles and fine clothing folds, simple color blocks express light and shadow without complex gradients.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止水彩晕染透明感、水墨湿画、透明图层；禁止照片写实、皮肤纹理、皱纹细节、衣服细碎褶皱；禁止硬方块几何、扁平化图标感、锐利直线；禁止描线勾勒五官和轮廓、黑色轮廓线；禁止高饱和艳色、荧光色；禁止复杂渐变光影、3D渲染、光滑反光表面、玻璃倒影",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no watercolor bleed transparent feel, ink wash wet painting, transparent layers; no photorealism, skin texture, wrinkle details, fine clothing folds; no hard square geometry, flat icon feel, sharp straight lines; no outlined facial features and contours, black contour lines; no high saturation bright colors, fluorescent colors; no complex gradient lighting, 3D rendering, smooth reflective surfaces, glass reflections"},
     {code:"SK41",cat:"skill",catLabel:"创意SKILL",name:"橙线极简编辑插画",nameEn:"Orange Line Illustration",desc:"《纽约客》杂志风格极简编辑插画，细黑墨线手绘编辑感，纯白背景大量留白，唯一暖橙点缀#F97316用在最有意义的元素上，人物非常tiny被场景物体 dwarfed，放大物体缩小人物的标志性尺度对比，机智克制智慧的氛围，默认角色小橙（胸口有橙色圆点的线条小人）",scene:"文章配图、公众号配图、封面图、概念隐喻插画、原则格言插画、PPT配插图、演讲稿配图、编辑插画、极简线条插画、杂志单格漫画",image:"images/91.jpg",positive:"SK41橙线极简编辑插画（orange-line-illustration）。《纽约客》杂志风格单格编辑插画，极简细黑墨线手绘感，纯白背景大量留白（留白是构图的一部分不是浪费），唯一暖橙点缀#F97316用在最有意义的那个元素上（橙色回答'这张图关于什么'），无阴影无渐变无填充（除橙色点缀）。人物非常tiny被物体/墙/楼梯/线条 dwarfed，放大物体缩小人物的标志性尺度对比（人物不超过画面1/10，明确写'a TINY human figure'）。一个画面一个概念，优先动作场景而非抽象符号。氛围机智克制智慧，让观众思考一秒然后微笑。默认角色小橙：圆形头（仅轮廓不填充）两个黑点眼睛无嘴，窄矩形身体（仅轮廓）细棍四肢，胸口一个实心橙色圆点#F97316（这就是点缀色），几何手绘感不可爱，必须参与核心动作不是装饰。左下角签名：短橙色横线+下方浅灰色小字中文标题。",positiveEn:"SK41 Orange Line Illustration (orange-line-illustration). New Yorker magazine style single-panel editorial illustration, minimalist thin black ink line drawing with hand-drawn editorial feel, pure white background with generous negative space (emptiness is part of composition, not wasted), single warm orange accent #F97316 used on the single most meaningful element (orange answers 'what is this image about'), no shading, no gradients, no fills except the accent. Figures are very TINY, dwarfed by objects/walls/stairs/lines, signature scale contrast of enlarging the thing and shrinking the person (figure no more than 1/10 of frame, explicitly write 'a TINY human figure'). One idea per image, prefer action scenes over abstract symbols. Mood: witty, restrained, intelligent, makes viewer think for one second then smile. Default character 小橙 (Xiao Orange): circle head (outline only, not filled), two black dot eyes, no mouth, narrow rectangular body (outline only), thin stick arms and legs, ONE small solid orange dot #F97316 on chest (this IS the accent), geometric hand-drawn feel, not cute, must participate in core action not decorate. Bottom-left signature: short horizontal orange line + small light-gray Chinese caption below.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止多种颜色、禁止除橙色外的其他彩色填充；禁止大尺寸人物（人物超过画面1/10即失败）；禁止复杂阴影、渐变、半透明；禁止高饱和多色、荧光色；禁止写实照片质感、3D渲染；禁止抽象无动作场景（必须有人物动作）；禁止Escher不可能几何、复杂楼梯建筑；禁止线条断裂；禁止可爱卡通风、儿童插画；禁止多余文字",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no multiple colors, no other colored fills except orange; no oversized figures (figure exceeding 1/10 of frame is failure); no complex shadows, gradients, translucency; no high-saturation multi-color, fluorescent colors; no photorealistic texture, 3D rendering; no abstract actionless scenes (must have human action); no Escher impossible geometry, complex stairs architecture; no broken lines; no cute cartoon style, children's illustration; no extra text"},
+    {code:"SK42",cat:"skill",catLabel:"创意SKILL",name:"超现实波普拼贴",nameEn:"Surreal Pop Collage",desc:"把照片变成超现实波普拼贴画：主体去色成黑白保留为现实锚（3秒内认出原图主体），背景替换为2-3个巨大平涂色形（无渐变无立体阴影），全图只有一个不可能的巨物（超现实全部力量在于只有一处不对劲），黑白现实与平涂梦境对撞，成群小元素沿弧线分布+白色手绘涂鸦线条",scene:"照片超现实化、小红书/抖音超现实海报、黑白照片+平涂色块梦境感、风景/人物/城市照超现实艺术、旅行海报、创意拼贴",image:"images/92.jpg",positive:"SK42｜超现实波普拼贴（surreal-pop-collage）。把照片变成超现实波普拼贴画：照片主体去色成黑白保留为现实锚（保持主体清晰可识别，保留其纹理细节，3秒内认出原图主体，脸部核心区不压元素），背景替换为2-3个巨大平涂色形（形状贴合场景原有区域边界：圆/拱/地平线色块/整面天空，颜色三选一策略：①场景已有色提纯 ②互补色对撞 ③情绪反转色，平涂无渐变无立体阴影），全图只有一个不可能的巨物（超现实的全部力量在于只有一处不对劲，巨物选择：①文化地标典故巨物 ②场景元素荒诞化 ③语义最远物 ④尺度颠倒，只选一个）。成群小元素3-5个大小梯度100/60/30沿弧线分布，白色手绘涂鸦线条2-3条做手工痕迹。整体保持明亮，黑白现实与平涂梦境对撞清晰。禁止暗黑恐怖基调。禁止水印、角标、AI字样、乱码、二维码、LOGO。",positiveEn:"SK42 Surreal Pop Collage (surreal-pop-collage). Transform a photo into a surreal pop collage: the main subject desaturated to black and white as the reality anchor (clearly recognizable within 3 seconds, preserving texture details, no elements covering the face core area), the background replaced by 2-3 huge flat matte color shapes (shapes fitting the original scene boundaries: circle/arch/horizon band/full sky, color strategy: ①purify existing scene colors ②complementary color contrast ③emotional reversal color, flat matte no gradients no dimensional shadows), only ONE impossible giant element in the entire image (the full power of surrealism lies in only one thing being wrong, giant element choice: ①cultural landmark allusion ②scene element absurdification ③semantically farthest object ④scale inversion, choose only one). 3-5 small elements in graduated sizes 100/60/30 following an arc, 2-3 white hand-drawn graffiti strokes for handmade texture. Overall bright, black-and-white reality collides clearly with the flat color dream world. No dark horror tone. No watermark, corner badge, AI text, garbled text, QR code, logo.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止第二个不可能巨物（全图只有一处不对劲）；禁止色形渐变、立体阴影；禁止装饰压脸（脸部核心区不压元素）；禁止相框式整圈包围；禁止满版纹理覆盖；禁止暗黑恐怖基调；禁止照搬参考图默认元素（红日/海豚/鲸鱼）；禁止孤立单个装饰；禁止多余文字",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no second impossible giant element (only one thing wrong in the entire image); no color shape gradients, dimensional shadows; no decorations covering the face; no full-frame border enclosure; no full-frame texture coverage; no dark horror tone; no copied default reference elements (red sun/dolphin/whale); no isolated single decoration; no extra text"},
 
 {code:"C01",cat:"cinema",catLabel:"电影调色",name:"韩式冷峻犯罪",nameEn:"Korean Noir Crime",desc:"韩国犯罪电影影像，低饱和冷调，暗部层次厚重",scene:"犯罪题材、都市冷峻氛围",image:"images/69.jpg",positive:"韩国犯罪电影影像，低饱和冷调，暗部层次厚重，35-50mm镜头，细微胶片颗粒，冷静纪实氛围感，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Korean crime film cinematography, low saturation cool tone, heavy shadow layering, 35-50mm lens, subtle film grain, calm documentary atmosphere, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"高饱和, 艳丽, 卡通, 水印, 角标, 文字, 过度磨皮",negativeEn:"high saturation, vivid, cartoon, watermark, corner marks, text, over-retouched skin"},
   {code:"C02",cat:"cinema",catLabel:"电影调色",name:"民国上海复古",nameEn:"Republic Shanghai Retro",desc:"民国都市复古电影，暖金钨丝灯光，酒红暗金色调",scene:"民国题材、复古都市",image:"images/70.jpg",positive:"民国都市复古电影，暖金钨丝灯光，酒红暗金色调，细腻胶片颗粒，轻微柔焦暖色光晕，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Republic of China Shanghai retro film, warm gold tungsten lighting, burgundy dark gold tone, fine film grain, slight soft focus warm glow, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"刺眼高饱和, 卡通, 水印, 角标, 文字, 过度磨皮",negativeEn:"harsh high saturation, cartoon, watermark, corner marks, text, over-retouched skin"},
@@ -933,7 +934,7 @@ function renderGrid() {
     const q = currentSearch.toLowerCase();
     filtered = filtered.filter(s => s.code.toLowerCase().includes(q) || s.name.toLowerCase().includes(q) || s.desc.toLowerCase().includes(q) || s.scene.toLowerCase().includes(q));
   }
-  galleryCount.textContent = filtered.length + ' / 90';
+  galleryCount.textContent = filtered.length + ' / 91';
   galleryTitle.textContent = catNames[currentCat] + (currentSearch ? ' · 搜索结果' : '');
   if (filtered.length === 0) {
     grid.innerHTML = '<div class="empty-state"><div class="empty-state-icon">∅</div><p>没有找到匹配的风格，换个关键词试试</p></div>';
