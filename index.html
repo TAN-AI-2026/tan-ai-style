@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TAN-AI 风格库 · V3.07</title>
-
 <style>
 :root {
   --bg: #EBE9E2;
@@ -38,7 +31,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 ::selection { background: var(--accent); color: #fff; }
-
 .topbar {
   position: sticky; top: 0; z-index: 100;
   background: rgba(235,233,226,0.92);
@@ -60,7 +52,6 @@ body {
 .brand-version { font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); border: 1px solid var(--line); padding: 2px 6px; border-radius: var(--radius); }
 .topbar-stats { display: flex; gap: 20px; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); }
 .topbar-stats span b { color: var(--ink); font-weight: 700; }
-
 .hero { max-width: 1280px; margin: 0 auto; padding: 72px 32px 48px; border-bottom: 1px solid var(--line); }
 .hero-eyebrow { font-family: var(--font-mono); font-size: 12px; color: var(--accent); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
 .hero-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--accent); }
@@ -73,7 +64,6 @@ body {
 .hero-meta-item { display: flex; flex-direction: column; gap: 4px; }
 .hero-meta-num { font-family: var(--font-mono); font-size: 28px; font-weight: 700; color: var(--ink); }
 .hero-meta-label { font-size: 12px; color: var(--ink-soft); letter-spacing: 1px; }
-
 .toolbar { max-width: 1280px; margin: 0 auto; padding: 28px 32px 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 .filter-group { display: flex; gap: 6px; flex-wrap: wrap; }
 .filter-btn {
@@ -94,12 +84,10 @@ body {
 .search-box input:focus { border-color: var(--accent); }
 .search-box input::placeholder { color: var(--ink-faint); }
 .search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--ink-faint); }
-
 .gallery { max-width: 1280px; margin: 0 auto; padding: 8px 32px 80px; }
 .gallery-header { display: flex; align-items: baseline; justify-content: space-between; padding: 16px 0 20px; border-bottom: 1px solid var(--line); margin-bottom: 24px; }
 .gallery-header h2 { font-family: var(--font-serif); font-size: 20px; font-weight: 700; }
 .gallery-count { font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); }
-
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
 .card {
   background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
@@ -137,11 +125,9 @@ body {
 .card-desc { font-size: 12px; color: var(--ink-soft); line-height: 1.7; margin-bottom: 12px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; flex: 1; }
 .card-tags { display: flex; flex-wrap: wrap; gap: 5px; }
 .card-tag { font-size: 11px; color: var(--ink-faint); border: 1px solid var(--line-soft); padding: 2px 8px; border-radius: var(--radius); }
-
 .empty-state { grid-column: 1 / -1; text-align: center; padding: 80px 20px; color: var(--ink-soft); }
 .empty-state-icon { font-family: var(--font-mono); font-size: 48px; color: var(--ink-faint); margin-bottom: 16px; }
 .empty-state p { font-size: 15px; }
-
 .overlay { position: fixed; inset: 0; background: rgba(26,25,22,0.4); z-index: 200; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; }
 .overlay.open { opacity: 1; visibility: visible; }
 .drawer {
@@ -192,7 +178,6 @@ body {
 .constraint-list { list-style: none; }
 .constraint-list li { font-size: 13px; color: var(--ink-soft); padding: 6px 0 6px 18px; position: relative; line-height: 1.7; }
 .constraint-list li::before { content: '—'; position: absolute; left: 0; color: var(--ink-faint); }
-
 .rules { max-width: 1280px; margin: 0 auto; padding: 60px 32px; border-top: 1px solid var(--line); }
 .rules h2 { font-family: var(--font-serif); font-size: 24px; font-weight: 700; margin-bottom: 8px; }
 .rules-sub { font-size: 14px; color: var(--ink-soft); margin-bottom: 32px; }
@@ -202,13 +187,11 @@ body {
 .rule-title { font-family: var(--font-serif); font-size: 16px; font-weight: 700; margin-bottom: 8px; }
 .rule-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.7; }
 .rule-code { font-family: var(--font-mono); font-size: 12px; background: var(--bg); border: 1px solid var(--line); padding: 8px 12px; border-radius: var(--radius); margin-top: 12px; color: var(--ink); display: block; }
-
 .site-stats { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; color: var(--ink-faint); margin-top: 8px; font-family: var(--font-mono); letter-spacing: 0.5px; }
 .site-stats .stat-item { display: inline-flex; align-items: center; gap: 4px; }
 .site-stats .stat-divider { opacity: 0.4; }
 .footer { border-top: 1px solid var(--line); padding: 32px; text-align: center; }
 .footer p { font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint); letter-spacing: 1px; }
-
 @media (max-width: 768px) {
   .topbar-inner { padding: 12px 18px; }
   .topbar-stats { display: none; }
@@ -223,10 +206,8 @@ body {
   .hero-meta-num { font-size: 22px; }
   .card-code { font-size: 20px; }
 }
-
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 .card { animation: fadeInUp 0.4s ease both; }
-
 /* ===== 开场封面 ===== */
 .cover {
   position: fixed; inset: 0; z-index: 9999;
@@ -238,7 +219,6 @@ body {
 }
 .cover.leaving { transform: translateY(-100%); opacity: 0; }
 .cover-gone { display: none; }
-
 .cover-bg {
   position: absolute; inset: 0;
   background:
@@ -246,7 +226,6 @@ body {
     radial-gradient(ellipse 60% 50% at 20% 80%, rgba(160,98,45,0.12) 0%, transparent 50%),
     radial-gradient(ellipse 50% 40% at 80% 20%, rgba(122,45,90,0.1) 0%, transparent 50%);
 }
-
 .cover-numbers {
   position: absolute; inset: 0;
   pointer-events: none;
@@ -263,13 +242,11 @@ body {
 .cover-num.cat-a { color: rgba(160,98,45,0.15); }
 .cover-num.cat-s { color: rgba(45,122,82,0.15); }
 .cover-num.cat-c { color: rgba(122,45,90,0.15); }
-
 @keyframes floatNum {
   0% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-20px) rotate(2deg); }
   100% { transform: translateY(0) rotate(0deg); }
 }
-
 .cover-content {
   position: relative; z-index: 2;
   text-align: center;
@@ -279,7 +256,6 @@ body {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 .cover-eyebrow {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -293,7 +269,6 @@ body {
   content: ''; width: 40px; height: 1px;
   background: rgba(255,255,255,0.2);
 }
-
 .cover-title {
   font-family: var(--font-serif);
   font-weight: 700;
@@ -306,7 +281,6 @@ body {
 .cover-title span {
   color: #8FB4D8;
 }
-
 .cover-subtitle {
   font-family: var(--font-mono);
   font-size: clamp(13px, 2vw, 16px);
@@ -314,7 +288,6 @@ body {
   letter-spacing: 3px;
   margin-bottom: 48px;
 }
-
 .cover-stats {
   display: flex; gap: 40px; justify-content: center;
   margin-bottom: 52px;
@@ -331,7 +304,6 @@ body {
   font-size: 11px; color: rgba(255,255,255,0.35);
   letter-spacing: 1px;
 }
-
 .cover-enter {
   display: inline-flex; align-items: center; gap: 12px;
   padding: 16px 40px;
@@ -362,7 +334,6 @@ body {
 .cover-enter:hover::before { transform: translateX(0); }
 .cover-enter svg { transition: transform 0.3s ease; }
 .cover-enter:hover svg { transform: translateX(4px); }
-
 .cover-hint {
   position: absolute; bottom: 32px; left: 50%;
   transform: translateX(-50%);
@@ -376,273 +347,6 @@ body {
   0%, 100% { opacity: 0.25; }
   50% { opacity: 0.6; }
 }
-
-/* ===== 互动小猫（橘猫） ===== */
-.cover-cat {
-  position: absolute;
-  bottom: 48px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90px;
-  height: 75px;
-  cursor: pointer;
-  z-index: 3;
-  transition: transform 0.3s ease;
-}
-.cover-cat:hover { transform: translateX(-50%) scale(1.08); }
-.cover-cat.jump { animation: catJump 0.6s ease; }
-@keyframes catJump {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  30% { transform: translateX(-50%) translateY(-20px); }
-  60% { transform: translateX(-50%) translateY(-6px); }
-}
-.cat-body {
-  position: absolute;
-  bottom: 0; left: 50%;
-  transform: translateX(-50%);
-  width: 60px; height: 42px;
-  background: #F0A050;
-  border-radius: 30px 30px 22px 22px;
-}
-.cat-body::before {
-  content: '';
-  position: absolute;
-  top: 6px; left: 50%;
-  transform: translateX(-50%);
-  width: 36px; height: 4px;
-  background: repeating-linear-gradient(90deg, #E08838 0 4px, transparent 4px 10px);
-  border-radius: 2px;
-  opacity: 0.6;
-}
-.cat-head {
-  position: absolute;
-  bottom: 30px; left: 50%;
-  transform: translateX(-50%);
-  width: 48px; height: 40px;
-  background: #F0A050;
-  border-radius: 50% 50% 45% 45%;
-  z-index: 2;
-}
-.cat-head::before {
-  content: '';
-  position: absolute;
-  top: 2px; left: 50%;
-  transform: translateX(-50%);
-  width: 28px; height: 10px;
-  background:
-    linear-gradient(135deg, transparent 40%, #E08838 40%, #E08838 50%, transparent 50%),
-    linear-gradient(45deg, transparent 40%, #E08838 40%, #E08838 50%, transparent 50%);
-  opacity: 0.5;
-}
-.cat-ear {
-  position: absolute;
-  top: -6px;
-  width: 0; height: 0;
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-bottom: 14px solid #F0A050;
-}
-.cat-ear.left { left: 3px; transform: rotate(-15deg); }
-.cat-ear.right { right: 3px; transform: rotate(15deg); }
-.cat-ear-inner {
-  position: absolute;
-  top: 3px;
-  width: 0; height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 8px solid #E08040;
-}
-.cat-ear.left .cat-ear-inner { left: -5px; }
-.cat-ear.right .cat-ear-inner { right: -5px; }
-.cat-eye {
-  position: absolute;
-  top: 14px;
-  width: 9px; height: 11px;
-  background: #fff;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: height 0.2s ease;
-}
-.cat-eye.left { left: 9px; }
-.cat-eye.right { right: 9px; }
-.cat-pupil {
-  position: absolute;
-  width: 5px; height: 6px;
-  background: #2A2A2A;
-  border-radius: 50%;
-  top: 2.5px; left: 2px;
-  transition: transform 0.1s ease;
-}
-.cat-nose {
-  position: absolute;
-  top: 24px; left: 50%;
-  transform: translateX(-50%);
-  width: 6px; height: 5px;
-  background: #D4857A;
-  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
-}
-.cat-mouth {
-  position: absolute;
-  top: 29px; left: 50%;
-  transform: translateX(-50%);
-  width: 12px; height: 6px;
-}
-.cat-mouth::before, .cat-mouth::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 6px; height: 5px;
-  border: 1.2px solid #A06830;
-  border-top: none;
-}
-.cat-mouth::before { left: 0; border-radius: 0 0 0 6px; border-right: none; }
-.cat-mouth::after { right: 0; border-radius: 0 0 6px 0; border-left: none; }
-.cat-tail {
-  position: absolute;
-  bottom: 8px;
-  right: -4px;
-  width: 24px; height: 6px;
-  background: #F0A050;
-  border-radius: 8px;
-  transform-origin: left center;
-  animation: tailWag 2s ease-in-out infinite;
-}
-@keyframes tailWag {
-  0%, 100% { transform: rotate(-10deg); }
-  50% { transform: rotate(20deg); }
-}
-.cat-paw {
-  position: absolute;
-  bottom: 2px;
-  left: calc(50% - 14px);
-  width: 12px; height: 9px;
-  background: #F0A050;
-  border-radius: 50% 50% 40% 40%;
-  z-index: 3;
-  transition: transform 0.3s ease;
-}
-.cat-paw::after {
-  content: '';
-  position: absolute;
-  top: 1px; left: 1px;
-  width: 10px; height: 3px;
-  background: repeating-linear-gradient(90deg, #E08838 0 2px, transparent 2px 4px);
-  border-radius: 2px;
-  opacity: 0.5;
-}
-.cover-cat.sleeping .cat-eye {
-  animation: catSleep 4.5s ease-in-out infinite;
-}
-.cover-cat.sleeping .cat-body {
-  animation: catBreath 3s ease-in-out infinite;
-}
-.cover-cat.sleeping .cat-tail {
-  animation: tailWagSlow 4s ease-in-out infinite;
-}
-@keyframes catSleep {
-  0%, 20%, 80%, 100% { height: 11px; }
-  35%, 65% { height: 2px; }
-  45%, 55% { height: 1px; }
-}
-@keyframes catBreath {
-  0%, 100% { transform: translateX(-50%) scaleY(1); }
-  50% { transform: translateX(-50%) scaleY(1.04); }
-}
-@keyframes tailWagSlow {
-  0%, 100% { transform: rotate(-5deg); }
-  50% { transform: rotate(8deg); }
-}
-.cat-zzz {
-  position: absolute;
-  bottom: 65px;
-  left: 50%;
-  transform: translateX(20px);
-  font-family: var(--font-serif);
-  font-size: 14px;
-  color: rgba(255,255,255,0.5);
-  opacity: 0;
-  pointer-events: none;
-  z-index: 4;
-}
-.cover-cat.sleeping .cat-zzz {
-  animation: zzzFloat 3s ease-in-out infinite;
-}
-@keyframes zzzFloat {
-  0% { opacity: 0; transform: translateX(20px) translateY(0); }
-  30% { opacity: 0.7; }
-  100% { opacity: 0; transform: translateX(28px) translateY(-20px); }
-}
-.cover-cat.licking .cat-paw {
-  animation: catLick 3.2s ease-in-out infinite;
-}
-.cover-cat.licking .cat-eye {
-  height: 6px;
-}
-@keyframes catLick {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  20% { transform: translate(-5px, -24px) rotate(-15deg); }
-  35% { transform: translate(-3px, -28px) rotate(-5deg); }
-  50% { transform: translate(-5px, -26px) rotate(-12deg); }
-  65% { transform: translate(-3px, -28px) rotate(-5deg); }
-  80% { transform: translate(-2px, -12px) rotate(0deg); }
-}
-.cover-cat.awake .cat-eye {
-  height: 11px;
-  animation: none;
-}
-.cover-cat.awake .cat-paw {
-  animation: none;
-  transform: translate(0, 0);
-}
-.cover-cat.awake .cat-body {
-  animation: none;
-}
-.cover-cat.awake .cat-zzz {
-  animation: none;
-  opacity: 0;
-}
-.cat-bubble {
-  position: absolute;
-  bottom: 78px;
-  left: 50%;
-  transform: translateX(-50%) scale(0);
-  background: #fff;
-  color: #333;
-  font-size: 13px;
-  padding: 6px 14px;
-  border-radius: 18px;
-  white-space: nowrap;
-  font-family: var(--font-sans);
-  opacity: 0;
-  transition: all 0.3s ease;
-  pointer-events: none;
-  z-index: 5;
-}
-.cat-bubble.show {
-  opacity: 1;
-  transform: translateX(-50%) scale(1);
-}
-.cat-bubble::after {
-  content: '';
-  position: absolute;
-  bottom: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #fff;
-}
-.cat-whisker {
-  position: absolute;
-  top: 26px;
-  width: 14px; height: 1px;
-  background: rgba(160,104,48,0.5);
-}
-.cat-whisker.l1 { left: -6px; transform: rotate(-8deg); }
-.cat-whisker.l2 { left: -8px; top: 30px; transform: rotate(5deg); }
-.cat-whisker.r1 { right: -6px; transform: rotate(8deg); }
-.cat-whisker.r2 { right: -8px; top: 30px; transform: rotate(-5deg); }
-
 .cover-line {
   position: absolute;
   background: rgba(255,255,255,0.06);
@@ -652,7 +356,6 @@ body {
 </style>
 </head>
 <body>
-
 <!-- 开场封面 -->
 <div class="cover" id="cover">
   <div class="cover-bg"></div>
@@ -666,75 +369,49 @@ body {
     <h1 class="cover-title">TAN-<span>AI</span></h1>
     <div class="cover-subtitle">绘 画 风 格 完 整 库</div>
     <div class="cover-stats">
-      <div class="cover-stat"><span class="cover-stat-num">92</span><span class="cover-stat-label">风格</span></div>
+      <div class="cover-stat"><span class="cover-stat-num">93</span><span class="cover-stat-label">风格</span></div>
       <div class="cover-stat"><span class="cover-stat-num">04</span><span class="cover-stat-label">分区</span></div>
-      <div class="cover-stat"><span class="cover-stat-num">V3.07</span><span class="cover-stat-label">版本</span></div>
+      <div class="cover-stat"><span class="cover-stat-num">V3.08</span><span class="cover-stat-label">版本</span></div>
     </div>
     <button class="cover-enter" id="coverEnter">
       进入画廊
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </button>
   </div>
-
-  <!-- 互动小猫 -->
-  <div class="cover-cat sleeping" id="coverCat">
-    <div class="cat-bubble" id="catBubble">喵~</div>
-    <div class="cat-zzz">zZ</div>
-    <div class="cat-tail"></div>
-    <div class="cat-body"></div>
-    <div class="cat-paw"></div>
-    <div class="cat-head">
-      <div class="cat-ear left"><div class="cat-ear-inner"></div></div>
-      <div class="cat-ear right"><div class="cat-ear-inner"></div></div>
-      <div class="cat-eye left"><div class="cat-pupil" id="pupilL"></div></div>
-      <div class="cat-eye right"><div class="cat-pupil" id="pupilR"></div></div>
-      <div class="cat-whisker l1"></div>
-      <div class="cat-whisker l2"></div>
-      <div class="cat-whisker r1"></div>
-      <div class="cat-whisker r2"></div>
-      <div class="cat-nose"></div>
-      <div class="cat-mouth"></div>
-    </div>
-  </div>
-
-  <div class="cover-hint">CLICK TO ENTER · 点点小猫</div>
+  <div class="cover-hint">CLICK TO ENTER</div>
 </div>
-
 <header class="topbar">
   <div class="topbar-inner">
     <a class="brand" href="#">
       <div class="brand-mark">T</div>
       <span class="brand-text">TAN-AI 风格库</span>
-      <span class="brand-version">V3.07</span>
+      <span class="brand-version">V3.08</span>
     </a>
     <div class="topbar-stats">
-      <span><b id="stat-total">92</b> 风格</span>
+      <span><b id="stat-total">93</b> 风格</span>
       <span><b>4</b> 分区</span>
-      <span>更新 2026.09.02</span>
+      <span>更新 2026.09.04</span>
     </div>
   </div>
 </header>
-
 <section class="hero">
   <div class="hero-eyebrow">Style Index &middot; Archive</div>
-  <h1 class="hero-title">92 种绘画风格<br>一座可检索的<em>视觉档案库</em></h1>
-    <div class="hero-title-en">92 Painting Styles<br>A Searchable Visual Archive</div>
+  <h1 class="hero-title">93 种绘画风格<br>一座可检索的<em>视觉档案库</em></h1>
+  <div class="hero-title-en">93 Painting Styles<br>A Searchable Visual Archive</div>
   <p class="hero-desc">从通用插画、建筑室内、创意重构到电影调色，每一种风格都有独立编号、参考图、完整提示词与适用场景。直接报编号即可调用，支持多风格叠加。</p>
-  <p class="hero-desc-en">From general illustration, architecture & interior, creative reconstruction to cinema color grading — each style has an independent ID, reference image, complete prompts and use cases. Just call the code number, multi-style stacking supported.</p>
   <div class="hero-meta">
     <div class="hero-meta-item"><span class="hero-meta-num">38</span><span class="hero-meta-label">通用插画 / 海报 / 摄影</span></div>
     <div class="hero-meta-item"><span class="hero-meta-num">04</span><span class="hero-meta-label">建筑室内专项</span></div>
-    <div class="hero-meta-item"><span class="hero-meta-num">42</span><span class="hero-meta-label">创意 Skill 组</span></div>
+    <div class="hero-meta-item"><span class="hero-meta-num">44</span><span class="hero-meta-label">创意 Skill 组</span></div>
     <div class="hero-meta-item"><span class="hero-meta-num">07</span><span class="hero-meta-label">电影调色专项</span></div>
   </div>
 </section>
-
 <div class="toolbar">
   <div class="filter-group" id="filterGroup">
     <button class="filter-btn active" data-cat="all">全部</button>
     <button class="filter-btn" data-cat="general"><span class="filter-dot" style="background:var(--cat-general)"></span>通用 01-38</button>
     <button class="filter-btn" data-cat="arch"><span class="filter-dot" style="background:var(--cat-arch)"></span>建筑 S01-S04</button>
-    <button class="filter-btn" data-cat="skill"><span class="filter-dot" style="background:var(--cat-skill)"></span>创意 SK01-SK42</button>
+    <button class="filter-btn" data-cat="skill"><span class="filter-dot" style="background:var(--cat-skill)"></span>创意 SK01-SK44</button>
     <button class="filter-btn" data-cat="cinema"><span class="filter-dot" style="background:var(--cat-cinema)"></span>电影 C01-C07</button>
   </div>
   <div class="search-box">
@@ -742,15 +419,13 @@ body {
     <input type="text" id="searchInput" placeholder="搜索编号、名称或关键词…">
   </div>
 </div>
-
 <main class="gallery">
   <div class="gallery-header">
     <h2 id="galleryTitle">全部风格</h2>
-    <span class="gallery-count" id="galleryCount">92 / 92</span>
+    <span class="gallery-count" id="galleryCount">93 / 93</span>
   </div>
   <div class="grid" id="styleGrid"></div>
 </main>
-
 <section class="rules">
   <h2>三种调用方式</h2>
   <p class="rules-sub">编号统一不带短横线：SK01、S01、C01、38</p>
@@ -761,43 +436,7 @@ body {
     <div class="rule-card"><div class="rule-num">GLOBAL</div><div class="rule-title">全局禁令</div><div class="rule-desc">所有风格禁止水印、角标、AI字样、乱码、二维码、LOGO。</div><code class="rule-code">watermark / logo / QR</code></div>
   </div>
 </section>
-
-
-<div style="max-width:1280px;margin:0 auto;padding:32px 32px 24px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;">
-  <div style="display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap;justify-content:center;">
-    <div style="text-align:center;">
-      <img src="images/qr_logo.png" alt="TAN-AI 风格库二维码" style="width:168px;height:168px;border-radius:4px;">
-      <p style="font-family:var(--font-mono);font-size:10px;color:var(--ink-faint);margin-top:8px;letter-spacing:1px;">扫码访问网站</p>
-    </div>
-    <div style="text-align:center;">
-      <img src="images/qr_wechat.png" alt="微信二维码" style="width:168px;height:168px;border-radius:4px;">
-      <p style="font-family:var(--font-mono);font-size:10px;color:var(--ink-faint);margin-top:8px;letter-spacing:1px;">扫码加微信</p>
-    </div>
-  </div>
-  <div style="max-width:480px;">
-    <p style="font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);letter-spacing:0.5px;line-height:1.8;">
-      本站所有风格参考图均为 AI 生成示意图，仅用于风格视觉参考，最终效果以实际 AI 生成结果为准。<br>
-      提示词复制方式：点击任意风格卡片 → 右侧抽屉中「正向提示词」/「反向提示词」右上角「复制」按钮。<br>
-      网址可直接转发他人，手机电脑均可使用。<br>
-      <span style="display:inline-block;margin-top:6px;">风格数据下载：
-        <a href="data/styles.json" download style="color:var(--accent);text-decoration:underline;">标准JSON</a> ·
-        <a href="data/styles-sdwebui.json" download style="color:var(--accent);text-decoration:underline;">SD WebUI JSON</a> ·
-        <a href="data/styles-sdwebui.csv" download style="color:var(--accent);text-decoration:underline;">SD WebUI CSV</a> ·
-        <a href="data/styles-prompts.txt" download style="color:var(--accent);text-decoration:underline;">纯文本TXT</a>
-      </span>
-      <br>
-      <span class="site-stats">
-        <span class="stat-item">总访问 <span id="busuanzi_value_site_pv">--</span></span>
-        <span class="stat-divider">·</span>
-        <span class="stat-item">访客 <span id="busuanzi_value_site_uv">--</span></span>
-        <span class="stat-divider">·</span>
-        <span class="stat-item">92 风格数据可下载</span>
-      </span>
-    </p>
-  </div>
-</div>
-<footer class="footer"><p>TAN-AI STYLE LIBRARY &middot; V3.07 &middot; 92 STYLES &middot; ARCHIVE EDITION</p></footer>
-
+<footer class="footer"><p>TAN-AI STYLE LIBRARY &middot; V3.08 &middot; 93 STYLES &middot; ARCHIVE EDITION</p></footer>
 <div class="overlay" id="overlay"></div>
 <aside class="drawer" id="drawer">
   <div class="drawer-hero" id="dHero"></div>
@@ -809,321 +448,260 @@ body {
   </div>
   <div class="drawer-body" id="drawerBody"></div>
 </aside>
-
 <script>
 const NEG_GLOBAL = "水印, watermark, 角标, logo, AI字样, signature, 乱码, gibberish text, 二维码, QR code";
-
 const STYLES = [
-  {code:"01",cat:"general",catLabel:"通用插画",name:"暗绿调",nameEn:"Dark Green Tone",desc:"暗绿电影胶片，低饱和暗调氛围",scene:"风景、氛围感人像、环境空间",image:"images/00.jpg",positive:"暗绿色调电影胶片质感，低饱和度，暗调氛围，深邃墨绿色彩，柔和阴影，电影感光影，细腻胶片颗粒，氛围感画面，8K高清",positiveEn:"dark green cinematic film tone, low saturation, moody atmosphere, deep ink-green colors, soft shadows, cinematic lighting, fine film grain, atmospheric scene, 8K ultra HD",negative:"水印, 高饱和, 艳丽色彩, 过曝, 明亮色调",negativeEn:"watermark, high saturation, vivid colors, overexposed, bright tones"},
-  {code:"02",cat:"general",catLabel:"通用插画",name:"青橙调",nameEn:"Teal & Orange Tone",desc:"青橙撞色电影色调，高对比光影",scene:"城市夜景、街景、氛围感画面",image:"images/01.jpg",positive:"青橙撞色电影色调，青色阴影与橙色高光对比，高对比光影，电影级调色，冷暖色彩分离，氛围感画面，8K高清",positiveEn:"teal and orange cinematic color grading, teal shadows contrasting with orange highlights, high contrast lighting, cinematic color grade, warm-cool color separation, atmospheric scene, 8K ultra HD",negative:"水印, 色彩平淡, 低对比, 单色调",negativeEn:"watermark, flat colors, low contrast, monochrome"},
-  {code:"03",cat:"general",catLabel:"通用插画",name:"雨夜胶片氛围感",nameEn:"Rainy Night Film Mood",desc:"雨夜湿润街道，胶片颗粒，冷调霓虹氛围感",scene:"城市夜景、雨夜场景",image:"images/02.jpg",positive:"雨夜湿润街道，地面积水反射霓虹灯光，胶片颗粒质感，冷调霓虹氛围，朦胧雨丝，城市夜景，电影感，8K高清",positiveEn:"rainy night wet streets, puddles reflecting neon lights, film grain texture, cool neon atmosphere, hazy rain streaks, urban nightscape, cinematic mood, 8K ultra HD",negative:"水印, 晴天, 干燥地面, 明亮日光, 高饱和",negativeEn:"watermark, sunny day, dry ground, bright daylight, high saturation"},
-  {code:"04",cat:"general",catLabel:"通用插画",name:"复古港风人像",nameEn:"Retro HK Portrait",desc:"90年代港风，胶片颗粒，暖柔磨皮，复古色调",scene:"人像、怀旧海报",image:"images/03.jpg",positive:"90年代港风人像，胶片颗粒质感，暖柔磨皮，复古色调，柔和光影，怀旧氛围，港式美学，8K高清",positiveEn:"90s Hong Kong retro portrait, film grain texture, warm soft skin retouching, vintage color tone, soft lighting, nostalgic atmosphere, Hong Kong aesthetic, 8K ultra HD",negative:"水印, 现代感, 冷色调, 锐化过度, 素颜",negativeEn:"watermark, modern look, cool tones, over-sharpened, bare face"},
-  {code:"05",cat:"general",catLabel:"通用插画",name:"莫奈印象油画风",nameEn:"Monet Impressionist Oil",desc:"印象派油画，柔和色块，笔触肌理，朦胧光影",scene:"风景、花草、氛围感插画",image:"images/04.jpg",positive:"莫奈印象派油画风格，柔和色块，明显笔触肌理，朦胧光影，色彩斑斓，户外风景，艺术感，油画质感，8K高清",positiveEn:"Monet impressionist oil painting style, soft color blocks, visible brushstroke texture, hazy light and shadow, vibrant colors, outdoor landscape, artistic feel, oil painting texture, 8K ultra HD",negative:"水印, 写实照片, 锐利细节, 数字绘画, 线稿",negativeEn:"watermark, photorealistic, sharp details, digital painting, line art"},
-  {code:"06",cat:"general",catLabel:"通用插画",name:"日系治愈水彩",nameEn:"Japanese Healing Watercolor",desc:"清透淡水彩，低饱和，柔和晕染，纸张纹理",scene:"风景、人文、小清新插画",image:"images/05.jpg",positive:"日系治愈水彩插画，清透淡水彩，低饱和度，柔和晕染，纸张纹理，清新色调，温暖氛围，手绘感，8K高清",positiveEn:"Japanese healing watercolor illustration, transparent light watercolor, low saturation, soft color bleeding, paper texture, fresh color palette, warm atmosphere, hand-drawn feel, 8K ultra HD",negative:"水印, 油画厚涂, 高饱和, 锐利边缘, 暗黑风格",negativeEn:"watermark, impasto oil painting, high saturation, sharp edges, dark style"},
-  {code:"07",cat:"general",catLabel:"通用插画",name:"赛博都市霓虹",nameEn:"Cyber City Neon",desc:"高饱和霓虹，未来都市，光影炫彩",scene:"科幻城市、潮流视觉",image:"images/06.jpg",positive:"赛博朋克都市夜景，高饱和霓虹灯光，未来感建筑，光影炫彩，雨夜反射，科幻氛围，8K高清",positiveEn:"cyberpunk urban nightscape, high saturation neon lights, futuristic architecture, dazzling light and color, rainy reflections, sci-fi atmosphere, 8K ultra HD",negative:"水印, 低饱和, 古典建筑, 日光场景, 朴素风格",negativeEn:"watermark, low saturation, classical architecture, daylight scene, plain style"},
-  {code:"08",cat:"general",catLabel:"通用插画",name:"极简扁平插画风",nameEn:"Minimal Flat Illustration",desc:"大色块扁平化，轮廓干净，少细节，高级简约",scene:"海报、信息插图",image:"images/07.jpg",positive:"极简扁平插画风格，大色块扁平化设计，干净轮廓线，少细节，高级简约，几何构成，现代感，8K高清",positiveEn:"minimalist flat illustration style, large color blocks flat design, clean outline, minimal details, premium simplicity, geometric composition, modern feel, 8K ultra HD",negative:"水印, 写实, 渐变, 阴影, 复杂细节, 3D渲染",negativeEn:"watermark, photorealistic, gradient, shadows, complex details, 3D render"},
-  {code:"09",cat:"general",catLabel:"通用插画",name:"速写线稿风",nameEn:"Sketch Line Art",desc:"钢笔速写，流畅轮廓，少量明暗，纸张底色",scene:"建筑、城市、人物速写",image:"images/08.jpg",positive:"钢笔速写线稿风格，流畅轮廓线条，少量明暗排线，米白纸张底色，手绘速写感，建筑城市速写，8K高清",positiveEn:"pen sketch line art style, fluid contour lines, minimal hatching shading, off-white paper background, hand-drawn sketch feel, architectural urban sketch, 8K ultra HD",negative:"水印, 全彩填充, 油画, 照片写实, 3D建模",negativeEn:"watermark, full color fill, oil painting, photorealistic, 3D modeling"},
-  {code:"10",cat:"general",catLabel:"通用插画",name:"复古胶片摄影",nameEn:"Vintage Film Photography",desc:"老胶卷，颗粒感，轻微褪色，复古色彩",scene:"人像、街景纪实",image:"images/09.jpg",positive:"复古胶片摄影，老胶卷质感，明显颗粒感，轻微褪色，复古色彩偏移，漏光效果，纪实摄影，8K高清",positiveEn:"vintage film photography, old film roll texture, prominent grain, slight fading, retro color shift, light leak effect, documentary photography, 8K ultra HD",negative:"水印, 数码清晰, 高饱和, 现代滤镜, 锐利",negativeEn:"watermark, digital clarity, high saturation, modern filter, sharp"},
-  {code:"11",cat:"general",catLabel:"通用插画",name:"宫崎骏动画风",nameEn:"Ghibli Animation Style",desc:"吉卜力质感，柔和色彩，通透光影，手绘动画质感",scene:"风景、童话、城市插画",image:"images/10.jpg",positive:"宫崎骏吉卜力动画风格，柔和色彩，通透自然光影，手绘动画质感，蓝天白云，绿意盎然，温暖治愈，8K高清",positiveEn:"Miyazaki Ghibli animation style, soft colors, transparent natural lighting, hand-drawn animation texture, blue sky and white clouds, lush greenery, warm healing, 8K ultra HD",negative:"水印, 3D渲染, 暗黑风格, 赛博朋克, 写实照片",negativeEn:"watermark, 3D render, dark style, cyberpunk, photorealistic"},
-  {code:"12",cat:"general",catLabel:"通用插画",name:"黑白纪实摄影",nameEn:"B&W Documentary",desc:"黑白高对比度，纪实颗粒，故事感",scene:"人文纪实、情绪画面",image:"images/11.jpg",positive:"黑白纪实摄影，高对比度，丰富灰阶，胶片颗粒，故事感，人文纪实，情绪画面，8K高清",positiveEn:"black and white documentary photography, high contrast, rich grayscale, film grain, narrative feel, humanistic documentary, emotional scene, 8K ultra HD",negative:"水印, 彩色, 低对比, 柔和磨皮, 摆拍感",negativeEn:"watermark, color, low contrast, soft skin retouching, posed feel"},
-  {code:"13",cat:"general",catLabel:"通用插画",name:"噪点颗粒复古海报",nameEn:"Grain Retro Poster",desc:"印刷噪点，做旧纸张，复古版式海报",scene:"复古主题宣传海报",image:"images/12.jpg",positive:"噪点颗粒复古海报，印刷噪点质感，做旧纸张纹理，复古版式设计，有限色彩，年代感，8K高清",positiveEn:"noise grain vintage poster, print noise texture, aged paper texture, retro layout design, limited color palette, vintage feel, 8K ultra HD",negative:"水印, 现代设计, 光滑质感, 高清晰, 渐变色彩",negativeEn:"watermark, modern design, smooth texture, high definition, gradient colors"},
-  {code:"14",cat:"general",catLabel:"通用插画",name:"莫比斯漫画风",nameEn:"Moebius Comic Style",desc:"干净流畅线条，平涂色彩，科幻文艺漫画构图",scene:"幻想、建筑、概念插画",image:"images/13.jpg",positive:"莫比斯漫画风格，干净流畅线条，平涂色彩，科幻文艺漫画构图，超现实场景，建筑幻想，艺术感，8K高清",positiveEn:"Moebius comic style, clean fluid lines, flat color fills, sci-fi literary comic composition, surreal scenes, architectural fantasy, artistic feel, 8K ultra HD",negative:"水印, 写实, 3D渲染, 厚涂油画, 照片质感",negativeEn:"watermark, photorealistic, 3D render, impasto oil painting, photo texture"},
-  {code:"15",cat:"general",catLabel:"通用插画",name:"丙烯肌理绘画",nameEn:"Acrylic Texture Painting",desc:"厚涂丙烯颜料，颜料肌理，色块笔触",scene:"风景、创意海报",image:"images/14.jpg",positive:"丙烯肌理绘画风格，厚涂丙烯颜料，明显颜料肌理，色块笔触，色彩丰富，手绘油画感，8K高清",positiveEn:"acrylic texture painting style, thick acrylic paint, prominent paint texture, color block brushstrokes, rich colors, hand-painted oil painting feel, 8K ultra HD",negative:"水印, 水彩, 扁平插画, 照片写实, 数字光滑",negativeEn:"watermark, watercolor, flat illustration, photorealistic, digital smooth"},
-  {code:"16",cat:"general",catLabel:"通用插画",name:"新中式水墨写意",nameEn:"Neo-Chinese Ink Wash",desc:"水墨晕染，留白，国风写意，淡墨色彩",scene:"国风山水、古建筑插画",image:"images/15.jpg",positive:"新中式水墨写意风格，水墨晕染，大量留白，国风写意，淡墨色彩，山水意境，东方美学，8K高清",positiveEn:"neo-Chinese ink wash freehand style, ink wash bleeding, generous negative space, Chinese freehand aesthetic, light ink colors, landscape poetic mood, Eastern aesthetics, 8K ultra HD",negative:"水印, 油画, 高饱和, 西方写实, 3D渲染",negativeEn:"watermark, oil painting, high saturation, Western realism, 3D render"},
-  {code:"17",cat:"general",catLabel:"通用插画",name:"颗粒丝网印刷风",nameEn:"Grain Screen Print",desc:"丝网印刷颗粒质感，有限色版，印刷做旧",scene:"潮流海报、城市插画",image:"images/16.jpg",positive:"颗粒丝网印刷风格，丝网印刷颗粒质感，有限色版，印刷做旧效果，套色偏移，潮流海报感，8K高清",positiveEn:"grain screen printing style, screen print grain texture, limited color plates, aged print effect, color registration offset, trendy poster feel, 8K ultra HD",negative:"水印, 照片写实, 渐变, 光滑数字, 全彩百万色",negativeEn:"watermark, photorealistic, gradient, smooth digital, full color millions"},
-  {code:"18",cat:"general",catLabel:"通用插画",name:"复古画报人像",nameEn:"Vintage Magazine Portrait",desc:"老杂志画报，精致平涂，复古排版装饰",scene:"人像、年代海报",image:"images/17.jpg",positive:"复古画报人像风格，老杂志画报质感，精致平涂插画，复古排版装饰，年代感，时尚插画，8K高清",positiveEn:"vintage magazine portrait illustration style, old magazine poster texture, refined flat illustration, retro layout decoration, vintage feel, fashion illustration, 8K ultra HD",negative:"水印, 现代摄影, 3D渲染, 极简, 暗黑",negativeEn:"watermark, modern photography, 3D render, minimalist, dark"},
-  {code:"19",cat:"general",catLabel:"通用插画",name:"低poly低多边形",nameEn:"Low Poly Geometric",desc:"几何多边形拼接，简约几何体构成画面",scene:"概念风景、抽象海报",image:"images/18.jpg",positive:"低多边形low poly风格，几何多边形拼接，简约几何体构成画面，三角面构成，色彩渐变，现代抽象，8K高清",positiveEn:"low poly style, geometric polygon mosaic, minimalist geometric composition, triangular facets, color gradient, modern abstract, 8K ultra HD",negative:"水印, 写实, 曲线柔美, 油画, 照片",negativeEn:"watermark, photorealistic, soft curves, oil painting, photo"},
-  {code:"20",cat:"general",catLabel:"通用插画",name:"梦幻柔光弥散风",nameEn:"Dreamy Soft Glow",desc:"柔光漫射，光晕朦胧，柔和虚化，氛围感",scene:"人像、梦境风景",image:"images/19.jpg",positive:"梦幻柔光弥散风格，柔光漫射，光晕朦胧，柔和虚化，氛围感画面，梦境感，柔焦，8K高清",positiveEn:"dreamy soft light diffusion style, soft light diffusion, glowing haze, soft bokeh blur, atmospheric scene, dreamlike feel, soft focus, 8K ultra HD",negative:"水印, 锐利清晰, 高对比, 硬光, 暗黑",negativeEn:"watermark, sharp clarity, high contrast, hard light, dark"},
-  {code:"21",cat:"general",catLabel:"通用插画",name:"国潮烫金国风",nameEn:"Guochao Gold Foil",desc:"国风纹样，烫金质感，红金配色，传统元素",scene:"国潮海报、节日视觉",image:"images/20.jpg",positive:"国潮烫金国风风格，传统国风纹样，烫金质感，红金配色，传统元素，祥云瑞兽，华丽大气，8K高清",positiveEn:"Chinese trendy gilded national style, traditional Chinese patterns, gilded texture, red and gold color scheme, traditional elements, auspicious clouds and mythical beasts, luxurious grandeur, 8K ultra HD",negative:"水印, 极简, 西方风格, 低饱和, 现代简约",negativeEn:"watermark, minimalist, Western style, low saturation, modern minimal"},
-  {code:"22",cat:"general",catLabel:"通用插画",name:"复古美式旧杂志旅行海报风",nameEn:"Retro American Travel Poster",desc:"复古美式旅行海报，装饰小英文，做旧印刷质感",scene:"城市文旅旅行海报",image:"images/21.jpg",positive:"复古美式旧杂志旅行海报风格，复古美式插画，装饰小英文排版，做旧印刷质感，旅行主题，年代感，8K高清",positiveEn:"vintage American old magazine travel poster style, retro American illustration, decorative small English typography, aged print texture, travel theme, vintage feel, 8K ultra HD",negative:"水印, 现代设计, 照片写实, 极简, 高清晰数码",negativeEn:"watermark, modern design, photorealistic, minimalist, high definition digital"},
-  {code:"23",cat:"general",catLabel:"通用插画",name:"复古城市地标拼贴海报风",nameEn:"Retro City Landmark Collage",desc:"城市地标拼贴，装饰色块，复古印刷质感",scene:"城市文旅海报",image:"images/22.jpg",positive:"复古城市地标拼贴海报风格，城市地标拼贴构图，装饰色块，复古印刷质感，旅行宣传，年代感，8K高清",positiveEn:"vintage city landmark collage poster style, city landmark collage composition, decorative color blocks, retro print texture, travel promotion, vintage feel, 8K ultra HD",negative:"水印, 现代简约, 单一场景, 照片写实, 极简",negativeEn:"watermark, modern minimal, single scene, photorealistic, minimalist"},
-  {code:"24",cat:"general",catLabel:"通用插画",name:"sujunmin超现实情绪静物摄影风",nameEn:"Surreal Emotional Still Life",desc:"超现实静物，柔和光影，情绪氛围感",scene:"静物、情绪艺术摄影",image:"images/23.jpg",positive:"sujunmin超现实情绪静物摄影风格，超现实静物构图，柔和光影，情绪氛围感，艺术摄影，极简构图，8K高清",positiveEn:"sujunmin surreal emotional still life photography style, surreal still life composition, soft lighting, emotional atmosphere, art photography, minimalist composition, 8K ultra HD",negative:"水印, 杂乱, 高饱和, 硬光, 商业产品照",negativeEn:"watermark, cluttered, high saturation, hard light, commercial product shot"},
-  {code:"25",cat:"general",catLabel:"通用插画",name:"四格夏日拼贴丙烯插画风",nameEn:"4-Panel Summer Collage Acrylic",desc:"四格分镜拼贴，丙烯手绘，统一主题，色彩鲜活",scene:"季节主题、故事插画",image:"images/24.jpg",positive:"四格夏日拼贴丙烯插画风格，四格分镜拼贴构图，丙烯手绘质感，统一夏日主题，色彩鲜活，故事感，8K高清",positiveEn:"four-panel summer collage acrylic illustration style, four-panel storyboard collage composition, acrylic hand-painted texture, unified summer theme, vivid colors, narrative feel, 8K ultra HD",negative:"水印, 单格, 水彩, 照片, 冬季主题",negativeEn:"watermark, single panel, watercolor, photo, winter theme"},
-  {code:"26",cat:"general",catLabel:"通用插画",name:"城市街头波普混合媒体海报风",nameEn:"Urban Pop Mixed Media",desc:"波普街头混合媒介，粗黑轮廓，色彩艳丽",scene:"城市潮流海报",image:"images/25.jpg",positive:"城市街头波普混合媒体海报风格，波普艺术，街头混合媒介，粗黑轮廓线，色彩艳丽，潮流感，拼贴元素，8K高清",positiveEn:"urban street pop mixed media poster style, pop art, street mixed media, bold black outlines, vivid colors, trendy feel, collage elements, 8K ultra HD",negative:"水印, 极简, 低饱和, 古典, 写实摄影",negativeEn:"watermark, minimalist, low saturation, classical, documentary photography"},
-  {code:"27",cat:"general",catLabel:"通用插画",name:"水墨重构明信片",nameEn:"Ink Reconstructed Postcard",desc:"上半高清写实摄影，下半水墨扁平重构插画，米白画册明信片",scene:"城市地标明信片输出",image:"images/26.jpg",positive:"水墨重构明信片风格，上半部分高清写实摄影，下半部分水墨扁平重构插画，米白画册明信片质感，左下角英文标题，8K高清",positiveEn:"ink wash reconstruction postcard style, upper half high-definition photorealistic photography, lower half ink wash flat reconstruction illustration, off-white album postcard texture, English title bottom left, 8K ultra HD",negative:"水印, 全彩统一, 无分割, 油画, 3D渲染",negativeEn:"watermark, uniform full color, no division, oil painting, 3D render"},
-  {code:"28",cat:"general",catLabel:"通用插画",name:"雨夜霓虹亚文化实验海报风",nameEn:"Rainy Neon Subculture Poster",desc:"雨夜霓虹撞色，亚文化实验海报",scene:"城市夜景潮流海报",image:"images/27.jpg",positive:"雨夜霓虹亚文化实验海报风格，雨夜霓虹撞色，亚文化视觉，实验性海报设计，街头潮流，8K高清",positiveEn:"rainy night neon subculture experimental poster style, rainy night neon color clash, subculture visual, experimental poster design, street trend, 8K ultra HD",negative:"水印, 古典, 极简, 日光, 商业正统",negativeEn:"watermark, classical, minimalist, daylight, commercial orthodox"},
-  {code:"29",cat:"general",catLabel:"通用插画",name:"分层城市烟火插画",nameEn:"Layered Urban Life Illustration",desc:"严格上下分层，每个城市匹配本地建筑+烟火素材",scene:"城市烟火文旅插画",image:"images/28.jpg",positive:"分层城市烟火插画风格，严格上下分层构图，本地建筑与烟火气素材，城市生活气息，温暖色调，文旅插画，8K高清",positiveEn:"layered urban everyday life illustration style, strict top-bottom layered composition, local architecture and everyday life elements, urban living atmosphere, warm color tones, cultural tourism illustration, 8K ultra HD",negative:"水印, 不分层, 通用元素, 照搬其他城市, 冷调",negativeEn:"watermark, no layering, generic elements, copying other cities, cool tones"},
-  {code:"30",cat:"general",catLabel:"通用插画",name:"蜡笔手绘城市旅行风",nameEn:"Crayon Urban Travel Sketch",desc:"蜡笔手绘质感，完整单张全景画面，城市烟火氛围",scene:"城市文旅海报、旅行插画",image:"images/29.jpg",positive:"蜡笔手绘城市旅行风格，蜡笔手绘质感，完整单张全景画面，城市烟火氛围，温暖色彩，旅行插画，8K高清",positiveEn:"crayon hand-drawn urban travel style, crayon hand-drawn texture, complete single panoramic scene, urban everyday atmosphere, warm colors, travel illustration, 8K ultra HD",negative:"水印, 水彩, 油画, 数字光滑, 照片写实",negativeEn:"watermark, watercolor, oil painting, digital smooth, photorealistic"},
-  {code:"31",cat:"general",catLabel:"通用插画",name:"巴斯奎特波普涂鸦风",nameEn:"Basquiat Pop Graffiti",desc:"巴斯奎特风格，波普涂鸦，粗犷街头笔触",scene:"潮流海报、城市创意视觉",image:"images/30.jpg",positive:"巴斯奎特波普涂鸦风格，新表现主义，波普涂鸦艺术，粗犷街头笔触，原始符号，色彩强烈，8K高清",positiveEn:"Basquiat pop graffiti style, neo-expressionism, pop graffiti art, raw street brushstrokes, primitive symbols, intense colors, 8K ultra HD",negative:"水印, 精致插画, 极简, 古典, 写实",negativeEn:"watermark, refined illustration, minimalist, classical, photorealistic"},
-  {code:"32",cat:"general",catLabel:"通用插画",name:"白边贴纸橙色太阳大写英文海报",nameEn:"Sticker Orange Sun Typography",desc:"白边贴纸拼贴效果，橙色太阳元素，大号大写英文标题",scene:"文旅打卡海报",image:"images/31.jpg",positive:"白边贴纸橙色太阳大写英文海报风格，白边贴纸拼贴效果，橙色太阳图形元素，大号大写英文标题，复古旅行海报，8K高清",positiveEn:"white border sticker orange sun uppercase English poster style, white border sticker collage effect, orange sun graphic element, large uppercase English title, retro travel poster, 8K ultra HD",negative:"水印, 无贴纸, 冷色调, 中文标题, 极简",negativeEn:"watermark, no stickers, cool tones, Chinese title, minimalist"},
-  {code:"33",cat:"general",catLabel:"通用插画",name:"彩色圆珠笔交叉排线速写风",nameEn:"Color Ballpoint Cross-Hatch",desc:"多色圆珠笔，交叉排线速写，细密手绘线条质感",scene:"城市、建筑、人文速写插画",image:"images/32.jpg",positive:"彩色圆珠笔交叉排线速写风格，多色圆珠笔手绘，交叉排线技法，细密手绘线条质感，建筑人文速写，8K高清",positiveEn:"colored ballpoint cross-hatching sketch style, multi-color ballpoint hand-drawing, cross-hatching technique, fine hand-drawn line texture, architectural humanistic sketch, 8K ultra HD",negative:"水印, 全彩填充, 油画, 照片, 3D",negativeEn:"watermark, full color fill, oil painting, photo, 3D"},
-  {code:"34",cat:"general",catLabel:"通用插画",name:"文旅城市波普潮玩海报风",nameEn:"Cultural Tourism Pop Toy Poster",desc:"底层高清实景，上层粗黑描边Q版卡通贴纸，顶部大号英文城市标题",scene:"城市宣传海报",image:"images/33.jpg",positive:"文旅城市波普潮玩海报风格，底层高清实景照片，上层粗黑描边Q版卡通贴纸，点缀涂鸦几何元素，顶部大号英文城市标题，潮流感，8K高清",positiveEn:"cultural tourism urban pop trendy toy poster style, bottom layer high-definition live-action photo, upper layer bold black outline Q-version cartoon stickers, dotted graffiti geometric elements, top large English city title, trendy feel, 8K ultra HD",negative:"水印, 全写实, 极简, 无卡通, 古典",negativeEn:"watermark, fully photorealistic, minimalist, no cartoon, classical"},
-  {code:"35",cat:"general",catLabel:"通用插画",name:"高饱和撞色钢笔点线插画",nameEn:"High Contrast Pen Dot-Line",desc:"钢笔点线排线技法，墨绿、紫红、橙金、天蓝、象牙白撞色",scene:"古建筑、国风文艺插画",image:"images/34.jpg",positive:"高饱和撞色钢笔点线插画风格，钢笔点线排线技法，墨绿紫红橙金天蓝象牙白撞色，古建筑国风，文艺插画，8K高清",positiveEn:"high saturation color clash pen dot-line illustration style, pen dot-line hatching technique, ink green purple red orange gold sky blue ivory white color clash, ancient architecture Chinese style, literary illustration, 8K ultra HD",negative:"水印, 低饱和, 水彩, 油画, 照片",negativeEn:"watermark, low saturation, watercolor, oil painting, photo"},
-  {code:"36",cat:"general",catLabel:"通用插画",name:"刻板印刷城市档案",nameEn:"Engraving City Archive",desc:"真实城市主体+深蓝刻板印刷背景，细密点刻铜版排线",scene:"城市建筑、展览海报",image:"images/35.jpg",positive:"刻板印刷城市档案风格，真实城市主体建筑，深蓝刻板印刷背景，细密点刻铜版排线，档案年鉴展览海报质感，8K高清",positiveEn:"letterpress print urban archive style, real city main architecture, deep blue letterpress print background, fine dot engraving copperplate hatching, archive yearbook exhibition poster texture, 8K ultra HD",negative:"水印, 全彩, 水彩, 现代设计, 照片",negativeEn:"watermark, full color, watercolor, modern design, photo"},
-  {code:"37",cat:"general",catLabel:"通用插画",name:"极繁钢笔文艺招贴插图",nameEn:"Maximalist Pen Literary Poster",desc:"无数细密短促钢笔线条，疏密塑造形体，大景深，古建老树",scene:"古建筑、国风场景插画",image:"images/36.jpg",positive:"极繁钢笔文艺招贴插图风格，无数细密短促钢笔线条，疏密对比塑造形体，大景深构图，古建老树，静谧生机，8K高清",positiveEn:"maximalist pen literary poster illustration style, countless fine short pen strokes, density contrast shaping form, large depth of field composition, ancient architecture old trees, quiet vitality, 8K ultra HD",negative:"水印, 极简, 水彩, 油画, 照片, 留白过多",negativeEn:"watermark, minimalist, watercolor, oil painting, photo, excessive negative space"},
-  {code:"38",cat:"general",catLabel:"通用插画",name:"9:16竖屏扁平矢量城市旅行海报",nameEn:"9:16 Flat Vector Travel Poster",desc:"日式文具轻奢扁平矢量插画，固定9:16手机竖屏比例，左上角固定文字排版，低饱和柔和配色，大面积留白",scene:"城市文旅宣传、手机端旅行打卡海报",image:"images/37.jpg",positive:"9:16竖版简约扁平矢量城市旅行海报，日式文具轻奢插画质感，干净统一细轮廓线，平涂色彩，低饱和柔和配色，大面积留白，现代杂志旅行海报版式。依据上传实景照片，保留原图空间纵深、建筑风貌、街道走向、植被、交通工具与人文氛围，将实景转化为简洁几何矢量造型，不复刻照片写实感。地标仅做远景识别，不放大喧宾夺主；精简人物为3-6个贴合当地日常的小人物，动作包含散步、骑行、驻足拍照、街边休憩等。根据场景匹配本土专属人文细节：老街搭配骑楼、复古招牌、暖光路灯；滨海搭配沙滩椰林、海面船只；都市街区搭配楼宇轻轨；老城夜景搭配暖光建筑、特色灯笼，杜绝通用元素堆砌。日间以雾蓝、浅天青、暖象牙白、米杏、灰草木绿为基底，点缀低饱和砖红/暖橙；夜景采用藏蓝夜空+柔和暖光灯光，拒绝强光霓虹、杂乱光影。线条统一，无渐变、无厚重阴影，整体松弛治愈，精致高级。左上角固定排版：中文城市名、对应英文、简短氛围感英文标语。",positiveEn:"9:16 vertical minimalist flat vector urban travel poster, Japanese stationery light luxury illustration texture, clean unified thin outlines, flat color fills, low saturation soft color palette, large negative space, modern magazine travel poster layout. Based on uploaded live-action photo, preserve original spatial depth, architectural style, street layout, vegetation, vehicles and humanistic atmosphere, transform live-action into concise geometric vector forms, not photorealistic reproduction. Landmarks only as distant recognition, not enlarged to dominate; simplify figures to 3-6 small local everyday characters with actions including walking, cycling, stopping to take photos, resting by street. Match scene-specific local humanistic details: old streets with arcade buildings, vintage signs, warm street lamps; coastal with beach coconut palms, sea vessels; urban blocks with buildings light rail; old town nightscape with warm lit architecture, characteristic lanterns, no generic element stacking. Daytime base palette of mist blue, light sky cyan, warm ivory white, beige apricot, gray sage green, accented with low saturation brick red warm orange; nightscape with deep navy night sky plus soft warm lighting, no harsh neon, no cluttered light and shadow. Unified lines, no gradients, no heavy shadows, overall relaxed healing, refined premium. Fixed layout top left: Chinese city name, corresponding English, short atmospheric English slogan.",negative:"禁止写实照片质感、水彩油画笔触、厚重笔刷、强对比光影、渐变、纸张纹理；禁止水印、角标、AI标识、乱码、二维码、LOGO；禁止地标过度堆砌、人群杂乱、人物过大；禁止高饱和艳色、泛滥霓虹、多余装饰元素；禁止文字偏离左上角位置、版式混乱、非9:16画幅比例。",negativeEn:"no photorealistic texture, no watercolor or oil painting brushstrokes, no heavy brushwork, no high contrast lighting, no gradients, no paper texture; no watermark, no corner marks, no AI text, no garbled text, no QR code, no logo; no excessive landmark stacking, no cluttered crowds, no oversized figures; no high saturation vivid colors, no excessive neon, no redundant decorative elements; no text deviating from top left position, no layout chaos, no non-9:16 aspect ratio"},
-  {code:"S01",cat:"arch",catLabel:"建筑室内专项",name:"室内写实效果图",nameEn:"Interior Photorealistic Render",desc:"照片级写实室内空间，真实材质、光影、软装细节",scene:"家装工装效果图输出",image:"images/38.jpg",positive:"照片级写实室内空间效果图，真实材质纹理，自然光影，精致软装细节，空间感，建筑摄影，8K超高清，专业渲染",positiveEn:"photorealistic interior space rendering, authentic material texture, natural lighting, refined soft furnishing details, spatial sense, architectural photography, 8K ultra HD, professional rendering",negative:"水印, 手绘, 水彩, 线稿, 卡通, 低质量",negativeEn:"watermark, hand-drawn, watercolor, line art, cartoon, low quality"},
-  {code:"S02",cat:"arch",catLabel:"建筑室内专项",name:"室内水彩方案手绘",nameEn:"Interior Watercolor Sketch",desc:"淡水彩手绘，柔和线稿，通透色彩，设计手绘感",scene:"设计汇报手绘方案",image:"images/39.jpg",positive:"室内设计水彩方案手绘风格，淡水彩手绘质感，柔和建筑线稿，通透色彩晕染，设计手绘感，方案汇报，8K高清",positiveEn:"interior design watercolor concept hand-drawn style, light watercolor hand-drawn texture, soft architectural line art, transparent color bleeding, design sketch feel, concept presentation, 8K ultra HD",negative:"水印, 照片写实, 3D渲染, 油画, 高饱和",negativeEn:"watermark, photorealistic, 3D render, oil painting, high saturation"},
-  {code:"S03",cat:"arch",catLabel:"建筑室内专项",name:"爆炸拆解轴测图",nameEn:"Exploded Axonometric",desc:"室内家具软装爆炸拆解轴测示意图，结构拆解表达",scene:"设计分析图输出",image:"images/40.jpg",positive:"室内家具软装爆炸拆解轴测图，等距轴测视角，结构分层拆解表达，清晰组件关系，设计分析图，技术插图，8K高清",positiveEn:"interior furniture soft furnishing exploded axonometric diagram, isometric axonometric view, structural layered exploded expression, clear component relationships, design analysis diagram, technical illustration, 8K ultra HD",negative:"水印, 写实渲染, 水彩, 照片, 杂乱无层次",negativeEn:"watermark, photorealistic rendering, watercolor, photo, cluttered no hierarchy"},
-  {code:"S04",cat:"arch",catLabel:"建筑室内专项",name:"效果图材质情绪板Moodboard",nameEn:"Material Moodboard",desc:"室内Moodboard，材质小样、色卡、软装拼贴，中英双语解析",scene:"设计提案、材质板输出",image:"images/41.jpg",positive:"室内设计材质情绪板Moodboard，材质小样拼贴，色卡展示，软装元素组合，中英双语标注，设计提案质感，8K高清",positiveEn:"interior design material moodboard, material swatch collage, color card display, soft furnishing element composition, bilingual Chinese-English annotations, design proposal texture, 8K ultra HD",negative:"水印, 单一场景, 无拼贴, 照片写实, 杂乱",negativeEn:"watermark, single scene, no collage, photorealistic, cluttered"},
-  {code:"SK01",cat:"skill",catLabel:"创意Skill",name:"scenes-gathered-zine 实景拼贴·拾景Zine",nameEn:"Scenes Gathered Zine",desc:"真摄影+抽象插画场域，撕纸边界，高饱和色彩结构",scene:"城市人文、照片转Zine海报",image:"images/42.jpg",positive:"scenes-gathered-zine实景拼贴拾景Zine风格，真实摄影与抽象插画场域融合，撕纸边界效果，高饱和色彩结构，Zine杂志感，8K高清",positiveEn:"scenes-gathered-zine live-action collage gathered scenes zine style, fusion of real photography and abstract illustration fields, torn paper edge effect, high saturation color structure, zine magazine feel, 8K ultra HD",negative:"水印, 单一媒介, 光滑边缘, 低饱和, 极简",negativeEn:"watermark, single medium, smooth edges, low saturation, minimalist"},
-  {code:"SK02",cat:"skill",catLabel:"创意Skill",name:"scene-distillation-zine 影像蒸馏Zine",nameEn:"Scene Distillation Zine",desc:"照片完全重绘，不保留原图，支持单色块模式",scene:"极简概念艺术海报",image:"images/43.jpg",positive:"scene-distillation-zine影像蒸馏Zine风格，照片完全重绘为极简插画，不保留原图细节，单色块模式，概念艺术，8K高清",positiveEn:"scene-distillation-zine image distillation zine style, photo completely redrawn as minimalist illustration, no original detail retention, single color block mode, conceptual art, 8K ultra HD",negative:"水印, 照片写实, 复杂细节, 高饱和多彩, 油画",negativeEn:"watermark, photorealistic, complex details, high saturation multi-color, oil painting"},
-  {code:"SK03",cat:"skill",catLabel:"创意Skill",name:"morandi-cinematic-poster 莫兰迪电影海报",nameEn:"Morandi Cinematic Poster",desc:"照片转电影key art，纯排版驱动，低饱和色调",scene:"照片改造电影海报",image:"images/44.jpg",positive:"morandi-cinematic-poster莫兰迪电影海报风格，照片转电影key art，纯排版驱动设计，莫兰迪低饱和色调，电影海报质感，8K高清",positiveEn:"morandi-cinematic-poster Morandi cinematic poster style, photo to cinematic key art, pure typography-driven design, Morandi low saturation color tone, cinematic poster texture, 8K ultra HD",negative:"水印, 高饱和, 复杂插画, 照片不处理, 艳丽",negativeEn:"watermark, high saturation, complex illustration, unprocessed photo, vivid"},
-  {code:"SK04",cat:"skill",catLabel:"创意Skill",name:"travel-memory-sticker-card 旅行手账记忆卡",nameEn:"Travel Memory Sticker Card",desc:"大插画主体+6枚手账贴纸+3个英文关键词",scene:"城市旅行、人文风景、打卡纪念海报",image:"images/45.jpg",positive:"travel-memory-sticker-card旅行手账记忆卡风格，大插画主体画面，6枚手账贴纸装饰，3个英文关键词，旅行手账质感，8K高清",positiveEn:"travel-memory-sticker-card travel journal memory card style, large illustration main scene, 6 journal sticker decorations, 3 English keywords, travel journal texture, 8K ultra HD",negative:"水印, 无贴纸, 极简, 照片写实, 暗黑",negativeEn:"watermark, no stickers, minimalist, photorealistic, dark"},
-  {code:"SK05",cat:"skill",catLabel:"创意Skill",name:"travel-memory-card-duo 横版记忆卡变体",nameEn:"Travel Memory Card Duo",desc:"3:2横版卡片+独立透明PNG贴纸",scene:"素材拆分、二次排版设计",image:"images/46.jpg",positive:"travel-memory-card-duo横版记忆卡变体，3:2横版卡片构图，独立贴纸元素，旅行记忆主题，手账风格，8K高清",positiveEn:"travel-memory-card-duo horizontal memory card variant, 3:2 horizontal card composition, independent sticker elements, travel memory theme, journal style, 8K ultra HD",negative:"水印, 竖版, 无贴纸, 照片, 极简",negativeEn:"watermark, vertical, no stickers, photo, minimalist"},
-  {code:"SK06",cat:"skill",catLabel:"创意Skill",name:"vinyl-image-generator 黑胶唱片套装",nameEn:"Vinyl Record Set",desc:"虚构AB面唱片+正反封套整套版式",scene:"音乐封面、氛围概念设计",image:"images/47.jpg",positive:"vinyl-image-generator黑胶唱片套装风格，虚构AB面唱片设计，正反封套整套版式，黑胶唱片质感，音乐封面设计，8K高清",positiveEn:"vinyl-image-generator vinyl record set style, fictional A/B side record design, front and back sleeve complete layout, vinyl record texture, music cover design, 8K ultra HD",negative:"水印, 无唱片, 单一封面, 照片, 极简",negativeEn:"watermark, no record, single cover, photo, minimalist"},
-  {code:"SK07",cat:"skill",catLabel:"创意Skill",name:"image-words 三连艺术解析海报",nameEn:"Image-Words Triptych",desc:"3:4比例一次性生成三张情绪构图解析海报",scene:"公众号配图、照片艺术改版",image:"images/48.jpg",positive:"image-words三连艺术解析海报风格，3:4竖版比例，三张一组情绪构图解析，艺术海报，文字与图像结合，8K高清",positiveEn:"image-words triptych art analysis poster style, 3:4 vertical ratio, three-panel emotional composition analysis, art poster, text and image integration, 8K ultra HD",negative:"水印, 单张, 横版, 无文字, 照片写实",negativeEn:"watermark, single panel, horizontal, no text, photorealistic"},
-  {code:"SK08",cat:"skill",catLabel:"创意Skill",name:"create-pantone-photo-posters 潘通色卡相框海报",nameEn:"Pantone Photo Poster",desc:"白相框、低饱和底色、自带专业色号标签",scene:"极简静物、色彩展示海报",image:"images/49.jpg",positive:"create-pantone-photo-posters潘通色卡相框海报风格，白色相框设计，低饱和底色，专业潘通色号标签，极简静物，色彩展示，8K高清",positiveEn:"create-pantone-photo-posters Pantone color card photo frame poster style, white frame design, low saturation background, professional Pantone color code labels, minimalist still life, color display, 8K ultra HD",negative:"水印, 高饱和, 无相框, 复杂背景, 油画",negativeEn:"watermark, high saturation, no frame, complex background, oil painting"},
-  {code:"SK09",cat:"skill",catLabel:"创意Skill",name:"photo-to-organic-knit 毛线针织艺术海报",nameEn:"Organic Knit Art Poster",desc:"钩针毛毡肌理、不规则毛边、毛线标题质感",scene:"氛围感静物、人像改造",image:"images/50.jpg",positive:"photo-to-organic-knit毛线针织艺术海报风格，钩针毛毡肌理质感，不规则毛边，毛线编织标题，温暖手工感，8K高清",positiveEn:"photo-to-organic-knit yarn knit art poster style, crochet felt texture, irregular frayed edges, yarn knit title, warm handmade feel, 8K ultra HD",negative:"水印, 光滑数字, 照片, 金属质感, 冷硬",negativeEn:"watermark, smooth digital, photo, metallic texture, cold hard"},
-  {code:"SK10",cat:"skill",catLabel:"创意Skill",name:"crystalize 极简水晶插画",nameEn:"Crystalize Minimal Illustration",desc:"通透晶体切面、大量留白、极简标题",scene:"景物抽象艺术重构",image:"images/51.jpg",positive:"crystalize极简水晶插画风格，通透晶体切面构成，大量留白，极简标题，抽象艺术重构，清透质感，8K高清",positiveEn:"crystalize minimalist crystal illustration style, transparent crystal facet composition, generous negative space, minimalist title, abstract art reconstruction, clear translucent texture, 8K ultra HD",negative:"水印, 复杂细节, 油画, 照片, 高饱和",negativeEn:"watermark, complex details, oil painting, photo, high saturation"},
-  {code:"SK11",cat:"skill",catLabel:"创意Skill",name:"photo-to-travel-sketch 旅行速写手绘",nameEn:"Travel Sketch",desc:"保留地标辨识度、手账速写纹理",scene:"城市风光、古建筑手绘转绘",image:"images/52.jpg",positive:"photo-to-travel-sketch旅行速写手绘风格，保留地标建筑辨识度，手账速写纹理，手绘线条，旅行日记感，8K高清",positiveEn:"photo-to-travel-sketch travel sketch hand-drawn style, preserve landmark architecture recognizability, journal sketch texture, hand-drawn lines, travel diary feel, 8K ultra HD",negative:"水印, 照片写实, 油画, 3D, 无地标",negativeEn:"watermark, photorealistic, oil painting, 3D, no landmark"},
-  {code:"SK12",cat:"skill",catLabel:"创意Skill",name:"handdrawn-photo-poster ZINE邮票海报",nameEn:"Handdrawn Zine Stamp Poster",desc:"书本载体、居中手绘邮票、提取实物元素重构",scene:"文艺杂志、纪念海报",image:"images/53.jpg",positive:"handdrawn-photo-poster ZINE邮票海报风格，书本载体构图，居中手绘邮票设计，提取实物元素重构，文艺杂志感，8K高清",positiveEn:"handdrawn-photo-poster ZINE stamp poster style, book carrier composition, centered hand-drawn stamp design, extract physical elements for reconstruction, literary magazine feel, 8K ultra HD",negative:"水印, 无邮票, 照片, 极简, 商业",negativeEn:"watermark, no stamp, photo, minimalist, commercial"},
-  {code:"SK13",cat:"skill",catLabel:"创意Skill",name:"joy-calm-woodcut-zine 日系木刻ZINE",nameEn:"Joy Calm Woodcut Zine",desc:"木刻线条、微光纸感、微型杂志排版",scene:"复古人文刊物配图",image:"images/54.jpg",positive:"joy-calm-woodcut-zine日系木刻ZINE风格，木刻版画线条，微光纸张质感，微型杂志排版，日系复古人文，8K高清",positiveEn:"joy-calm-woodcut-zine Japanese woodcut zine style, woodcut print lines, subtle paper texture, micro magazine layout, Japanese retro humanistic, 8K ultra HD",negative:"水印, 照片, 油画, 高饱和, 现代光滑",negativeEn:"watermark, photo, oil painting, high saturation, modern smooth"},
-  {code:"SK14",cat:"skill",catLabel:"创意Skill",name:"Eyer_Paint 油画质感画风",nameEn:"Eyer Oil Painting",desc:"照片转印象派油画，颜料堆积肌理，锁定原图构图比例不改物体轮廓",scene:"人像、风景艺术化转绘",image:"images/55.jpg",positive:"Eyer_Paint油画质感画风，照片转印象派油画，颜料堆积肌理，厚涂笔触，锁定原图构图比例，不改物体轮廓，艺术转绘，8K高清",positiveEn:"Eyer_Paint oil painting texture style, photo to impressionist oil painting, paint accumulation texture, impasto brushstrokes, lock original composition ratio, no object contour change, art redraw, 8K ultra HD",negative:"水印, 照片写实, 水彩, 扁平, 改变构图",negativeEn:"watermark, photorealistic, watercolor, flat, composition change"},
-  {code:"SK15",cat:"skill",catLabel:"创意Skill",name:"Eyer_淡彩风格",nameEn:"Eyer Light Watercolor",desc:"低饱和薄雾水彩晕染，轻盈梦幻氛围",scene:"氛围感人像、风景调色",image:"images/56.jpg",positive:"Eyer_淡彩风格，低饱和薄雾水彩晕染，轻盈梦幻氛围，柔和色彩，通透感，淡彩插画，8K高清",positiveEn:"Eyer light color style, low saturation mist watercolor bleeding, light dreamy atmosphere, soft colors, transparent feel, light color illustration, 8K ultra HD",negative:"水印, 高饱和, 厚涂, 暗黑, 锐利",negativeEn:"watermark, high saturation, impasto, dark, sharp"},
-  {code:"SK16",cat:"skill",catLabel:"创意Skill",name:"Eyer_仿红外摄影",nameEn:"Eyer Infrared Photo",desc:"植物雪白、天空深蓝、超现实高对比风光",scene:"户外、树林、自然场景",image:"images/57.jpg",positive:"Eyer_仿红外摄影风格，植物呈现雪白色，天空深蓝色，超现实高对比风光，红外摄影质感，自然场景，8K高清",positiveEn:"Eyer faux infrared photography style, plants appear snow white, sky deep blue, surreal high contrast landscape, infrared photography texture, natural scene, 8K ultra HD",negative:"水印, 正常色彩, 低对比, 人像, 城市",negativeEn:"watermark, normal colors, low contrast, portrait, urban"},
-  {code:"SK17",cat:"skill",catLabel:"创意Skill",name:"Eyer_高级黑白胶片",nameEn:"Eyer Premium B&W Film",desc:"银盐丰富灰阶、颗粒细腻、高光影对比",scene:"纪实、人像、风光黑白创作",image:"images/58.jpg",positive:"Eyer_高级黑白胶片风格，银盐摄影丰富灰阶，细腻颗粒，高光影对比，黑白艺术，纪实人像风光，8K高清",positiveEn:"Eyer premium black and white film style, silver halide photography rich grayscale, fine grain, high light-shadow contrast, black and white art, documentary portrait landscape, 8K ultra HD",negative:"水印, 彩色, 低对比, 数码清晰, 磨皮过度",negativeEn:"watermark, color, low contrast, digital clarity, over-retouched skin"},
-  {code:"SK18",cat:"skill",catLabel:"创意Skill",name:"Eyer_复古怀旧老照片",nameEn:"Eyer Vintage Old Photo",desc:"暖黄褪色、划痕暗角、岁月复古质感",scene:"怀旧人像、老照片高级重构",image:"images/59.jpg",positive:"Eyer_复古怀旧老照片风格，暖黄色调褪色，照片划痕与暗角，岁月复古质感，老照片效果，怀旧氛围，8K高清",positiveEn:"Eyer vintage nostalgic old photo style, warm yellow tone fading, photo scratches and vignette, aged vintage texture, old photo effect, nostalgic atmosphere, 8K ultra HD",negative:"水印, 现代清晰, 高饱和, 冷色调, 无划痕",negativeEn:"watermark, modern clarity, high saturation, cool tones, no scratches"},
-  {code:"SK19",cat:"skill",catLabel:"创意Skill",name:"HongKong_尼康港风色彩",nameEn:"HK Nikon Color",desc:"浓郁通透港风、高锐度、色彩分离强烈",scene:"城市街景、都市人像",image:"images/60.jpg",positive:"HongKong_尼康港风色彩风格，浓郁通透香港色调，高锐度，色彩分离强烈，都市街景人像，港风美学，8K高清",positiveEn:"HongKong_Nikon Hong Kong color style, rich transparent Hong Kong tone, high sharpness, strong color separation, urban street portrait, Hong Kong aesthetic, 8K ultra HD",negative:"水印, 低饱和, 日系, 柔和, 复古褪色",negativeEn:"watermark, low saturation, Japanese style, soft, vintage fading"},
-  {code:"SK20",cat:"skill",catLabel:"创意Skill",name:"Kevin_电影暗调人像",nameEn:"Kevin Cinematic Moody Portrait",desc:"胶片低曝光、柔暖肤色、故事电影氛围",scene:"写真、环境人像、情绪大片",image:"images/61.jpg",positive:"Kevin_电影暗调人像风格，胶片低曝光，柔暖肤色，故事感电影氛围，环境人像，情绪大片，8K高清",positiveEn:"Kevin cinematic low-key portrait style, film low exposure, warm soft skin tone, narrative cinematic atmosphere, environmental portrait, emotional blockbuster, 8K ultra HD",negative:"水印, 高调明亮, 过曝, 冷白肤色, 商业棚拍",negativeEn:"watermark, high-key bright, overexposed, cool white skin, commercial studio"},
-  {code:"SK21",cat:"skill",catLabel:"创意Skill",name:"YamatoStyle 日式大和美学",nameEn:"Yamato Japanese Aesthetic",desc:"淡雅和色、侘寂留白、静谧禅意",scene:"静物、风景、日系人文画面",image:"images/62.jpg",positive:"YamatoStyle日式大和美学风格，淡雅和风色彩，侘寂留白，静谧禅意，极简构图，日式人文，8K高清",positiveEn:"YamatoStyle Japanese Yamato aesthetic style, elegant Japanese color palette, wabi-sabi negative space, quiet zen, minimalist composition, Japanese humanistic, 8K ultra HD",negative:"水印, 高饱和, 复杂装饰, 西方风格, 喧闹",negativeEn:"watermark, high saturation, complex decoration, Western style, noisy"},
-  {code:"SK22",cat:"skill",catLabel:"创意Skill",name:"reality-restaged 纪实记忆重演",nameEn:"Reality Restaged",desc:"优先完整保留原图人物、动作、服饰、文化细节、真实记忆；舞台化构图、大面积负空间、尺度重构",scene:"旅行纪实、人文摄影、老照片高级重构",image:"images/63.jpg",positive:"reality-restaged纪实记忆重演风格，完整保留原图人物动作服饰文化细节与真实记忆，舞台化构图，大面积负空间，尺度重构，克制高级超现实电影画面，8K高清",positiveEn:"reality-restaged documentary memory restaging style, fully preserve original figure actions clothing cultural details and true memory, theatrical composition, large negative space, scale reconstruction, restrained premium surreal cinematic scene, 8K ultra HD",negative:"水印, 粗暴换背景, 改变人物, 高饱和, 杂乱",negativeEn:"watermark, crude background swap, figure alteration, high saturation, cluttered"},
-  {code:"SK23",cat:"skill",catLabel:"创意Skill",name:"老街城市记忆海报",nameEn:"Old Street City Memory Poster",desc:"老街旧墙、骑楼街巷、新旧高楼对比，复古胶片怀旧记忆氛围",scene:"城市老街、旧街景、新旧建筑对比实拍转海报",image:"images/64.jpg",positive:"老街城市记忆海报风格，老街旧墙与骑楼街巷，新旧高楼对比，复古胶片怀旧记忆氛围，保留街道人物摩托主体，城市记忆，8K高清",positiveEn:"old street urban memory poster style, old street walls and arcade alleys, contrast between old and new high-rises, vintage film nostalgic memory atmosphere, preserve street figures motorcycles as main subjects, urban memory, 8K ultra HD",negative:"水印, 全新建筑, 高饱和, 无对比, 现代感",negativeEn:"watermark, brand new architecture, high saturation, no contrast, modern feel"},
-  {code:"SK24",cat:"skill",catLabel:"创意Skill",name:"照片重构型旅行杂志封面模板",nameEn:"Photo Reconstructed Magazine Cover",desc:"保留原图全部景物主体不篡改；左侧/上方米白复古纸张大留白，左上角大号黑色无衬线大写英文标题；右侧/下方完整保留原图照片主体；水墨撕裂毛边+泼墨过渡",scene:"古建、塔、摩天轮、湖景、老街、各类旅行风景照片",image:"images/65.jpg",positive:"SK24｜照片重构型旅行杂志封面模板。以用户原图为唯一主体，严格保留建筑、风景、物体、空间结构与原始照片全部内容，禁止复制参考图内具体场景元素。旅行杂志封面版式：左侧或上方大面积米白复古纸张留白，左上角放置大号黑色无衬线大写英文标题，标题内容匹配图片场景生成；右侧或下方完整保留照片主体，建筑/塔/摩天轮/景观作为第一视觉；照片与留白之间用水墨撕裂毛边、泼墨自然过渡，叠加旧纸颗粒做旧肌理，文艺复古旅行出版海报质感。禁止水印、角标、AI字样、乱码、LOGO；禁止主体变形崩坏、建筑扭曲、文字错乱、过度饱和滤镜。",positiveEn:"SK24 photo reconstruction travel magazine cover template. User original photo as sole subject, strictly preserve architecture, landscape, objects, spatial structure and all original photo content, no copying specific scene elements from reference images. Travel magazine cover layout: large off-white vintage paper negative space on left or top, large black sans-serif uppercase English title top left matching image scene; right or bottom fully preserve photo subject, architecture tower ferris wheel landscape as primary visual; ink wash torn frayed edges and splatter natural transition between photo and negative space, overlay old paper grain aging texture, literary retro travel publishing poster texture. No watermark, corner marks, AI text, garbled text, logo; no subject deformation, architecture distortion, text chaos, over-saturation filter.",negative:"水印, 角标, AI字样, 乱码, LOGO, 主体变形崩坏, 建筑扭曲, 文字错乱, 过度饱和滤镜",negativeEn:"watermark, corner marks, AI text, garbled text, logo, subject deformation, architecture distortion, text chaos, over-saturation filter"},
-  {code:"SK25",cat:"skill",catLabel:"创意Skill",name:"街拍转复古杂志封面v2.0",nameEn:"Street to Vintage Magazine Cover v2.0",desc:"街拍照片生成复古杂志封面，自动生成英文大字锚点，重彩水彩胶片噪点",scene:"街头纪实、城市街景",image:"images/66.jpg",positive:"街拍转复古杂志封面v2.0风格，街拍照片生成复古杂志封面，英文大字锚点排版，重彩水彩胶片噪点质感，杂志秩序排版，街头纪实，8K高清",positiveEn:"street photo to vintage magazine cover v2.0 style, street photo generated vintage magazine cover, English large text anchor layout, heavy color watercolor film grain texture, magazine orderly layout, street documentary, 8K ultra HD",negative:"水印, 现代设计, 无文字, 极简, 高清晰数码",negativeEn:"watermark, modern design, no text, minimalist, high definition digital"},
-  {code:"SK26",cat:"skill",catLabel:"创意Skill",name:"双联老城木刻研究海报",nameEn:"Diptych Old City Woodcut Poster",desc:"竖版3:4，画面水平对半分割上下1:1等高；上半部分强制锁死输入原图；下半部分现代套色木刻版画转译",scene:"老城街巷、骑楼、旧街人文记录",image:"images/67.jpg",positive:"SK26 双联老城木刻研究海报，竖版3:4，画面水平对半分割上下1:1等高。上半部分必须完整保留输入原图，不改变构图、不改变色彩、不改变人物位置、不改变建筑结构、不改变光影、不做滤镜处理、不做风格化、不重绘，保持照片原始画面。下半部分基于上半部分原图转化为现代木刻版画，提炼建筑轮廓、街巷纵深、人物动态、门窗节奏、招牌结构和街道物件，使用清晰刻刀轮廓、平涂色面、木刻刀痕、细密排线、宣纸米白肌理、轻微木板套色错位和纸张吸墨毛边。色彩控制在四种以内：宣纸米白、靛蓝、朱红、暖赭黄，可加入少量炭黑轮廓线。边角加入少量克制英文标题和小型篆刻印章，文字不遮挡主体。平面化构图，安静克制，老城人文艺术研究页，可印刷收藏质感。",positiveEn:"SK26 diptych old town woodcut research poster, vertical 3:4, image horizontally split top-bottom 1:1 equal height. Upper half must fully preserve input original photo, no composition change, no color change, no figure position change, no architecture structure change, no lighting change, no filter, no stylization, no redraw, keep photo original. Lower half based on upper half original photo transformed into modern woodcut print, extract architecture contours, street depth, figure dynamics, door-window rhythm, sign structure and street objects, use clear knife-cut outlines, flat color surfaces, woodcut knife marks, fine hatching, rice paper off-white texture, slight woodblock color registration offset and paper ink absorption frayed edges. Colors limited to four: rice paper off-white, indigo blue, vermilion red, warm ochre yellow, may add small amount charcoal black outlines. Corners add restrained English title and small seal stamp, text not obscuring subject. Flat composition, quiet restrained, old town humanistic art research page, printable collectible texture.",negative:"禁止上半部分照片被重绘、滤镜化、变色、裁切、重构、美颜、风格化；禁止廉价日式和风，禁止过度卡通，禁止照片原样复制到下半部分，禁止五官扭曲，禁止色彩杂乱，禁止油画厚笔触，禁止水彩晕染，禁止3D渲染，禁止水印，禁止logo，禁止乱码，禁止主体比例崩坏，禁止画面元素堆砌。",negativeEn:"no upper half photo redraw, filter, color change, crop, reconstruct, beauty retouch, stylization; no cheap Japanese style, no excessive cartoon, no photo copied as-is to lower half, no facial distortion, no color clutter, no oil painting impasto, no watercolor bleeding, no 3D render, no watermark, no logo, no garbled text, no subject proportion collapse, no element stacking"},
-  {code:"SK27",cat:"skill",catLabel:"创意Skill",name:"regional-culture-poster 地域文化大字海报",nameEn:"Regional Culture Typography Poster",desc:"中国省域/城市/县域文化转译为克制当代大字海报，一个文化浓缩汉字为主视觉骨架",scene:"城市文化海报、省域视觉、地域系列海报、展览主视觉",image:"images/68.jpg",positive:"工作流：七维文化候选池（地理气候/建筑结构/材料颜色/历史文学/日常生活/当代状态/精神气质）→ 选定不可替换地方机制 → 主字变形（单字优先，变形须有文化来源）→ 视觉系统定义（主字+主文化结构+辅助元素+色彩+构图）→ 直接生成/分层生产 → 遮字识别检查（遮住文字后仍有地域文化证据）。双模式：MODE A 结构造字海报：汉字结构是主视觉，城市元素参与字形生长。MODE B 地域编辑海报：城市空间是主视觉，城市名是编辑锚点。色彩原则：从地域气候/材料/光提取，主色+1-2辅色+中性色，反乡土（避免土黄/做旧/红金国潮默认）。",positiveEn:"workflow: seven-dimensional culture candidate pool (geography climate / architecture structure / material color / history literature / daily life / contemporary state / spiritual temperament) then select irreplaceable local mechanism then main character deformation (single character preferred, deformation must have cultural origin) then visual system definition (main character plus main cultural structure plus auxiliary elements plus color plus composition) then direct generate or layered production then character occlusion recognition check (still has regional cultural evidence after covering text). Dual mode: MODE A structural character poster: Chinese character structure is main visual, city elements participate in character growth. MODE B regional editorial poster: city space is main visual, city name is editorial anchor. Color principle: extracted from regional climate material light, main color plus 1-2 auxiliary plus neutral, anti-rustic (avoid earth yellow aged red-gold national trend default).",negative:"水印, 土黄做旧, 红金国潮默认, 通用元素, 无地域特征",negativeEn:"watermark, earth yellow aged, red-gold national trend default, generic elements, no regional feature"},
-    {code:"SK28",cat:"skill",catLabel:"创意Skill",name:"工业遗址人文水彩",nameEn:"Industrial Heritage Watercolor",desc:"复古水彩+旧纸颗粒，保留工业遗产记忆，弱描边不做废墟感，转成人文休闲公园场景",scene:"城市工业遗址公园、旧厂区改造、水岸码头公园、废弃工厂文创园、城市记忆文旅",image:"images/76.jpg",positive:"21:9电影宽幅全景构图，复古水彩工业遗址人文公园风格，超宽幅电影感画面，旧纸颗粒质感，低饱和复古色调，米白纸张底色，保留工业遗产元素（旧厂房、铁轨、船坞、铁锚、塔吊、齿轮、烟囱、锈蚀金属），弱描边，不做硬核废墟感，不做破败末日感，转成温暖人文休闲公园场景，市民休闲漫步休憩，儿童玩耍，水岸步道，绿植树木环绕，水面柔和反射，远景现代城市天际线拉开层次，柔和自然光，淡水彩晕染技法，手绘速写线条，整体温暖怀旧，电影感宽幅构图，8K高清",positiveEn:"21:9 cinematic widescreen panoramic composition, retro watercolor industrial heritage humanities park style, ultra-wide cinematic frame, aged paper grain texture, low saturation retro tones, off-white paper background, preserving industrial heritage elements (old factory buildings, railway tracks, ship docks, iron anchors, cranes, gears, chimneys, rusted metal), soft outlines, no hardcore ruins feel, no dilapidated apocalyptic feel, transformed into warm humanities leisure park scene, citizens strolling and resting, children playing, waterfront walkway, surrounded by greenery and trees, soft water reflection, distant modern city skyline creating depth, soft natural light, light watercolor wash technique, hand-drawn sketch lines, overall warm and nostalgic, cinematic widescreen composition, 8K ultra HD",negative:"水印, 高饱和, 艳丽色彩, 过曝, 硬核废墟, 破败感, 末日感, 现代感过强, 照片写实, 脏乱差, 阴暗压抑",negativeEn:"watermark, high saturation, vivid colors, overexposed, hardcore ruins, dilapidated feel, apocalyptic feel, overly modern, photorealistic, dirty and messy, dark and depressing"},
-  {code:"SK29",cat:"skill",catLabel:"创意SKILL",name:"老街招牌记忆贴纸",nameEn:"Old Town Sign Sticker",desc:"左侧完整方形街景卡片忠实原图，右侧拆分独立模切贴纸，低饱和复古扁平插画",scene:"老街店铺、城市记忆、旅行手帐、贴纸素材、文创纪念品、旧照片转插画",image:"images/77.jpg",positive:"旅行手帐记忆贴纸卡片设计，左侧为完整方形老街街景插画卡片，尽量忠实原图构图，保留原始建筑立面、招牌位置、门窗结构、人物位置、车辆位置和街边细节，不重新设计场景，不美化，不裁切，不抠出主体，只做轻微手绘化处理；右侧将画面中的招牌、门窗、灯杆、人物、车辆、店铺元素、墙面纹理等拆分成多个独立贴纸，每个贴纸带有白色模切轮廓和轻微阴影，整齐排列；低饱和复古色调，旧纸颗粒质感，简约色块，扁平肌理插画，城市记忆感，旅行纪念品感，底部加入简短英文标签描述画面，不要写实照片",positiveEn:"travel journal memory sticker card design, left side complete square old street scene illustration card, faithfully following original composition, preserving building facades, sign positions, door/window structures, person positions, vehicle positions and street details, no scene redesign, no beautification, no cropping, no subject cutout, only slight hand-drawn processing; right side splits scene elements (signs, doors, windows, lamp posts, people, vehicles, shop elements, wall textures) into multiple independent stickers with white die-cut outline and subtle shadow, neatly arranged; low saturation retro tones, aged paper grain, simple color blocks, flat texture illustration, urban memory, travel souvenir, short English label at bottom, no photorealistic photos",negative:"写实照片，摄影质感，过度美化，重新设计场景，改变原构图，裁切主体，抠出主体，左侧单独物体抠图，复杂背景，高饱和颜色，强烈透视，夸张变形，多余物体，杂乱文字，水印，低清晰度",negativeEn:"photorealistic photos, photography texture, over-beautification, scene redesign, changing original composition, cropping subject, cutting out subject, left side single object cutout, complex background, high saturation colors, strong perspective, exaggerated deformation, extra objects, messy text, watermark, low clarity"},
-  {code:"SK30",cat:"skill",catLabel:"创意SKILL",name:"复古城市等轴旅行海报",nameEn:"Retro City Isometric Travel Poster",desc:"高空等轴鸟瞰城市全景，强制呈现城市专属地标，顶部留白标题区，底部云雾虚化的复古旅行海报",scene:"城市旅行海报、手机竖屏壁纸、旅行清单封面、文创城市系列、复古旅行纪念品",image:"images/78.jpg",positive:"9:16竖版复古城市旅行海报，顶部保留大面积米白留白标题区，文字只放在顶部，不遮挡城市主体。画面为高空等轴鸟瞰城市全景，重点呈现该城市最具辨识度的专属地标、历史建筑、现代建筑、河流、桥梁、道路、绿植与城市烟火，严格遵循目标城市的真实地理格局与建筑特征，禁止出现无关城市的地标建筑。整体为复古旅行海报插画，柔和3D插画质感，非写实照片，米黄旧纸底色，低暖饱和色调，细腻颗粒肌理，底部柔和云雾虚化，干净怀旧排版。顶部居中放置大号粗体无衬线城市英文名，下方小字为国家·大洲·国旗图标",positiveEn:"9:16 vertical retro city travel poster, large creamy off-white blank title area at top, text only at top, does not cover city subject. High-angle isometric bird-eye panoramic city view, focusing on the city most recognizable exclusive landmarks, historic architecture, modern buildings, rivers, bridges, roads, greenery and urban life, strictly following the target city real geographic layout and architectural features, no unrelated city landmark buildings. Overall retro travel poster illustration, soft 3D illustration texture, not photorealistic, creamy aged paper background, low warm saturation, delicate grain texture, soft hazy mist fade at bottom, clean nostalgic layout. Large bold uppercase sans-serif city name centered at top, small subtitle below country continent flag icon",negative:"上海建筑，外滩，陆家嘴，东方明珠，上海中心，金茂大厦，建筑错位，地标错误，城市混淆，无关城市建筑，文字压在建筑上，遮挡主体，写实照片，摄影质感，高饱和颜色，生硬阴影，杂乱元素，多余边框，水印，logo，低清晰度",negativeEn:"Shanghai buildings, the Bund, Lujiazui, Oriental Pearl, Shanghai Tower, Jin Mao Tower, architectural mismatch, wrong landmarks, city confusion, unrelated city buildings, text over buildings, covering subject, photorealistic photos, photography texture, high saturation colors, harsh shadows, messy elements, extra borders, watermark, logo, low clarity"},
-  {code:"SK31",cat:"skill",catLabel:"创意SKILL",name:"三重音色城市建筑矢量旅行海报",nameEn:"Three-Tone Volume City Architecture Vector Travel Poster",desc:"城市建筑矢量艺术复古旅行海报，三重音色分色体系，固有色为主、窄边受光、蓝灰阴影，三层式构图",scene:"城市旅行海报、手机竖屏壁纸、旅行清单封面、文创城市系列、复古旅行纪念品",image:"images/79.jpg",positive:"城市建筑矢量艺术复古旅行海报，竖版9:16构图，顶部保留大面积标题区。顶部居中放置大号粗体无衬线全大写城市英文名称，下方中文城市名或国家名，标题两侧配有装饰水平线和装饰符号。画面主体为城市地标建筑群矢量拼贴，包含城市最具辨识度的历史建筑、现代摩天大楼、桥梁、河流、交通工具，建筑几何化简化造型，近大远小有层次，历史建筑与现代建筑并存。建筑采用克制三重音色分色体系：固有色为主，受光面仅作为窄边缘轻微提亮，阴影面用蓝灰分面压住屋檐、窗洞、拱内和建筑侧面；禁止大面积暖黄高光，禁止整体色相偏移。整体保持复古旅行海报的温暖高饱和配色：天空为明亮清透蓝色，建筑以红墙、金橙屋檐、青绿琉璃瓦、灰白石墙为主，暖黄色仅作为窄边缘高光；阴影使用克制蓝灰与暖棕，避免画面偏冷、偏黄或发灰。画面底部前景融入城市特色美食、文化符号、路牌、标牌，路牌标签招牌必须填充对应城市真实名称或合理内容，禁止空白牌。水面带蓝色反光，植物花卉鸟类点缀，干净整洁排版，8K高清",positiveEn:"urban architecture vector art vintage travel poster, vertical 9:16 composition, large title area at top. Large bold sans-serif all-caps city English name centered at top, Chinese city name or country name below, decorative horizontal lines and ornamental symbols on both sides. Main scene is vector collage of city landmark architecture, including the city most recognizable historic buildings, modern skyscrapers, bridges, rivers, transportation, geometrically simplified building shapes, depth with near-large far-small, historic and modern architecture coexisting. Architecture uses restrained three-tone color system: local color as main, lit surface only as narrow edge subtle highlight, shadow surface uses blue-gray facets to define eaves, window recesses, arches and building sides; no large area warm yellow highlight, no overall hue shift. Overall warm high saturation vintage travel poster palette: bright clear blue sky, buildings dominated by red walls, golden-orange eaves, teal glazed tiles, gray-white stone walls, warm yellow only as narrow edge highlight; shadows use restrained blue-gray and warm brown, avoid overall cool, yellow or gray tint. Bottom foreground incorporates city specialty food, cultural symbols, street signs, signboards, street signs labels signboards must fill corresponding city real names or reasonable content, no blank signs. Water with blue reflections, plants flowers birds accents, clean organized layout, 8K ultra HD",negative:"写实照片，摄影质感，3D渲染，复杂渐变，模糊，低清晰度，建筑扭曲，地标错误，城市混淆，文字乱码，空白路牌，无意义字母，水印，logo，杂乱元素，多余边框，人物特写，暗黑风格，低饱和，灰暗色调，单一平涂，大面积暖黄高光，整体偏冷偏黄",negativeEn:"photorealistic photo, photography texture, 3D render, complex gradients, blurry, low resolution, distorted architecture, wrong landmarks, city confusion, garbled text, blank street signs, meaningless letters, watermark, logo, messy elements, extra borders, close-up people, dark style, low saturation, gloomy tones, single flat color, large area warm yellow highlight, overall cool or yellow tint"},
-  {code:"SK32",cat:"skill",catLabel:"创意SKILL",name:"极简撕纸Zine风景海报",nameEn:"Minimal Torn Paper Zine Landscape",desc:"撕纸拼贴+纸张颗粒肌理+水平层叠地形+大面积天空留白+低饱和自然配色+极简主义",scene:"旅行风景、户外徒步、自然山川、草原田园、极简海报、Zine杂志、孤独旅行感",image:"images/80.jpg",positive:"极简撕纸拼贴Zine风景海报，竖版9:16构图，顶部大面积纯净蓝天留白，水平层叠式地形构图，天空、远山、中景、前景逐层展开，每一层地形之间有白色撕纸边缘效果，整体覆盖细腻纸张颗粒肌理，扁平大色块，低饱和自然配色，纯净蓝天空、蓝灰山脉、橄榄绿草原、米色地面、橙色点缀，极简主义，少元素大留白，安静孤独旅行感，自然风景为主，山脉、水面、草原、天空，少量人文元素，小屋、小人物、卡车，人物通常很小背对观众，复古Zine杂志质感，无文字，8K高清",positiveEn:"minimal torn paper collage zine landscape poster, vertical 9:16 composition, large area of pure blue sky negative space at top, horizontal layered terrain composition, sky, distant mountains, midground, foreground unfolding layer by layer, white torn paper edge effects between each terrain layer, overall covered with delicate paper grain texture, flat large color blocks, muted natural color palette, pure blue sky, blue-gray mountains, olive green grasslands, beige ground, orange accents, minimalism, few elements large negative space, quiet lonely travel feeling, natural landscapes as main subject, mountains, water, grasslands, sky, small amount of human elements, small houses, tiny figures, trucks, figures usually small and facing away, vintage zine magazine aesthetic, no text, 8K ultra HD",negative:"写实照片，摄影质感，3D渲染，复杂渐变，高饱和，鲜艳色彩，人物特写，面部细节，复杂建筑，城市天际线，文字，水印，logo，杂乱元素，多余边框，暗黑风格，灰暗色调，无纸纹，无撕纸边缘，密集构图",negativeEn:"photorealistic photo, photography texture, 3D render, complex gradients, high saturation, vivid colors, close-up people, facial details, complex architecture, city skyline, text, watermark, logo, messy elements, extra borders, dark style, gloomy tones, no paper grain, no torn paper edges, dense composition"},{code:"SK33",cat:"skill",catLabel:"创意SKILL",name:"单色印刷编辑海报",nameEn:"Monocolor Editorial Print",desc:"纯单色平面印刷海报，单一墨色+纸底，半色调网点/干净分色，25%-55%主动留白，大标题与主体物理碰撞，衬线+无衬线字体5-12倍对比，一个克制手动手势，无mockup无撕纸",scene:"城市文旅海报、展览主视觉、杂志封面、zine内页、明信片、包装贴纸、社交封面、静物海报",image:"images/81.jpg",positive:"3:4竖版平面印刷海报，整张画布即海报本身，绝对平面正面，无桌面无阴影无卷边无撕纸无折痕无mockup无任何周围物体。单一墨色印刷，纸底从暖米色#F5F1E8/冷灰色#E9E9E5/中性白#FAFAF7三选一，墨色从钴蓝#2148B8/皇家蓝#2058D4/植物绿#008A4B/薄荷绿#5EB783/陶土橙#C65F38/信号红#C83232/茄子紫#63365F/炭灰#30343A八色中根据主题选择，城市文化默认钴蓝，旅行暖调默认陶土橙，历史建筑默认炭灰。25%-55%主动留白，一个焦点事件主导画面（主体穿出页边/极端裁剪/超大标题碰撞），一个安静释放区。主体以半色调网点或干净分色呈现，近距离可见印刷颗粒，高光处纸底透出形成可见形状，暗部墨色堆积。大号衬线或粗体浓缩无衬线标题与主体物理碰撞/横穿/紧贴边缘，配小号等宽/无衬线注释文字，字号对比5-12倍，不超过3种字体。一个克制手动手势（圆形登记标记/手绘短线/小符号/旋转标签），仅一种手势风格。平面印刷质感，干净直边，8K高清",positiveEn:"3:4 vertical flat printed poster, the entire canvas IS the poster, absolutely flat front-facing, no desk no shadow no curled edges no torn paper no crease no mockup no objects around. Single ink color only, paper substrate from pale beige #F5F1E8 / cool gray #E9E9E5 / neutral white #FAFAF7, ink from cobalt #2148B8 / royal blue #2058D4 / botanical green #008A4B / mint green #5EB783 / terracotta orange #C65F38 / signal red #C83232 / aubergine #63365F / charcoal #30343A, cobalt for urban culture, terracotta for warm travel, charcoal for historical architecture. 25%-55% active negative space, one focal event (subject exiting page edge / extreme crop / oversized title collision), one quiet release zone. Subject rendered in coarse halftone dots or clean plate separation, visible print grain at close range, paper shows through highlights forming visible shapes, ink pools in shadows. Large serif or bold condensed sans headline physically collides/crosses/locks to the subject, paired with tiny monospaced/sans annotation, 5-12x size contrast, max 3 type voices. One restrained manual gesture (circular registration mark / hand-drawn short line / small symbol / rotated label), single gesture family only. Flat print texture, clean straight edges, 8K ultra HD",negative:"渐变、全彩照片、光泽mockup、3D渲染、电影光影、镜头虚化、硬阴影、桌面摆拍、纸张实体模型、居中模板对称、卡片网格、UI面板、贴纸拼贴、装饰色块、装饰blob、撕纸边缘、毛边、卷角、无控制重叠、脏污噪点过载、grunge、复古黄化、sepia老化、做旧边框、怀旧道具、长段落、营销文案、CTA按钮、logo、URL、二维码、水印、AI字样、乱码文字、签名、假出版标记、超过1种印刷墨色、纸底被全幅染色成数字单色滤镜",negativeEn:"gradients, full color photo, glossy mockup, 3D render, cinematic lighting, lens blur, hard shadows, desk setup, physical paper model, centered template symmetry, card grid, UI panels, sticker collage, decorative color blocks, decorative blobs, torn paper edges, deckle edges, curled corners, uncontrolled overlap, dirty noise overload, grunge, vintage yellowing, sepia aging, distressed borders, nostalgic props, long paragraphs, marketing copy, CTA buttons, logo, URL, QR codes, watermark, AI text, gibberish, signatures, fake publication marks, more than one printing ink, paper substrate tinted into digital monochrome filter"},
-  {code:"SK34",cat:"skill",catLabel:"创意SKILL",name:"喜茶风儿童简笔画海报",nameEn:"Heytea-style Children's Doodle Poster",desc:"真实物件锚点+粗黑儿童简笔画小人+歪扭手写字+大量留白，真实与涂鸦共存，儿童节限定包装感",scene:"生活照片、饮品海报、儿童节物料、可爱日常记录、社媒海报、品牌限定包装",image:"images/85.jpg",positive:"喜茶风儿童简笔画海报，竖版3:4构图，干净纯白色背景大量留白，画面中央保留一个真实拍摄的物件作为视觉锚点，物件有真实照片质感，周围围绕几个粗黑色儿童简笔画小人，线条笨拙歪扭带断笔，小人们在做与物件互动的动作，倒、搬、爬、品尝、清洁、探索，小人是原始黑线简笔画风格没有填充色，画面有歪歪扭扭的儿童马克笔手写字，字体粗糙可爱像小朋友写的，整体风格是真实物件与手绘涂鸦共存，不要把整张图变成插画，童趣、轻松、可爱、儿童节限定包装感，无渐变、无密集装饰、无写实人脸",positiveEn:"heytea-style children's doodle poster, vertical 3:4 composition, clean pure white background with generous negative space, preserve one real photographed object in the center as visual anchor, object has realistic photo texture, surrounded by several rough black-line childlike doodle figures, lines clumsy crooked with broken strokes, figures interacting with the object by pouring, carrying, climbing, tasting, cleaning, exploring, primitive black line doodle style without fill color, rough crooked childlike marker hand lettering, font rough and cute like a child wrote it, overall style is real object coexisting with hand-drawn doodles, do not turn the whole image into illustration, playful, relaxed, cute, children's day limited packaging feel, no gradients, no dense decoration, no realistic human faces",negative:"全局插画化，过度卡通化，精致描边，整齐字体，商业海报感太重，丢失真实物件细节，普通简笔画背景，渐变，密集装饰，写实人脸，可爱贴纸风格，漫画分镜",negativeEn:"full illustration, overly cartoonish, polished outlines, neat fonts, too commercial poster feel, losing real object details, ordinary doodle background, gradients, dense decoration, realistic human faces, cute sticker style, comic panels"},
-  {code:"SK35",cat:"skill",catLabel:"创意SKILL",name:"复古物件贴纸写实",nameEn:"Vintage Object Sticker Photorealistic",desc:"真实写实物件主体，物体表面贴多款复古纸质标签贴纸，贴纸带褶皱翘边不完全贴合，纯白背景商业产品摄影质感",scene:"水果、器皿、机车、潮玩、文具、各类实体物件、产品摄影、复古标签设计",image:"images/86.jpg",positive:"单个写实物件，完整主体，漂浮状态，略微倾斜，中景特写，主体居中，构图均衡，物件表面保留适量空白区域，不被装饰完全覆盖。物件表面具有自然真实的材质质感，轻微自然瑕疵与细小水珠，表面具有非常克制的自然光泽。物件表面随机但均衡地分布多种贴纸，不完全覆盖表面，包含字体图案贴纸、图形贴纸、写实复古标签贴纸。部分贴纸轻微重叠，以少量小簇形式出现，避免大面积堆叠。贴纸为半光泽纸质、标签材质，不过度闪亮。贴纸存在轻微褶皱、翘边和不完全贴合感，局部可以看到下方物件表面纹理，保持真实粘贴效果。柔和大面积主光，微弱边缘光，柔和但具有一定明暗层次与电影感对比，避免过强高光与硬阴影。纯白色背景，干净，无多余环境元素。photorealistic, high detail，真实摄影质感，清晰自然的材质细节。",positiveEn:"A single photorealistic object, complete subject, floating state, slightly tilted. Medium close-up, subject centered, balanced composition, the object surface retains proper blank areas, not fully covered by decorations. Natural realistic material texture, subtle blemishes and tiny water droplets, restrained natural gloss. Various vintage label stickers randomly and evenly placed on object surface, typography stickers, graphic stickers, realistic product tags. Partial slight overlapping in small clusters, no large-area stacking. Semi-gloss paper label material, not overly shiny. Stickers with slight wrinkles, curled edges, imperfect adhesion, underlying object texture partially visible. Soft large-area key light, subtle rim light, cinematic contrast, avoid harsh highlights and hard shadows. Pure white clean background, no extra elements. photorealistic, high detail, sharp material details.",negative:"卡通，插画，3D渲染，手绘，二次元，动漫风格，低质量，模糊，像素化，水印，多余logo，复杂背景环境，强高光，硬阴影，过度曝光，贴纸完全铺满物体表面，贴纸无褶皱翘边，贴纸过度闪亮，金属贴纸，塑料假贴纸，不真实粘贴效果",negativeEn:"cartoon, illustration, 3d render, hand drawn, anime, low quality, blurry, watermark, logo, complex background, harsh highlight, hard shadow, overexposed, stickers fully cover object, flat perfect stickers, metallic stickers, unrealistic sticking effect"},
-    {code:"SK36",cat:"skill",catLabel:"创意SKILL",name:"CRT复古像素界面",nameEn:"CRT Retro Pixel Interface",desc:"照片转1980年代CRT计算机界面质感复古像素插画，全局统一像素网格，早期Macintosh/Minitel风格窗口+菜单+下拉+光标，扫描线+色偏+球面桶形畸变，3种预设：街头怪诞/巨像符号/冷面几何",scene:"生活照片、人像、街景、复古科技主题、社媒海报、8-bit怀旧创作、亚文化视觉",image:"images/87.jpg",positive:"SK36 CRT复古像素界面，将照片转化为1980年代早期CRT计算机界面质感复古像素插画。全局统一正方形像素网格，主体保留3-5个识别锚点后重绘为成人向1980年代位图编辑漫画风格，棱角分明、工业感、5-9个扁平色块。界面层：3-6个Macintosh/Minitel风格窗口，含标题栏、关闭框、滚动条、菜单、下拉菜单、箭头光标，1-3个局部放大提取窗口。CRT信号层：密集扫描线、稀疏噪点、单像素色偏、垂直余辉、外边缘10%球面桶形畸变。右上角签名tait-crt-interface-skill。三种预设：街头怪诞（涂鸦+怪诞角色+霓虹贴纸+故障像素）、巨像符号（主体放大为巨大图腾+强轮廓+纪念碑构图）、冷面几何（几何块面+网格+蓝紫CRT光效+冷峻界面）",positiveEn:"SK36 CRT Retro Pixel Interface, transform photo into 1980s early CRT computer interface retro pixel illustration. Global unified square pixel grid, subject retains 3-5 identity anchors then redrawn as adult 1980s bitmap editorial caricature, angular, industrial, 5-9 flat color blocks. Interface layer: 3-6 Macintosh/Minitel style windows with title bars, close boxes, scrollbars, menus, dropdowns, arrow cursor, 1-3 magnified feature extraction windows. CRT signal layer: dense scanlines, sparse noise, single-pixel misregistration, vertical persistence, outer 10% spherical barrel distortion. Top-right signature tait-crt-interface-skill. Three presets: Street Grotesque (graffiti+grotesque characters+neon stickers+glitch pixels), Colossus Symbol (subject enlarged as giant totem+strong contours+monumental composition), Cold Geometry (geometric planes+grid+blue-purple CRT glow+cold interface)",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止写实照片质感、照片滤镜、自动像素化、描边临摹；禁止半像素、抗锯齿、渐变、透明光晕、平滑曲线；禁止人脸/皮肤区域棋盘格纹理；禁止儿童插画、可爱吉祥物、动漫萌系；禁止窗口外出现物理显示器/边框/房间环境；禁止遗漏右上角签名",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no photorealistic photo texture, photo filter, auto-pixelation, outline tracing; no half-pixels, anti-aliasing, gradients, transparent glow, smooth curves; no checkerboard texture on faces/skin; no children illustration, cute mascot, anime moe; no physical monitor/bezel/room environment outside windows; no missing top-right signature"},
-    {code:"SK37",cat:"skill",catLabel:"创意SKILL",name:"解构双色调海报",nameEn:"Deconstructed Duotone Poster",desc:"把照片/主题解构为九宫格/六宫格/四宫格双色调印刷海报，浅象牙色纸底#F7F1E3+用户选择的一种墨色，扁平化大块面+负空间切割，少量保留识别线索，其余为抽象/材质/动势，底部两行小英文打字机字体+极简图标",scene:"照片重构、编辑海报、主题创作、批量变体、社媒海报、展览视觉、杂志内页",image:"images/88.jpg",positive:"SK37解构双色调海报，将照片/主题解构为九宫格/六宫格/四宫格双色调印刷海报。固定浅象牙色纸底#F7F1E3+用户选择的一种墨色（如钴蓝/砖红/墨绿）。布局：竖版3:4九宫格或四宫格，横版4:3六宫格或四宫格，固定坐标，等距边距，每个格子为一个共享正方形模板。内容：扁平化大块面+负空间切割，仅2-4个格子保留少量识别线索，其余格子为抽象/材质/动势/节奏/负空间。底部：两行小的英文打字机字体（3-7词）+极简图标（1-5个，按主体数量）。材质：纸张纤维纹理、墨色晕染边缘、独立光晕、向内手工印刷毛边。",positiveEn:"SK37 Deconstructed Duotone Poster, deconstruct photo/theme into 9-grid/6-grid/4-grid duotone print poster. Fixed pale ivory paper background #F7F1E3 + one user-chosen ink color (cobalt blue/brick red/ink green). Layout: portrait 3:4 nine-grid or four-panel, landscape 4:3 six-grid or four-panel, fixed coordinates, equal margins, each cell a shared square template. Content: flat large masses + negative space cuts, only 2-4 cells retain minimal recognition cues, remaining cells are abstract/material/gesture/rhythm/negative space. Footer: two small English typewriter lines (3-7 words) + minimal icons (1-5, by subject count). Material: paper fiber texture, ink bleed edges, separate halation, inward hand-printed fringe.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止写实照片质感、照片滤镜、海报化原图；禁止第三种颜色、渐变色、高饱和多色；禁止精致描边、铅笔、彩色铅笔、蚀刻、雕刻、交叉排线、轮廓排线、点画阴影、毛发笔触、羽毛笔触、叶脉、表面划痕、精细描述轮廓；禁止razor-sharp矢量、脆直角、硬裁剪剪影、重复库存几何；禁止格子变成详细插画或空通用符号；禁止墨边变成云雾状或涂抹；禁止底部文字主导或不可读；禁止均匀噪点模拟纸张",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no photorealistic photo texture, photo filter, posterized original; no third color, gradients, high-saturation multi-color; no refined outlines, pencil, colored pencil, etching, engraving, cross-hatching, contour hatching, stippled shading, fur strokes, feather strokes, leaf veins, surface scratches, fine descriptive outlines; no razor-sharp vectors, brittle right angles, hard-cut silhouettes, repeated stock geometry; no cells becoming detailed illustrations or empty generic symbols; no ink edges becoming cloudy or smeared; no footer text dominating or unreadable; no uniform noise simulating paper"},
-    {code:"SK38",cat:"skill",catLabel:"创意SKILL",name:"三重记忆三联画",nameEn:"Threefold Memory Triptych",desc:"一张照片转成竖版三面板记忆艺术品：顶部碎片视觉记忆拼贴+中部原图不变+底部空间信号地图，立体主义解构+纸面拼贴+诗意地铁图，默认1920×3240",scene:"记忆主题、照片重构、艺术创作、展览海报、社媒长图、个人纪念、概念视觉",image:"images/89.jpg",positive:"SK38三重记忆三联画，将一张照片转化为竖版三面板记忆艺术品，默认1920×3240（三个1920×1080面板，边缘对齐无间隙无框无标签）。顶部面板WHAT I SAW：碎片视觉记忆拼贴，大不规则几何碎片+重叠纸面+锐利切割+半透明层+位移剪影+磨损颜料+选择性金属/印刷纹理，主体保持大且构图主导但不稳定，30-60%结构可识别，移除字面表面细节。中部面板WHAT HAPPENED：原图不变，仅比例适配，不重绘/不重新打光/不重新调色/不去噪/不修饰/不移除/不添加内容。底部面板WHAT STAYED：空间信号地图，从照片的路径/方向/颜色区域/物体关系/间隔提取，松散混合地铁图+星座图+克制电路轨迹，2-5个可识别但非字面的源回声，1条主路径+1-2条次路径，变化的星点/节点/短点链/薄环/停顿/换乘/密度梯度，5-20%芯片式痕迹作为次要重音，大量留白。三层共享源的调色/光/材质/情感温度，但使用不同的组织逻辑。",positiveEn:"SK38 Threefold Memory Triptych, transform one photo into vertical three-panel memory artwork, default 1920x3240 (three 1920x1080 panels, edge-aligned no gaps no frames no labels). TOP panel WHAT I SAW: fragmented visual memory collage, large irregular geometric fragments + overlapping paper planes + sharp cuts + translucent layers + displaced silhouettes + worn pigment + selective metallic/printed texture, subject remains large and compositionally dominant but unstable, 30-60% structure recognizable, literal surface detail removed. MIDDLE panel WHAT HAPPENED: original photo unchanged, only proportional fitting, no redraw/relight/recolor/denoise/retouch/remove/add content. BOTTOM panel WHAT STAYED: spatial signal map, extracted from photo paths/directions/color regions/object relationships/intervals, loose hybrid of metro diagram + constellation chart + restrained circuit traces, 2-5 recognizable but non-literal source echoes, 1 primary route + 1-2 secondary routes, varied star points/nodes/short dotted chains/thin rings/pauses/transfers/density gradients, 5-20% chip-like traces as secondary accent, generous negative space. Three layers share source palette/light/material/emotional temperature but use different organizational logic.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止单面板、四面板、其他面板数；禁止顶部变成滤镜/放大照片/通用抽象画/小图标主体；禁止底部变成通用城市地图/规则星座/主板/技术示意图；禁止固定模板主体（塔/树/花/动物/地标/城市/固定路线/固定节点形状/固定星座/固定调色板）；禁止中间照片被重绘/重新打光/重新调色/去噪/修饰/移除/添加；禁止面板间有间隙/框/分隔线/标签/标题/说明/签名/水印/mockup；禁止写实照片质感、照片滤镜；禁止全图PCB网格/主板构图/处理器块/引脚阵列/焊盘词汇/工程标签/技术对称/完美对称；禁止外层空间奇观/微缩写实场景",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no single panel, four panels, other panel counts; no top becoming filter/enlarged photo/generic abstract art/small icon subject; no bottom becoming generic city map/regular constellation/motherboard/technical diagram; no fixed template subjects (tower/tree/flower/animal/landmark/city/fixed route/fixed node shape/fixed constellation/fixed palette); no middle photo being redrawn/relit/recolored/denoised/retouched/removed/added; no gaps/frames/dividers/labels/titles/captions/signatures/watermarks/mockups between panels; no photorealistic photo texture, photo filter; no full-field PCB grid/motherboard composition/processor blocks/pin arrays/solder pad vocabulary/engineering labels/technical symmetry/perfect symmetry; no outer space spectacle/micro realistic scenes"},
-    {code:"SK39",cat:"skill",catLabel:"创意SKILL",name:"梦幻动态杂志风",nameEn:"Dreamy Motion Editorial",desc:"从日常照片提取语义主体，重构成高级朦胧梦幻动态杂志风，Keep/Fade/Remove方法论，35-55%动态负空间，6种机制：人群漂移/花卉扩散/玻璃记忆/逆光晕染/低角度色场/掠过手势，三档强度",scene:"人像、街拍、生活照片、杂志封面、社媒海报、电影感创作、品牌视觉、青春主题",image:"images/90.jpg",positive:"SK39梦幻动态杂志风，从日常照片提取语义主体，重构成高级朦胧梦幻动态杂志风。方法论：Keep（保留1个主体+1个本质手势/物体+不超过2个上下文线索）/Fade（2-4个次要人物/花/织物/车辆/纸/植物/建筑边缘拉伸为大方向模糊块+半透明条纹+浅色轨迹）/Remove（仅移除微小杂物和竞争细节）。构图：35-55%动态负空间（大方向动态面纱）+15-30%安静色调区域，主体占25-40%，允许重新构图/不对称放置/主体重新定位/背景重构。6种机制选1主1辅：人群漂移/花卉扩散/玻璃记忆/逆光晕染/低角度色场/掠过手势。三档强度：克制高级（25-40%微妙动态）/梦幻朦胧（35-55%可见动态面纱，默认）/强烈实验（更强动态拖影/重影/折射/颜色污染）。风格：高级感+朦胧感+梦幻感+电影感+慢门拖影+柔焦+胶片感+诗意海报，主体清晰锚点周围环绕移动的半透明形式。",positiveEn:"SK39 Dreamy Motion Editorial, extract semantic hero from everyday photo and rebuild as premium hazy dreamlike motion editorial image. Methodology: Keep (1 hero + 1 essential gesture/object + max 2 contextual cues) / Fade (2-4 secondary people/flowers/fabric/vehicles/paper/plants/architecture edges stretched into large directional blur masses + translucent streaks + light-color trails) / Remove (only tiny clutter and competing details). Composition: 35-55% kinetic negative space (large directional motion veils) + 15-30% quiet tonal fields, hero occupies 25-40%, allow reframing/asymmetric placement/subject repositioning/background reconstruction. 6 mechanisms choose 1 primary + 1 support: crowd-drift/floral-diffusion/glass-memory/backlit-halation/low-angle-color-field/passing-gesture. 3 intensity levels: Restrained Premium (25-40% subtle motion) / Dream Haze (35-55% visible motion veils, default) / Experimental Memory (stronger motion drag/doubling/refraction/color contamination). Style: premium + hazy + dreamy + cinematic + slow shutter drag + soft focus + film grain + poetic poster, sharp hero anchor surrounded by moving translucent forms.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止全图均匀模糊、静态空背景无方向动态氛围；禁止每个背景物体同等清晰、字面全场景重建无层次；禁止擦除每个次要人物/物体而不是转化为动态块；禁止默认保留超过2个上下文线索；禁止用抽象梦幻魔法代替物理光学原因；禁止随机添加花/闪光/珠宝/服装/人物；禁止把主体美化为通用脸；禁止全图白雾覆盖；禁止所有机制堆叠在一个场景；禁止无菌8K HDR锐利+模拟柔焦组合；禁止极端蓝橙调色；禁止变成婚纱工作室/cosplay/赛博朋克/库存照片风格；禁止密集文字覆盖脸/手势/产品标签",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no uniform full-frame blur, static empty background without directional motion atmosphere; no every background object equally sharp, literal full-scene reconstruction without hierarchy; no erasing every secondary person/object instead of transforming into motion masses; no default keeping more than 2 contextual cues; no replacing physical optical causes with abstract dream magic; no random adding flowers/sparkles/jewelry/clothing/people; no beautifying subject into generic face; no full-frame white fog coverage; no all mechanisms stacked in one scene; no sterile 8K HDR sharpness + simulated soft focus combination; no extreme teal-orange grading; no becoming wedding studio/cosplay/cyberpunk/stock photo style; no dense text covering faces/gestures/product labels"},
-    {code:"SK40",cat:"skill",catLabel:"创意SKILL",name:"静谧日常几何叙事插画",nameEn:"Quiet Domestic Geometry Illustration",desc:"厚重不透明水粉丙烯颜料质感，有明显颜料笔触和堆塑感，人物脸部通过明暗色块叠加表现立体感，全局覆盖细密统一旧纸张颗粒和印刷颗粒质感，绝对无轮廓勾线，低饱和柔和复古褪色调，直接手绘感，柔和自然形体",scene:"日常人物、家庭生活、城市街景、风景建筑、照片转插画、杂志叙事插画、儿童绘本、生活记录、人文场景、旅行记忆",image:"images/84.jpg",positive:"SK40静谧日常几何叙事插画（quiet-domestic-geometry-illustration）。厚重不透明水粉丙烯颜料质感，有明显颜料笔触和堆塑感，像直接画上去不用打底稿的手绘感，直线不是很直用色块表现线条感填图，不是明确锐利的直线。人物脸部通过明暗色块叠加表现立体感，鼻子、眼睛、脸颊、下巴都有体积感，五官通过色块变化自然表现不是描线勾勒。全局覆盖非常明显的细密统一旧纸张颗粒和印刷颗粒质感，颗粒在墙面、车厢、天空、地面等大面积色块区域特别突出。低饱和柔和复古褪色调，整体旧纸张米黄暖调像老画印刷品。色块自然柔和叠加有明暗层次，绝对没有任何轮廓勾线，物体边界完全靠不同颜色色块互相挤压自然形成。柔和自然的形体不是硬方块几何，保留原图人物姿态和构图，去掉照片式皮肤纹理皱纹和衣服细碎褶皱，简单色块表现明暗阴影无复杂渐变。",positiveEn:"SK40 Quiet Domestic Geometry Illustration (quiet-domestic-geometry-illustration). Heavy opaque gouache and acrylic paint texture with visible brush strokes and impasto feel, like directly painted without underdrawing, lines are not perfectly straight but expressed through color blocks filling, not sharp precise lines. Character faces show dimensionality through layered light and dark color blocks, nose, eyes, cheeks, chin all have volume, facial features naturally expressed through color block changes not outlined. Global coverage of very obvious fine uniform old paper grain and print grain texture, grain especially prominent in large color block areas like walls, train cars, sky, ground. Low saturation soft vintage faded tone, overall old paper beige warm tone like old printed artwork. Color blocks naturally and softly layered with light and shadow hierarchy, absolutely no contour outlines, object boundaries formed entirely by different color blocks pressing against each other naturally. Soft natural forms not hard square geometry, preserve original character poses and composition, remove photo-like skin texture wrinkles and fine clothing folds, simple color blocks express light and shadow without complex gradients.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止水彩晕染透明感、水墨湿画、透明图层；禁止照片写实、皮肤纹理、皱纹细节、衣服细碎褶皱；禁止硬方块几何、扁平化图标感、锐利直线；禁止描线勾勒五官和轮廓、黑色轮廓线；禁止高饱和艳色、荧光色；禁止复杂渐变光影、3D渲染、光滑反光表面、玻璃倒影",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no watercolor bleed transparent feel, ink wash wet painting, transparent layers; no photorealism, skin texture, wrinkle details, fine clothing folds; no hard square geometry, flat icon feel, sharp straight lines; no outlined facial features and contours, black contour lines; no high saturation bright colors, fluorescent colors; no complex gradient lighting, 3D rendering, smooth reflective surfaces, glass reflections"},
-    {code:"SK41",cat:"skill",catLabel:"创意SKILL",name:"橙线极简编辑插画",nameEn:"Orange Line Illustration",desc:"《纽约客》杂志风格极简编辑插画，细黑墨线手绘编辑感，纯白背景大量留白，唯一暖橙点缀#F97316用在最有意义的元素上，人物非常tiny被场景物体 dwarfed，放大物体缩小人物的标志性尺度对比，机智克制智慧的氛围，默认角色小橙（胸口有橙色圆点的线条小人）",scene:"文章配图、公众号配图、封面图、概念隐喻插画、原则格言插画、PPT配插图、演讲稿配图、编辑插画、极简线条插画、杂志单格漫画",image:"images/91.jpg",positive:"SK41橙线极简编辑插画（orange-line-illustration）。《纽约客》杂志风格单格编辑插画，极简细黑墨线手绘感，纯白背景大量留白（留白是构图的一部分不是浪费），唯一暖橙点缀#F97316用在最有意义的那个元素上（橙色回答'这张图关于什么'），无阴影无渐变无填充（除橙色点缀）。人物非常tiny被物体/墙/楼梯/线条 dwarfed，放大物体缩小人物的标志性尺度对比（人物不超过画面1/10，明确写'a TINY human figure'）。一个画面一个概念，优先动作场景而非抽象符号。氛围机智克制智慧，让观众思考一秒然后微笑。默认角色小橙：圆形头（仅轮廓不填充）两个黑点眼睛无嘴，窄矩形身体（仅轮廓）细棍四肢，胸口一个实心橙色圆点#F97316（这就是点缀色），几何手绘感不可爱，必须参与核心动作不是装饰。左下角签名：短橙色横线+下方浅灰色小字中文标题。",positiveEn:"SK41 Orange Line Illustration (orange-line-illustration). New Yorker magazine style single-panel editorial illustration, minimalist thin black ink line drawing with hand-drawn editorial feel, pure white background with generous negative space (emptiness is part of composition, not wasted), single warm orange accent #F97316 used on the single most meaningful element (orange answers 'what is this image about'), no shading, no gradients, no fills except the accent. Figures are very TINY, dwarfed by objects/walls/stairs/lines, signature scale contrast of enlarging the thing and shrinking the person (figure no more than 1/10 of frame, explicitly write 'a TINY human figure'). One idea per image, prefer action scenes over abstract symbols. Mood: witty, restrained, intelligent, makes viewer think for one second then smile. Default character 小橙 (Xiao Orange): circle head (outline only, not filled), two black dot eyes, no mouth, narrow rectangular body (outline only), thin stick arms and legs, ONE small solid orange dot #F97316 on chest (this IS the accent), geometric hand-drawn feel, not cute, must participate in core action not decorate. Bottom-left signature: short horizontal orange line + small light-gray Chinese caption below.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止多种颜色、禁止除橙色外的其他彩色填充；禁止大尺寸人物（人物超过画面1/10即失败）；禁止复杂阴影、渐变、半透明；禁止高饱和多色、荧光色；禁止写实照片质感、3D渲染；禁止抽象无动作场景（必须有人物动作）；禁止Escher不可能几何、复杂楼梯建筑；禁止线条断裂；禁止可爱卡通风、儿童插画；禁止多余文字",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no multiple colors, no other colored fills except orange; no oversized figures (figure exceeding 1/10 of frame is failure); no complex shadows, gradients, translucency; no high-saturation multi-color, fluorescent colors; no photorealistic texture, 3D rendering; no abstract actionless scenes (must have human action); no Escher impossible geometry, complex stairs architecture; no broken lines; no cute cartoon style, children's illustration; no extra text"},
-    {code:"SK42",cat:"skill",catLabel:"创意SKILL",name:"超现实波普拼贴",nameEn:"Surreal Pop Collage",desc:"把照片变成超现实波普拼贴画：主体去色成黑白保留为现实锚（3秒内认出原图主体），背景替换为2-3个巨大平涂色形（无渐变无立体阴影），全图只有一个不可能的巨物（超现实全部力量在于只有一处不对劲），黑白现实与平涂梦境对撞，成群小元素沿弧线分布+白色手绘涂鸦线条",scene:"照片超现实化、小红书/抖音超现实海报、黑白照片+平涂色块梦境感、风景/人物/城市照超现实艺术、旅行海报、创意拼贴",image:"images/92.jpg",positive:"SK42｜超现实波普拼贴（surreal-pop-collage）。把照片变成超现实波普拼贴画：照片主体去色成黑白保留为现实锚（保持主体清晰可识别，保留其纹理细节，3秒内认出原图主体，脸部核心区不压元素），背景替换为2-3个巨大平涂色形（形状贴合场景原有区域边界：圆/拱/地平线色块/整面天空，颜色三选一策略：①场景已有色提纯 ②互补色对撞 ③情绪反转色，平涂无渐变无立体阴影），全图只有一个不可能的巨物（超现实的全部力量在于只有一处不对劲，巨物选择：①文化地标典故巨物 ②场景元素荒诞化 ③语义最远物 ④尺度颠倒，只选一个）。成群小元素3-5个大小梯度100/60/30沿弧线分布，白色手绘涂鸦线条2-3条做手工痕迹。整体保持明亮，黑白现实与平涂梦境对撞清晰。禁止暗黑恐怖基调。禁止水印、角标、AI字样、乱码、二维码、LOGO。",positiveEn:"SK42 Surreal Pop Collage (surreal-pop-collage). Transform a photo into a surreal pop collage: the main subject desaturated to black and white as the reality anchor (clearly recognizable within 3 seconds, preserving texture details, no elements covering the face core area), the background replaced by 2-3 huge flat matte color shapes (shapes fitting the original scene boundaries: circle/arch/horizon band/full sky, color strategy: ①purify existing scene colors ②complementary color contrast ③emotional reversal color, flat matte no gradients no dimensional shadows), only ONE impossible giant element in the entire image (the full power of surrealism lies in only one thing being wrong, giant element choice: ①cultural landmark allusion ②scene element absurdification ③semantically farthest object ④scale inversion, choose only one). 3-5 small elements in graduated sizes 100/60/30 following an arc, 2-3 white hand-drawn graffiti strokes for handmade texture. Overall bright, black-and-white reality collides clearly with the flat color dream world. No dark horror tone. No watermark, corner badge, AI text, garbled text, QR code, logo.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止第二个不可能巨物（全图只有一处不对劲）；禁止色形渐变、立体阴影；禁止装饰压脸（脸部核心区不压元素）；禁止相框式整圈包围；禁止满版纹理覆盖；禁止暗黑恐怖基调；禁止照搬参考图默认元素（红日/海豚/鲸鱼）；禁止孤立单个装饰；禁止多余文字",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no second impossible giant element (only one thing wrong in the entire image); no color shape gradients, dimensional shadows; no decorations covering the face; no full-frame border enclosure; no full-frame texture coverage; no dark horror tone; no copied default reference elements (red sun/dolphin/whale); no isolated single decoration; no extra text"},
-    {code:"SK43",cat:"skill",catLabel:"创意SKILL",name:"淡彩明信片插画",nameEn:"Soft Watercolor Postcard Illustration",desc:"米白哑光特种纸质感+淡彩水彩明信片插画，保留原景物结构与色彩调性，弱化细节，柔和块面+轻盈水彩层次+自然晕染边缘，大面积留白，底部双行英文排版",scene:"旅行照片、城市街景、建筑、植物、海边、明信片、相册封面、竖版海报",image:"images/93.jpg",positive:"SK43｜淡彩明信片插画（soft-watercolor-postcard-illustration）。将原图转化为米白哑光特种纸质感、淡彩水彩明信片插画效果。保留原图中主要景物的结构关系和整体色彩调性，弱化复杂背景、杂物、厚重光影和细碎纹理，把景物简化为松弛柔和的块面造型，分层平涂搭配随性淡墨晕染笔触，边缘自然晕开，摒弃生硬轮廓线，只留存景物原生结构神韵。画面大面积留白，主体放置居中或略偏上位置。底部居中排布文字：首行优雅衬线手写英文标题，第二行小号无衬线英文短句。依托米白哑光纸张底色，大面积留白构图，兼具随性水墨气韵与干净克制的学术质感，不添加多余装饰元素。",positiveEn:"SK43 Soft Watercolor Postcard Illustration (soft-watercolor-postcard-illustration). Transform the original image into a soft watercolor postcard illustration on matte off-white specialty paper. Preserve the structural relationships and overall color tone of the main subjects, downplay complex backgrounds, clutter, heavy lighting and fine textures, simplify subjects into relaxed soft color blocks, layered flat application with casual light ink washes, edges naturally blending, no rigid outlines, keep only the essence of the original structure. Large areas of negative space, subject centered or slightly above center. Bottom centered text: first line an elegant serif handwritten English title, second line a small sans-serif English phrase. Rely on the matte off-white paper base with large negative space composition, combining casual ink-wash spirit with clean restrained academic texture, no extra decorative elements.",negative:"水印、角标、AI字样、乱码、二维码、LOGO；禁止生硬轮廓线、黑色描边；禁止厚重光影、3D渲染、光滑反光；禁止高饱和艳色、荧光色；禁止照片写实皮肤纹理、细碎杂物；禁止杂乱构图、满版填充、装饰元素堆叠；禁止多余文字",negativeEn:"watermark, corner badge, AI text, garbled text, QR code, logo; no rigid outlines, black strokes; no heavy lighting, 3D rendering, glossy reflections; no high saturation bright colors, neon colors; no photorealistic skin texture, fine clutter; no messy composition, full-frame fill, decorative element stacking; no extra text"},
-
-{code:"C01",cat:"cinema",catLabel:"电影调色",name:"韩式冷峻犯罪",nameEn:"Korean Noir Crime",desc:"韩国犯罪电影影像，低饱和冷调，暗部层次厚重",scene:"犯罪题材、都市冷峻氛围",image:"images/69.jpg",positive:"韩国犯罪电影影像，低饱和冷调，暗部层次厚重，35-50mm镜头，细微胶片颗粒，冷静纪实氛围感，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Korean crime film cinematography, low saturation cool tone, heavy shadow layering, 35-50mm lens, subtle film grain, calm documentary atmosphere, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"高饱和, 艳丽, 卡通, 水印, 角标, 文字, 过度磨皮",negativeEn:"high saturation, vivid, cartoon, watermark, corner marks, text, over-retouched skin"},
-  {code:"C02",cat:"cinema",catLabel:"电影调色",name:"民国上海复古",nameEn:"Republic Shanghai Retro",desc:"民国都市复古电影，暖金钨丝灯光，酒红暗金色调",scene:"民国题材、复古都市",image:"images/70.jpg",positive:"民国都市复古电影，暖金钨丝灯光，酒红暗金色调，细腻胶片颗粒，轻微柔焦暖色光晕，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Republic of China Shanghai retro film, warm gold tungsten lighting, burgundy dark gold tone, fine film grain, slight soft focus warm glow, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"刺眼高饱和, 卡通, 水印, 角标, 文字, 过度磨皮",negativeEn:"harsh high saturation, cartoon, watermark, corner marks, text, over-retouched skin"},
-  {code:"C03",cat:"cinema",catLabel:"电影调色",name:"西北乡土史诗",nameEn:"Northwest Rural Epic",desc:"西北乡土史诗电影，赭石土地厚重色调，粗颗粒35mm胶片",scene:"西北题材、乡土史诗",image:"images/71.jpg",positive:"西北乡土史诗电影，赭石土地厚重色调，24-35mm镜头，粗颗粒35mm胶片，沉稳纪实质感，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Northwest rural epic film, ochre earth heavy tone, 24-35mm lens, coarse grain 35mm film, steady documentary texture, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"马卡龙鲜亮色, 卡通, 水印, 角标, 文字, 塑料光滑质感",negativeEn:"macaron bright colors, cartoon, watermark, corner marks, text, plastic smooth texture"},
-  {code:"C04",cat:"cinema",catLabel:"电影调色",name:"昭和日式怀旧",nameEn:"Showa Japanese Nostalgia",desc:"昭和日本生活片，褪色柔和低饱和，侧柔光，温润肤色",scene:"日式怀旧、生活题材",image:"images/72.jpg",positive:"昭和日本生活片，褪色柔和低饱和，侧柔光，温润肤色，细密胶片颗粒，旧时光氛围，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Showa Japanese lifestyle film, faded soft low saturation, side soft light, warm skin tone, fine film grain, old times atmosphere, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"高饱和艳色, 强硬光, 卡通, 水印, 角标, 文字",negativeEn:"high saturation vivid, hard strong light, cartoon, watermark, corner marks, text"},
-  {code:"C05",cat:"cinema",catLabel:"电影调色",name:"70年代香港功夫",nameEn:"70s HK Kung Fu",desc:"70年代香港功夫片，老式球面镜头，暖调朴素色彩，粗胶片颗粒",scene:"功夫题材、复古港片",image:"images/73.jpg",positive:"70年代香港功夫片，老式球面镜头，暖调朴素色彩，粗胶片颗粒，轻微手持呼吸感，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"70s Hong Kong kung fu film, vintage spherical lens, warm plain color tone, coarse film grain, slight handheld breathing, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"荧光高饱和, 过度磨皮, 卡通, 水印, 角标, 文字",negativeEn:"fluorescent high saturation, over-retouched skin, cartoon, watermark, corner marks, text"},
-  {code:"C06",cat:"cinema",catLabel:"电影调色",name:"好莱坞青橙调色",nameEn:"Hollywood Teal Orange",desc:"好莱坞商业电影，青蓝冷阴影，琥珀暖肤色，冷暖色彩分离",scene:"商业大片、通用电影感",image:"images/74.jpg",positive:"好莱坞商业电影，青蓝冷阴影，琥珀暖肤色，冷暖色彩分离，椭圆柔散景，高动态电影画质，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Hollywood commercial film, teal blue cool shadows, amber warm skin tone, warm-cool color separation, oval soft bokeh, high dynamic cinematic quality, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"色彩脏污溢出, 肤色发青, 卡通, 水印, 角标, 文字",negativeEn:"dirty color overflow, cyan skin tone, cartoon, watermark, corner marks, text"},
-  {code:"C07",cat:"cinema",catLabel:"电影调色",name:"邵氏棚拍武侠",nameEn:"Shaw Brothers Wuxia",desc:"邵氏老武侠胶片，浓郁东方配色，硬主光+轮廓光，Eastmancolor胶片",scene:"武侠题材、东方复古",image:"images/75.jpg",positive:"邵氏老武侠胶片，浓郁东方配色，硬主光+轮廓光，Eastmancolor胶片，细密颗粒，8K写实电影质感，保留原图人物、场景、原始构图",positiveEn:"Shaw Brothers studio wuxia film, rich Eastern color palette, hard key light plus rim light, Eastmancolor film, fine grain, 8K photorealistic cinematic quality, preserve original figures, scene, original composition",negative:"灰暗寡淡, 卡通, 水印, 角标, 文字, 塑料质感",negativeEn:"dull flat, cartoon, watermark, corner marks, text, plastic texture"}
+{code:"01",cat:"general",catLabel:"通用插画",name:"暗绿调",nameEn:"Dark Green Tone",desc:"暗绿电影胶片，低饱和暗调氛围",scene:"风景、氛围感人像、环境空间",image:"images/00.jpg",positive:"暗绿色调电影胶片质感，低饱和度，暗调氛围，深邃墨绿色彩，柔和阴影，电影感光影，细腻胶片颗粒，氛围感画面，8K高清",positiveEn:"dark green cinematic film tone, low saturation, moody atmosphere, deep ink-green colors, soft shadows, cinematic lighting, fine film grain, atmospheric scene, 8K ultra HD",negative:"水印, 高饱和, 艳丽色彩, 过曝, 明亮色调",negativeEn:"watermark, high saturation, vivid colors, overexposed, bright tones"},
+{code:"02",cat:"general",catLabel:"通用插画",name:"青橙调",nameEn:"Teal & Orange Tone",desc:"青橙撞色电影色调，高对比光影",scene:"城市夜景、街景、氛围感画面",image:"images/01.jpg",positive:"青橙撞色电影色调，青色阴影与橙色高光对比，高对比光影，电影级调色，冷暖色彩分离，氛围感画面，8K高清",positiveEn:"teal and orange cinematic color grading, teal shadows contrasting with orange highlights, high contrast lighting, cinematic color grade, warm-cool color separation, atmospheric scene, 8K ultra HD",negative:"水印, 色彩平淡, 低对比, 单色调",negativeEn:"watermark, flat colors, low contrast, monochrome"},
+{code:"03",cat:"general",catLabel:"通用插画",name:"雨夜胶片氛围感",nameEn:"Rainy Night Film Mood",desc:"雨夜湿润街道，胶片颗粒，冷调霓虹氛围感",scene:"城市夜景、雨夜场景",image:"images/02.jpg",positive:"雨夜湿润街道，地面积水反射霓虹灯光，胶片颗粒质感，冷调霓虹氛围，朦胧雨丝，城市夜景，电影感，8K高清",positiveEn:"rainy night wet streets, puddles reflecting neon lights, film grain texture, cool neon atmosphere, hazy rain streaks, urban nightscape, cinematic mood, 8K ultra HD",negative:"水印, 晴天, 干燥地面, 明亮日光, 高饱和",negativeEn:"watermark, sunny day, dry ground, bright daylight, high saturation"},
+{code:"04",cat:"general",catLabel:"通用插画",name:"复古港风人像",nameEn:"Retro HK Portrait",desc:"90年代港风，胶片颗粒，暖柔磨皮，复古色调",scene:"人像、怀旧海报",image:"images/03.jpg",positive:"90年代港风人像，胶片颗粒质感，暖柔磨皮，复古色调，柔和光影，怀旧氛围，港式美学，8K高清",positiveEn:"90s Hong Kong retro portrait, film grain texture, warm soft skin retouching, vintage color tone, soft lighting, nostalgic atmosphere, Hong Kong aesthetic, 8K ultra HD",negative:"水印, 现代感, 冷色调, 锐化过度, 素颜",negativeEn:"watermark, modern look, cool tones, over-sharpened, bare face"},
+{code:"05",cat:"general",catLabel:"通用插画",name:"莫奈印象油画风",nameEn:"Monet Impressionist Oil",desc:"印象派油画，柔和色块，笔触肌理，朦胧光影",scene:"风景、花草、氛围感插画",image:"images/04.jpg",positive:"莫奈印象派油画风格，柔和色块，明显笔触肌理，朦胧光影，色彩斑斓，户外风景，艺术感，油画质感，8K高清",positiveEn:"Monet impressionist oil painting style, soft color blocks, visible brushstroke texture, hazy light and shadow, vibrant colors, outdoor landscape, artistic feel, oil painting texture, 8K ultra HD",negative:"水印, 写实照片, 锐利细节, 数字绘画, 线稿",negativeEn:"watermark, photorealistic, sharp details, digital painting, line art"},
+{code:"06",cat:"general",catLabel:"通用插画",name:"日系治愈水彩",nameEn:"Japanese Healing Watercolor",desc:"清透淡水彩，低饱和，柔和晕染，纸张纹理",scene:"风景、人文、小清新插画",image:"images/05.jpg",positive:"日系治愈水彩插画，清透淡水彩，低饱和度，柔和晕染，纸张纹理，清新色调，温暖氛围，手绘感，8K高清",positiveEn:"Japanese healing watercolor illustration, transparent light watercolor, low saturation, soft color bleeding, paper texture, fresh color palette, warm atmosphere, hand-drawn feel, 8K ultra HD",negative:"水印, 油画厚涂, 高饱和, 锐利边缘, 暗黑风格",negativeEn:"watermark, impasto oil painting, high saturation, sharp edges, dark style"},
+{code:"07",cat:"general",catLabel:"通用插画",name:"赛博都市霓虹",nameEn:"Cyber City Neon",desc:"高饱和霓虹，未来都市，光影炫彩",scene:"科幻城市、潮流视觉",image:"images/06.jpg",positive:"赛博朋克都市夜景，高饱和霓虹灯光，未来感建筑，光影炫彩，雨夜反射，科幻氛围，8K高清",positiveEn:"cyberpunk urban nightscape, high saturation neon lights, futuristic architecture, dazzling light and color, rainy reflections, sci-fi atmosphere, 8K ultra HD",negative:"水印, 低饱和, 古典建筑, 日光场景, 朴素风格",negativeEn:"watermark, low saturation, classical architecture, daylight scene, plain style"},
+{code:"08",cat:"general",catLabel:"通用插画",name:"极简扁平插画风",nameEn:"Minimal Flat Illustration",desc:"大色块扁平化，轮廓干净，少细节，高级简约",scene:"海报、信息插图",image:"images/07.jpg",positive:"极简扁平插画风格，大色块扁平化设计，干净轮廓线，少细节，高级简约，几何构成，现代感，8K高清",positiveEn:"minimalist flat illustration style, large color blocks flat design, clean outline, minimal details, premium simplicity, geometric composition, modern feel, 8K ultra HD",negative:"水印, 写实, 渐变, 阴影, 复杂细节, 3D渲染",negativeEn:"watermark, photorealistic, gradient, shadows, complex details, 3D render"},
+{code:"09",cat:"general",catLabel:"通用插画",name:"速写线稿风",nameEn:"Sketch Line Art",desc:"钢笔速写，流畅轮廓，少量明暗，纸张底色",scene:"建筑、城市、人物速写",image:"images/08.jpg",positive:"钢笔速写线稿风格，流畅轮廓线条，少量明暗排线，米白纸张底色，手绘速写感，建筑城市速写，8K高清",positiveEn:"pen sketch line art style, fluid contour lines, minimal hatching shading, off-white paper background, hand-drawn sketch feel, architectural urban sketch, 8K ultra HD",negative:"水印, 全彩填充, 油画, 照片写实, 3D建模",negativeEn:"watermark, full color fill, oil painting, photorealistic, 3D modeling"},
+{code:"10",cat:"general",catLabel:"通用插画",name:"复古胶片摄影",nameEn:"Vintage Film Photography",desc:"老胶卷，颗粒感，轻微褪色，复古色彩",scene:"人像、街景纪实",image:"images/09.jpg",positive:"复古胶片摄影，老胶卷质感，明显颗粒感，轻微褪色，复古色彩偏移，漏光效果，纪实摄影，8K高清",positiveEn:"vintage film photography, old film roll texture, prominent grain, slight fading, retro color shift, light leak effect, documentary photography, 8K ultra HD",negative:"水印, 数码清晰, 高饱和, 现代滤镜, 锐利",negativeEn:"watermark, digital clarity, high saturation, modern filter, sharp"},
+{code:"11",cat:"general",catLabel:"通用插画",name:"宫崎骏动画风",nameEn:"Ghibli Animation Style",desc:"吉卜力质感，柔和色彩，通透光影，手绘动画质感",scene:"风景、童话、城市插画",image:"images/10.jpg",positive:"宫崎骏吉卜力动画风格，柔和色彩，通透自然光影，手绘动画质感，蓝天白云，绿意盎然，温暖治愈，8K高清",positiveEn:"Miyazaki Ghibli animation style, soft colors, transparent natural lighting, hand-drawn animation texture, blue sky and white clouds, lush greenery, warm healing, 8K ultra HD",negative:"水印, 3D渲染, 暗黑风格, 赛博朋克, 写实照片",negativeEn:"watermark, 3D render, dark style, cyberpunk, photorealistic"},
+{code:"12",cat:"general",catLabel:"通用插画",name:"黑白纪实摄影",nameEn:"B&W Documentary",desc:"黑白高对比度，纪实颗粒，故事感",scene:"人文纪实、情绪画面",image:"images/11.jpg",positive:"黑白纪实摄影，高对比度，丰富灰阶，胶片颗粒，故事感，人文纪实，情绪画面，8K高清",positiveEn:"black and white documentary photography, high contrast, rich grayscale, film grain, narrative feel, humanistic documentary, emotional scene, 8K ultra HD",negative:"水印, 彩色, 低对比, 柔和磨皮, 摆拍感",negativeEn:"watermark, color, low contrast, soft skin retouching, posed feel"},
+{code:"13",cat:"general",catLabel:"通用插画",name:"噪点颗粒复古海报",nameEn:"Grain Retro Poster",desc:"印刷噪点，做旧纸张，复古版式海报",scene:"复古主题宣传海报",image:"images/12.jpg",positive:"噪点颗粒复古海报，印刷噪点质感，做旧纸张纹理，复古版式设计，有限色彩，年代感，8K高清",positiveEn:"noise grain vintage poster, print noise texture, aged paper texture, retro layout design, limited color palette, vintage feel, 8K ultra HD",negative:"水印, 现代设计, 光滑质感, 高清晰, 渐变色彩",negativeEn:"watermark, modern design, smooth texture, high definition, gradient colors"},
+{code:"14",cat:"general",catLabel:"通用插画",name:"莫比斯漫画风",nameEn:"Moebius Comic Style",desc:"干净流畅线条，平涂色彩，科幻文艺漫画构图",scene:"幻想、建筑、概念插画",image:"images/13.jpg",positive:"莫比斯漫画风格，干净流畅线条，平涂色彩，科幻文艺漫画构图，超现实场景，建筑幻想，艺术感，8K高清",positiveEn:"Moebius comic style, clean fluid lines, flat color fills, sci-fi literary comic composition, surreal scenes, architectural fantasy, artistic feel, 8K ultra HD",negative:"水印, 写实, 3D渲染, 厚涂油画, 照片质感",negativeEn:"watermark, photorealistic, 3D render, impasto oil painting, photo texture"},
+{code:"15",cat:"general",catLabel:"通用插画",name:"丙烯肌理绘画",nameEn:"Acrylic Texture Painting",desc:"厚涂丙烯颜料，颜料肌理，色块笔触",scene:"风景、创意海报",image:"images/14.jpg",positive:"丙烯肌理绘画风格，厚涂丙烯颜料，明显颜料肌理，色块笔触，色彩丰富，手绘油画感，8K高清",positiveEn:"acrylic texture painting style, thick acrylic paint, prominent paint texture, color block brushstrokes, rich colors, hand-painted oil painting feel, 8K ultra HD",negative:"水印, 水彩, 扁平插画, 照片写实, 数字光滑",negativeEn:"watermark, watercolor, flat illustration, photorealistic, digital smooth"},
+{code:"16",cat:"general",catLabel:"通用插画",name:"新中式水墨写意",nameEn:"Neo-Chinese Ink Wash",desc:"水墨晕染，留白，国风写意，淡墨色彩",scene:"国风山水、古建筑插画",image:"images/15.jpg",positive:"新中式水墨写意风格，水墨晕染，大量留白，国风写意，淡墨色彩，山水意境，东方美学，8K高清",positiveEn:"neo-Chinese ink wash freehand style, ink wash bleeding, generous negative space, Chinese freehand aesthetic, light ink colors, landscape poetic mood, Eastern aesthetics, 8K ultra HD",negative:"水印, 油画, 高饱和, 西方写实, 3D渲染",negativeEn:"watermark, oil painting, high saturation, Western realism, 3D render"},
+{code:"17",cat:"general",catLabel:"通用插画",name:"颗粒丝网印刷风",nameEn:"Grain Screen Print",desc:"丝网印刷颗粒质感，有限色版，印刷做旧",scene:"潮流海报、城市插画",image:"images/16.jpg",positive:"颗粒丝网印刷风格，丝网印刷颗粒质感，有限色版，印刷做旧效果，套色偏移，潮流海报感，8K高清",positiveEn:"grain screen printing style, screen print grain texture, limited color plates, aged print effect, color registration offset, trendy poster feel, 8K ultra HD",negative:"水印, 照片写实, 渐变, 光滑数字, 全彩百万色",negativeEn:"watermark, photorealistic, gradient, smooth digital, full color millions"},
+{code:"18",cat:"general",catLabel:"通用插画",name:"复古画报人像",nameEn:"Vintage Magazine Portrait",desc:"老杂志画报，精致平涂，复古排版装饰",scene:"人像、年代海报",image:"images/17.jpg",positive:"复古画报人像风格，老杂志画报质感，精致平涂插画，复古排版装饰，年代感，时尚插画，8K高清",positiveEn:"vintage magazine portrait illustration style, old magazine poster texture, refined flat illustration, retro layout decoration, vintage feel, fashion illustration, 8K ultra HD",negative:"水印, 现代摄影, 3D渲染, 极简, 暗黑",negativeEn:"watermark, modern photography, 3D render, minimalist, dark"},
+{code:"19",cat:"general",catLabel:"通用插画",name:"低poly低多边形",nameEn:"Low Poly Geometric",desc:"几何多边形拼接，简约几何体构成画面",scene:"概念风景、抽象海报",image:"images/18.jpg",positive:"低多边形low poly风格，几何多边形拼接，简约几何体构成画面，三角面构成，色彩渐变，现代抽象，8K高清",positiveEn:"low poly style, geometric polygon mosaic, minimalist geometric composition, triangular facets, color gradient, modern abstract, 8K ultra HD",negative:"水印, 写实照片, 油画, 复杂细节, 柔和渐变",negativeEn:"watermark, photorealistic, oil painting, complex details, soft gradient"},
+{code:"20",cat:"general",catLabel:"通用插画",name:"浮世绘和风",nameEn:"Ukiyo-e Japanese",desc:"日式浮世绘，平涂色块，线条勾勒，和风意境",scene:"风景、人物、传统插画",image:"images/19.jpg",positive:"日式浮世绘风格，平涂色块，流畅线条勾勒，和风意境，传统纹样，木版画质感，8K高清",positiveEn:"Japanese Ukiyo-e style, flat color blocks, fluid line outlines, Japanese poetic mood, traditional patterns, woodblock print texture, 8K ultra HD",negative:"水印, 油画, 3D渲染, 西方写实, 高饱和",negativeEn:"watermark, oil painting, 3D render, Western realism, high saturation"},
+{code:"21",cat:"general",catLabel:"通用插画",name:"波普艺术风",nameEn:"Pop Art Style",desc:"波普艺术，高饱和撞色，半调网点，漫画风格",scene:"潮流海报、人物插画",image:"images/20.jpg",positive:"波普艺术风格，高饱和撞色，半调网点纹理，漫画风格线条，大胆色彩，流行文化元素，8K高清",positiveEn:"pop art style, high saturation contrasting colors, halftone dot texture, comic style lines, bold colors, pop culture elements, 8K ultra HD",negative:"水印, 低饱和, 油画, 写实照片, 极简",negativeEn:"watermark, low saturation, oil painting, photorealistic, minimalist"},
+{code:"22",cat:"general",catLabel:"通用插画",name:"蒸汽波复古",nameEn:"Vaporwave Retro",desc:"蒸汽波美学，粉紫渐变，复古电脑，霓虹网格",scene:"复古未来、潮流视觉",image:"images/21.jpg",positive:"蒸汽波vaporwave风格，粉紫渐变色彩，复古电脑元素，霓虹网格地平线，古希腊雕塑，80年代复古未来感，8K高清",positiveEn:"vaporwave style, pink-purple gradient colors, retro computer elements, neon grid horizon, ancient Greek sculptures, 80s retro-futuristic feel, 8K ultra HD",negative:"水印, 自然风景, 油画, 写实, 低饱和",negativeEn:"watermark, natural landscape, oil painting, photorealistic, low saturation"},
+{code:"23",cat:"general",catLabel:"通用插画",name:"像素艺术风",nameEn:"Pixel Art Style",desc:"8-bit像素艺术，方块像素，复古游戏感",scene:"游戏插画、复古海报",image:"images/22.jpg",positive:"8-bit像素艺术风格，方块像素构成，复古游戏感，有限色板，像素化细节，怀旧游戏美学，8K高清",positiveEn:"8-bit pixel art style, blocky pixel composition, retro game feel, limited color palette, pixelated details, nostalgic game aesthetic, 8K ultra HD",negative:"水印, 写实照片, 油画, 平滑渐变, 3D渲染",negativeEn:"watermark, photorealistic, oil painting, smooth gradient, 3D render"},
+{code:"24",cat:"general",catLabel:"通用插画",name:"暗黑哥特风",nameEn:"Dark Gothic Style",desc:"暗黑哥特，深色调，神秘氛围，建筑尖拱",scene:"暗黑主题、神秘插画",image:"images/23.jpg",positive:"暗黑哥特风格，深色调，神秘氛围，哥特建筑尖拱，烛光阴影，宗教元素，阴郁美学，8K高清",positiveEn:"dark gothic style, deep dark tones, mysterious atmosphere, gothic architecture pointed arches, candlelight shadows, religious elements, gloomy aesthetic, 8K ultra HD",negative:"水印, 明亮色调, 高饱和, 可爱风格, 极简",negativeEn:"watermark, bright tones, high saturation, cute style, minimalist"},
+{code:"25",cat:"general",catLabel:"通用插画",name:"孟菲斯设计风",nameEn:"Memphis Design Style",desc:"孟菲斯设计，几何图形，撞色，活泼图案",scene:"潮流海报、装饰插画",image:"images/24.jpg",positive:"孟菲斯Memphis设计风格，几何图形拼接，大胆撞色，活泼图案，波浪线条，80年代设计美学，8K高清",positiveEn:"Memphis design style, geometric shape mosaic, bold color clashing, playful patterns, wavy lines, 80s design aesthetic, 8K ultra HD",negative:"水印, 写实, 油画, 低饱和, 极简",negativeEn:"watermark, photorealistic, oil painting, low saturation, minimalist"},
+{code:"26",cat:"general",catLabel:"通用插画",name:"超现实主义",nameEn:"Surrealism Style",desc:"超现实场景，梦境构图，不合理元素，奇幻氛围",scene:"概念艺术、奇幻插画",image:"images/25.jpg",positive:"超现实主义风格，梦境般构图，不合理元素组合，奇幻氛围，视觉错觉，达利式意象，8K高清",positiveEn:"surrealism style, dreamlike composition, illogical element combinations, fantasy atmosphere, visual illusions, Dali-esque imagery, 8K ultra HD",negative:"水印, 写实照片, 日常场景, 极简, 低饱和",negativeEn:"watermark, photorealistic, everyday scene, minimalist, low saturation"},
+{code:"27",cat:"general",catLabel:"通用插画",name:"国潮插画风",nameEn:"Chinese Trendy Illustration",desc:"国潮风格，传统元素，现代构图，撞色",scene:"国潮海报、文化插画",image:"images/26.jpg",positive:"国潮插画风格，中国传统元素，现代构图，大胆撞色，祥云纹样，潮流文化，东方美学，8K高清",positiveEn:"Chinese trendy illustration style, traditional Chinese elements, modern composition, bold color clashing, auspicious cloud patterns, trendy culture, Eastern aesthetics, 8K ultra HD",negative:"水印, 西方写实, 油画, 极简, 低饱和",negativeEn:"watermark, Western realism, oil painting, minimalist, low saturation"},
+{code:"28",cat:"general",catLabel:"通用插画",name:"3D渲染风格",nameEn:"3D Render Style",desc:"3D渲染，立体光影，材质质感，干净背景",scene:"产品展示、概念设计",image:"images/27.jpg",positive:"3D渲染风格，立体光影，真实材质质感，干净背景，柔和环境光，产品级渲染，8K高清",positiveEn:"3D render style, dimensional lighting, realistic material texture, clean background, soft ambient lighting, product-grade rendering, 8K ultra HD",negative:"水印, 2D扁平, 油画, 线稿, 低饱和",negativeEn:"watermark, 2D flat, oil painting, line art, low saturation"},
+{code:"29",cat:"general",catLabel:"通用插画",name:"故障艺术风",nameEn:"Glitch Art Style",desc:"故障艺术，画面撕裂，RGB偏移，数字噪点",scene:"科技主题、潮流海报",image:"images/28.jpg",positive:"故障艺术glitch风格，画面撕裂效果，RGB色彩偏移，数字噪点，信号干扰，数字美学，8K高清",positiveEn:"glitch art style, screen tearing effect, RGB color shift, digital noise, signal interference, digital aesthetic, 8K ultra HD",negative:"水印, 干净画面, 油画, 写实, 低饱和",negativeEn:"watermark, clean image, oil painting, photorealistic, low saturation"},
+{code:"30",cat:"general",catLabel:"通用插画",name:"剪纸拼贴风",nameEn:"Paper Cut Collage",desc:"剪纸拼贴，层叠纸张，阴影，手工质感",scene:"装饰插画、节日海报",image:"images/29.jpg",positive:"剪纸拼贴风格，层叠纸张效果，柔和阴影，手工质感，有限色彩，纸艺美学，8K高清",positiveEn:"paper cut collage style, layered paper effect, soft shadows, handmade texture, limited colors, paper art aesthetic, 8K ultra HD",negative:"水印, 3D渲染, 油画, 写实, 高饱和",negativeEn:"watermark, 3D render, oil painting, photorealistic, high saturation"},
+{code:"31",cat:"general",catLabel:"通用插画",name:"等距轴测风",nameEn:"Isometric Style",desc:"等距轴测视角，2.5D，几何构成，干净线条",scene:"城市插画、信息图",image:"images/30.jpg",positive:"等距轴测isometric风格，2.5D视角，几何构成，干净线条，有限色彩，城市微缩模型感，8K高清",positiveEn:"isometric style, 2.5D perspective, geometric composition, clean lines, limited colors, miniature city model feel, 8K ultra HD",negative:"水印, 写实照片, 油画, 透视视角, 高饱和",negativeEn:"watermark, photorealistic, oil painting, perspective view, high saturation"},
+{code:"32",cat:"general",catLabel:"通用插画",name:"霓虹赛博朋克",nameEn:"Neon Cyberpunk",desc:"霓虹赛博朋克，雨夜都市，全息投影，高科技",scene:"科幻城市、未来视觉",image:"images/31.jpg",positive:"霓虹赛博朋克风格，雨夜都市，全息投影广告，高科技建筑，霓虹灯光反射，未来感，8K高清",positiveEn:"neon cyberpunk style, rainy night city, holographic projection ads, high-tech architecture, neon light reflections, futuristic feel, 8K ultra HD",negative:"水印, 日光场景, 古典建筑, 低饱和, 写实",negativeEn:"watermark, daylight scene, classical architecture, low saturation, photorealistic"},
+{code:"33",cat:"general",catLabel:"通用插画",name:"治愈系手绘",nameEn:"Healing Hand-drawn",desc:"治愈系手绘，温暖色调，柔和线条，可爱元素",scene:"生活插画、治愈海报",image:"images/32.jpg",positive:"治愈系手绘风格，温暖色调，柔和线条，可爱元素，日常场景，温暖治愈氛围，手绘感，8K高清",positiveEn:"healing hand-drawn style, warm color tones, soft lines, cute elements, everyday scenes, warm healing atmosphere, hand-drawn feel, 8K ultra HD",negative:"水印, 暗黑风格, 3D渲染, 高饱和, 写实",negativeEn:"watermark, dark style, 3D render, high saturation, photorealistic"},
+{code:"34",cat:"general",catLabel:"通用插画",name:"高级灰调",nameEn:"Premium Gray Tone",desc:"高级灰调，低饱和，克制色彩，质感光影",scene:"时尚摄影、产品展示",image:"images/33.jpg",positive:"高级灰调风格，低饱和度，克制色彩，质感光影，高级感构图，时尚摄影美学，8K高清",positiveEn:"premium gray tone style, low saturation, restrained colors, textured lighting, premium composition, fashion photography aesthetic, 8K ultra HD",negative:"水印, 高饱和, 艳丽色彩, 暗黑, 可爱风格",negativeEn:"watermark, high saturation, vivid colors, dark, cute style"},
+{code:"35",cat:"general",catLabel:"通用插画",name:"漫画分镜风",nameEn:"Comic Panel Style",desc:"漫画分镜，速度线，对话框，黑白网点",scene:"故事插画、漫画海报",image:"images/34.jpg",positive:"漫画分镜风格，速度线效果，对话框，黑白网点，分镜构图，日式漫画美学，8K高清",positiveEn:"comic panel style, speed line effects, speech bubbles, black and white screentone, panel composition, Japanese manga aesthetic, 8K ultra HD",negative:"水印, 油画, 3D渲染, 写实, 高饱和",negativeEn:"watermark, oil painting, 3D render, photorealistic, high saturation"},
+{code:"36",cat:"general",catLabel:"通用插画",name:"极光梦幻风",nameEn:"Aurora Dreamy Style",desc:"极光色彩，梦幻渐变，星空，柔和光晕",scene:"梦幻风景、治愈插画",image:"images/35.jpg",positive:"极光梦幻风格，极光色彩渐变，星空背景，柔和光晕，梦幻氛围，自然奇观，8K高清",positiveEn:"aurora dreamy style, aurora color gradient, starry sky background, soft glow, dreamy atmosphere, natural wonder, 8K ultra HD",negative:"水印, 暗黑, 高饱和, 写实, 城市场景",negativeEn:"watermark, dark, high saturation, photorealistic, urban scene"},
+{code:"37",cat:"general",catLabel:"通用插画",name:"复古美式插画",nameEn:"Vintage American Illustration",desc:"复古美式插画，50年代风格，暖色调，广告画",scene:"复古海报、美式插画",image:"images/36.jpg",positive:"复古美式插画风格，50年代设计，暖色调，广告画质感，复古字体，美式怀旧，8K高清",positiveEn:"vintage American illustration style, 50s design, warm color tones, advertising poster texture, retro typography, American nostalgia, 8K ultra HD",negative:"水印, 现代设计, 高饱和, 暗黑, 极简",negativeEn:"watermark, modern design, high saturation, dark, minimalist"},
+{code:"38",cat:"general",catLabel:"通用插画",name:"9:16竖屏扁平矢量",nameEn:"9:16 Vertical Flat Vector",desc:"竖屏扁平矢量城市旅行海报，大色块，几何构成",scene:"手机壁纸、旅行海报",image:"images/37.jpg",positive:"9:16竖屏扁平矢量城市旅行海报，大色块扁平化，几何构成，干净线条，有限色彩，城市风景，8K高清",positiveEn:"9:16 vertical flat vector city travel poster, large color blocks flat design, geometric composition, clean lines, limited colors, urban landscape, 8K ultra HD",negative:"水印, 写实照片, 油画, 3D渲染, 高饱和",negativeEn:"watermark, photorealistic, oil painting, 3D render, high saturation"},
+{code:"S01",cat:"arch",catLabel:"建筑室内",name:"建筑线稿渲染",nameEn:"Architectural Line Render",desc:"建筑线稿+淡彩渲染，精准线条，空间透视",scene:"建筑方案、空间分析",image:"images/38.jpg",positive:"建筑线稿渲染风格，精准建筑线条，淡彩渲染，空间透视，结构清晰，专业建筑制图感，8K高清",positiveEn:"architectural line render style, precise architectural lines, light color rendering, spatial perspective, clear structure, professional architectural drawing feel, 8K ultra HD",negative:"水印, 写实照片, 油画, 高饱和, 可爱风格",negativeEn:"watermark, photorealistic, oil painting, high saturation, cute style"},
+{code:"S02",cat:"arch",catLabel:"建筑室内",name:"室内效果图写实",nameEn:"Interior Photorealistic",desc:"室内效果图写实渲染，真实材质，光影氛围",scene:"室内设计、空间展示",image:"images/39.jpg",positive:"室内效果图写实渲染风格，真实材质纹理，自然光影氛围，空间感强，家具细节，专业室内设计感，8K高清",positiveEn:"interior photorealistic render style, realistic material texture, natural lighting atmosphere, strong spatial sense, furniture details, professional interior design feel, 8K ultra HD",negative:"水印, 线稿, 油画, 扁平, 高饱和",negativeEn:"watermark, line art, oil painting, flat, high saturation"},
+{code:"S03",cat:"arch",catLabel:"建筑室内",name:"SU白模渲染",nameEn:"SU White Model Render",desc:"SketchUp白模渲染，纯白材质，光影分析，空间结构",scene:"建筑方案、体量分析",image:"images/40.jpg",positive:"SketchUp白模渲染风格，纯白材质，精准光影分析，空间结构清晰，体块构成，建筑方案感，8K高清",positiveEn:"SketchUp white model render style, pure white materials, precise lighting analysis, clear spatial structure, massing composition, architectural scheme feel, 8K ultra HD",negative:"水印, 彩色材质, 油画, 写实, 高饱和",negativeEn:"watermark, colored materials, oil painting, photorealistic, high saturation"},
+{code:"S04",cat:"arch",catLabel:"建筑室内",name:"2.5D轴测分析图",nameEn:"2.5D Axonometric Analysis",desc:"2.5D轴测分析图，爆炸图，构件拆解，标注清晰",scene:"建筑分析、方案展示",image:"images/41.jpg",positive:"2.5D轴测分析图风格，爆炸图构件拆解，标注清晰，轴测视角，结构分析，专业建筑分析图感，8K高清",positiveEn:"2.5D axonometric analysis style, exploded view component breakdown, clear annotations, axonometric perspective, structural analysis, professional architectural analysis feel, 8K ultra HD",negative:"水印, 写实照片, 油画, 透视视角, 高饱和",negativeEn:"watermark, photorealistic, oil painting, perspective view, high saturation"},
+{code:"SK01",cat:"skill",catLabel:"创意SKILL",name:"黑白人像重构",nameEn:"B&W Portrait Reconstruction",desc:"黑白人像+几何重构，高对比，艺术感",scene:"人像、艺术海报",image:"images/42.jpg",positive:"黑白人像重构风格，高对比黑白，几何切割重构，艺术感构图，人像剪影，现代艺术，8K高清",positiveEn:"black and white portrait reconstruction style, high contrast B&W, geometric cutting reconstruction, artistic composition, portrait silhouette, modern art, 8K ultra HD",negative:"水印, 彩色, 低对比, 写实照片, 可爱风格",negativeEn:"watermark, color, low contrast, photorealistic, cute style"},
+{code:"SK02",cat:"skill",catLabel:"创意SKILL",name:"双重曝光",nameEn:"Double Exposure",desc:"双重曝光效果，人像+风景叠加，梦幻氛围",scene:"人像、艺术海报",image:"images/43.jpg",positive:"双重曝光风格，人像与风景叠加融合，梦幻氛围，柔和过渡，自然元素，艺术摄影感，8K高清",positiveEn:"double exposure style, portrait and landscape overlay fusion, dreamy atmosphere, soft transitions, natural elements, artistic photography feel, 8K ultra HD",negative:"水印, 单张照片, 高饱和, 写实, 暗黑",negativeEn:"watermark, single photo, high saturation, photorealistic, dark"},
+{code:"SK03",cat:"skill",catLabel:"创意SKILL",name:"低多边形人像",nameEn:"Low Poly Portrait",desc:"低多边形人像，三角面构成，几何艺术",scene:"人像、概念海报",image:"images/44.jpg",positive:"低多边形人像风格，三角面构成，几何艺术，有限色彩，人像重构，现代设计感，8K高清",positiveEn:"low poly portrait style, triangular facet composition, geometric art, limited colors, portrait reconstruction, modern design feel, 8K ultra HD",negative:"水印, 写实照片, 油画, 平滑渐变, 高饱和",negativeEn:"watermark, photorealistic, oil painting, smooth gradient, high saturation"},
+{code:"SK04",cat:"skill",catLabel:"创意SKILL",name:"蒸汽波人像",nameEn:"Vaporwave Portrait",desc:"蒸汽波风格人像，粉紫渐变，复古元素，霓虹",scene:"潮流人像、复古海报",image:"images/45.jpg",positive:"蒸汽波人像风格，粉紫渐变色彩，复古电脑元素，霓虹灯光，80年代复古未来，人像融合，8K高清",positiveEn:"vaporwave portrait style, pink-purple gradient colors, retro computer elements, neon lights, 80s retro-futuristic, portrait fusion, 8K ultra HD",negative:"水印, 自然风景, 油画, 写实, 低饱和",negativeEn:"watermark, natural landscape, oil painting, photorealistic, low saturation"},
+{code:"SK05",cat:"skill",catLabel:"创意SKILL",name:"故障艺术人像",nameEn:"Glitch Art Portrait",desc:"故障艺术人像，画面撕裂，RGB偏移，数字噪点",scene:"科技人像、潮流海报",image:"images/46.jpg",positive:"故障艺术人像风格，画面撕裂效果，RGB色彩偏移，数字噪点，信号干扰，人像重构，数字美学，8K高清",positiveEn:"glitch art portrait style, screen tearing effect, RGB color shift, digital noise, signal interference, portrait reconstruction, digital aesthetic, 8K ultra HD",negative:"水印, 干净画面, 油画, 写实, 低饱和",negativeEn:"watermark, clean image, oil painting, photorealistic, low saturation"},
+{code:"SK06",cat:"skill",catLabel:"创意SKILL",name:"波普艺术人像",nameEn:"Pop Art Portrait",desc:"波普艺术人像，高饱和撞色，半调网点，漫画风格",scene:"潮流人像、艺术海报",image:"images/47.jpg",positive:"波普艺术人像风格，高饱和撞色，半调网点纹理，漫画风格线条，大胆色彩，人像艺术化，8K高清",positiveEn:"pop art portrait style, high saturation contrasting colors, halftone dot texture, comic style lines, bold colors, portrait artistic, 8K ultra HD",negative:"水印, 低饱和, 油画, 写实照片, 极简",negativeEn:"watermark, low saturation, oil painting, photorealistic, minimalist"},
+{code:"SK07",cat:"skill",catLabel:"创意SKILL",name:"赛博朋克人像",nameEn:"Cyberpunk Portrait",desc:"赛博朋克人像，霓虹灯光，机械元素，未来感",scene:"科幻人像、未来海报",image:"images/48.jpg",positive:"赛博朋克人像风格，霓虹灯光，机械义体元素，未来感城市背景，高对比光影，科幻氛围，8K高清",positiveEn:"cyberpunk portrait style, neon lights, mechanical body elements, futuristic city background, high contrast lighting, sci-fi atmosphere, 8K ultra HD",negative:"水印, 日光场景, 古典建筑, 低饱和, 写实",negativeEn:"watermark, daylight scene, classical architecture, low saturation, photorealistic"},
+{code:"SK08",cat:"skill",catLabel:"创意SKILL",name:"极简黑白",nameEn:"Minimal B&W",desc:"极简黑白，大量留白，单一主体，克制构图",scene:"概念海报、艺术摄影",image:"images/49.jpg",positive:"极简黑白风格，大量留白，单一主体，克制构图，高对比黑白，现代极简美学，8K高清",positiveEn:"minimal black and white style, generous negative space, single subject, restrained composition, high contrast B&W, modern minimalist aesthetic, 8K ultra HD",negative:"水印, 彩色, 复杂细节, 高饱和, 可爱风格",negativeEn:"watermark, color, complex details, high saturation, cute style"},
+{code:"SK09",cat:"skill",catLabel:"创意SKILL",name:"复古胶片人像",nameEn:"Vintage Film Portrait",desc:"复古胶片人像，颗粒感，漏光，褪色，怀旧",scene:"人像、怀旧海报",image:"images/50.jpg",positive:"复古胶片人像风格，明显颗粒感，漏光效果，褪色色彩，怀旧氛围，老照片质感，8K高清",positiveEn:"vintage film portrait style, prominent grain, light leak effect, faded colors, nostalgic atmosphere, old photo texture, 8K ultra HD",negative:"水印, 数码清晰, 高饱和, 现代滤镜, 锐利",negativeEn:"watermark, digital clarity, high saturation, modern filter, sharp"},
+{code:"SK10",cat:"skill",catLabel:"创意SKILL",name:"水彩泼墨",nameEn:"Watercolor Splash",desc:"水彩泼墨效果，色彩晕染，流动感，艺术抽象",scene:"抽象艺术、装饰海报",image:"images/51.jpg",positive:"水彩泼墨风格，色彩晕染流动，泼墨效果，艺术抽象，柔和过渡，水彩质感，8K高清",positiveEn:"watercolor splash style, color bleeding flow, ink splash effect, artistic abstract, soft transitions, watercolor texture, 8K ultra HD",negative:"水印, 油画厚涂, 高饱和, 锐利边缘, 写实",negativeEn:"watermark, impasto oil painting, high saturation, sharp edges, photorealistic"},
+{code:"SK11",cat:"skill",catLabel:"创意SKILL",name:"金属质感",nameEn:"Metallic Texture",desc:"金属质感渲染，反光，高光，工业感",scene:"产品展示、工业海报",image:"images/52.jpg",positive:"金属质感风格，金属反光，高光反射，工业感，材质细节，冷色调，产品级渲染，8K高清",positiveEn:"metallic texture style, metallic reflection, highlight reflections, industrial feel, material details, cool tones, product-grade rendering, 8K ultra HD",negative:"水印, 水彩, 油画, 低饱和, 可爱风格",negativeEn:"watermark, watercolor, oil painting, low saturation, cute style"},
+{code:"SK12",cat:"skill",catLabel:"创意SKILL",name:"玻璃拟态",nameEn:"Glassmorphism",desc:"玻璃拟态效果，半透明，模糊背景，磨砂质感",scene:"UI设计、现代海报",image:"images/53.jpg",positive:"玻璃拟态风格，半透明玻璃效果，模糊背景，磨砂质感，柔和光影，现代UI美学，8K高清",positiveEn:"glassmorphism style, semi-transparent glass effect, blurred background, frosted texture, soft lighting, modern UI aesthetic, 8K ultra HD",negative:"水印, 油画, 写实, 高饱和, 暗黑",negativeEn:"watermark, oil painting, photorealistic, high saturation, dark"},
+{code:"SK13",cat:"skill",catLabel:"创意SKILL",name:"霓虹光绘",nameEn:"Neon Light Painting",desc:"霓虹光绘效果，光线轨迹，长曝光，夜色",scene:"夜景、艺术摄影",image:"images/54.jpg",positive:"霓虹光绘风格，光线轨迹，长曝光效果，霓虹色彩，夜色背景，光绘艺术，8K高清",positiveEn:"neon light painting style, light trails, long exposure effect, neon colors, night background, light painting art, 8K ultra HD",negative:"水印, 日光场景, 油画, 低饱和, 写实",negativeEn:"watermark, daylight scene, oil painting, low saturation, photorealistic"},
+{code:"SK14",cat:"skill",catLabel:"创意SKILL",name:"超现实拼贴",nameEn:"Surreal Collage",desc:"超现实拼贴，不相关元素组合，梦境感，复古",scene:"概念艺术、拼贴海报",image:"images/55.jpg",positive:"超现实拼贴风格，不相关元素组合，梦境感构图，复古杂志拼贴，超现实氛围，8K高清",positiveEn:"surreal collage style, unrelated element combinations, dreamlike composition, vintage magazine collage, surreal atmosphere, 8K ultra HD",negative:"水印, 单张照片, 写实, 高饱和, 极简",negativeEn:"watermark, single photo, photorealistic, high saturation, minimalist"},
+{code:"SK15",cat:"skill",catLabel:"创意SKILL",name:"像素风城市",nameEn:"Pixel Art City",desc:"像素风城市，8-bit像素，复古游戏，城市夜景",scene:"游戏插画、复古海报",image:"images/56.jpg",positive:"像素风城市风格，8-bit像素构成，复古游戏感，城市夜景，有限色板，像素化细节，8K高清",positiveEn:"pixel art city style, 8-bit pixel composition, retro game feel, city nightscape, limited color palette, pixelated details, 8K ultra HD",negative:"水印, 写实照片, 油画, 平滑渐变, 3D渲染",negativeEn:"watermark, photorealistic, oil painting, smooth gradient, 3D render"},
+{code:"SK16",cat:"skill",catLabel:"创意SKILL",name:"水墨城市",nameEn:"Ink Wash City",desc:"水墨城市风景，水墨晕染，留白，东方意境",scene:"城市风景、国风海报",image:"images/57.jpg",positive:"水墨城市风格，水墨晕染效果，大量留白，东方意境，城市建筑，水墨质感，8K高清",positiveEn:"ink wash city style, ink wash bleeding effect, generous negative space, Eastern poetic mood, urban architecture, ink wash texture, 8K ultra HD",negative:"水印, 油画, 高饱和, 西方写实, 3D渲染",negativeEn:"watermark, oil painting, high saturation, Western realism, 3D render"},
+{code:"SK17",cat:"skill",catLabel:"创意SKILL",name:"复古科幻",nameEn:"Retro Sci-Fi",desc:"复古科幻风格，50年代未来感，暖色调，原子时代",scene:"科幻海报、复古插画",image:"images/58.jpg",positive:"复古科幻风格，50年代未来感，暖色调，原子时代设计，复古火箭，科幻怀旧，8K高清",positiveEn:"retro sci-fi style, 50s futuristic feel, warm color tones, atomic age design, retro rockets, sci-fi nostalgia, 8K ultra HD",negative:"水印, 现代科技, 高饱和, 暗黑, 写实",negativeEn:"watermark, modern tech, high saturation, dark, photorealistic"},
+{code:"SK18",cat:"skill",catLabel:"创意SKILL",name:"梦幻柔焦",nameEn:"Dreamy Soft Focus",desc:"梦幻柔焦效果，柔和光晕，低对比，浪漫氛围",scene:"人像、梦幻海报",image:"images/59.jpg",positive:"梦幻柔焦风格，柔和光晕效果，低对比，浪漫氛围，柔焦镜头，梦幻色彩，8K高清",positiveEn:"dreamy soft focus style, soft glow effect, low contrast, romantic atmosphere, soft focus lens, dreamy colors, 8K ultra HD",negative:"水印, 高对比, 锐利, 暗黑, 写实",negativeEn:"watermark, high contrast, sharp, dark, photorealistic"},
+{code:"SK19",cat:"skill",catLabel:"创意SKILL",name:"几何抽象",nameEn:"Geometric Abstract",desc:"几何抽象艺术，形状构成，色彩块面，包豪斯",scene:"抽象艺术、装饰海报",image:"images/60.jpg",positive:"几何抽象风格，几何形状构成，色彩块面，包豪斯美学，抽象构图，现代艺术，8K高清",positiveEn:"geometric abstract style, geometric shape composition, color blocks, Bauhaus aesthetic, abstract composition, modern art, 8K ultra HD",negative:"水印, 写实, 油画, 复杂细节, 高饱和",negativeEn:"watermark, photorealistic, oil painting, complex details, high saturation"},
+{code:"SK20",cat:"skill",catLabel:"创意SKILL",name:"电影海报风",nameEn:"Movie Poster Style",desc:"电影海报风格，标题排版，人物剪影，氛围光影",scene:"电影海报、宣传设计",image:"images/61.jpg",positive:"电影海报风格，大气标题排版，人物剪影，氛围光影，电影感构图，宣传设计感，8K高清",positiveEn:"movie poster style, grand title typography, character silhouette, atmospheric lighting, cinematic composition, promotional design feel, 8K ultra HD",negative:"水印, 极简, 低饱和, 可爱风格, 写实",negativeEn:"watermark, minimalist, low saturation, cute style, photorealistic"},
+{code:"SK21",cat:"skill",catLabel:"创意SKILL",name:"暗黑工业风",nameEn:"Dark Industrial",desc:"暗黑工业风格，金属质感，冷色调，机械元素",scene:"工业海报、科技视觉",image:"images/62.jpg",positive:"暗黑工业风格，金属质感，冷色调，机械元素，工业场景，粗粝质感，暗黑氛围，8K高清",positiveEn:"dark industrial style, metallic texture, cool tones, mechanical elements, industrial scene, rough texture, dark atmosphere, 8K ultra HD",negative:"水印, 明亮色调, 高饱和, 可爱风格, 水彩",negativeEn:"watermark, bright tones, high saturation, cute style, watercolor"},
+{code:"SK22",cat:"skill",catLabel:"创意SKILL",name:"日系漫画风",nameEn:"Japanese Manga Style",desc:"日系漫画风格，黑白网点，速度线，分镜构图",scene:"漫画插画、故事海报",image:"images/63.jpg",positive:"日系漫画风格，黑白网点，速度线效果，分镜构图，漫画人物，日式漫画美学，8K高清",positiveEn:"Japanese manga style, black and white screentone, speed line effects, panel composition, manga characters, Japanese manga aesthetic, 8K ultra HD",negative:"水印, 油画, 3D渲染, 写实, 高饱和",negativeEn:"watermark, oil painting, 3D render, photorealistic, high saturation"},
+{code:"SK23",cat:"skill",catLabel:"创意SKILL",name:"油画厚涂",nameEn:"Impasto Oil Painting",desc:"油画厚涂风格，明显笔触，颜料肌理，色彩丰富",scene:"艺术插画、风景海报",image:"images/64.jpg",positive:"油画厚涂风格，明显笔触肌理，颜料堆积，色彩丰富，手绘油画感，艺术质感，8K高清",positiveEn:"impasto oil painting style, prominent brushstroke texture, paint buildup, rich colors, hand-painted oil painting feel, artistic texture, 8K ultra HD",negative:"水印, 水彩, 扁平插画, 照片写实, 数字光滑",negativeEn:"watermark, watercolor, flat illustration, photorealistic, digital smooth"},
+{code:"SK24",cat:"skill",catLabel:"创意SKILL",name:"极简线条",nameEn:"Minimal Line Art",desc:"极简线条风格，单一颜色线条，大量留白，简约",scene:"概念海报、装饰插画",image:"images/65.jpg",positive:"极简线条风格，单一颜色流畅线条，大量留白，简约构图，线条艺术，现代极简美学，8K高清",positiveEn:"minimal line art style, single color fluid lines, generous negative space, minimalist composition, line art, modern minimalist aesthetic, 8K ultra HD",negative:"水印, 彩色, 复杂细节, 油画, 高饱和",negativeEn:"watermark, color, complex details, oil painting, high saturation"},
+{code:"SK25",cat:"skill",catLabel:"创意SKILL",name:"复古旅行海报",nameEn:"Vintage Travel Poster",desc:"复古旅行海报风格，扁平插画，有限色彩，复古字体",scene:"旅行海报、城市宣传",image:"images/66.jpg",positive:"复古旅行海报风格，扁平插画，有限色彩，复古字体排版，城市地标，旅行宣传感，8K高清",positiveEn:"vintage travel poster style, flat illustration, limited colors, retro typography, city landmarks, travel promotional feel, 8K ultra HD",negative:"水印, 写实照片, 油画, 高饱和, 极简",negativeEn:"watermark, photorealistic, oil painting, high saturation, minimalist"},
+{code:"SK26",cat:"skill",catLabel:"创意SKILL",name:"双联老城木刻",nameEn:"Diptych Old Town Woodcut",desc:"双联画木刻风格，黑白木刻，老城建筑，对比构图",scene:"城市风景、艺术海报",image:"images/67.jpg",positive:"双联老城木刻风格，黑白木刻质感，老城建筑，对比构图，木刻线条，艺术感，8K高清",positiveEn:"diptych old town woodcut style, black and white woodcut texture, old town architecture, contrasting composition, woodcut lines, artistic feel, 8K ultra HD",negative:"水印, 彩色, 油画, 写实, 高饱和",negativeEn:"watermark, color, oil painting, photorealistic, high saturation"},
+{code:"SK27",cat:"skill",catLabel:"创意SKILL",name:"地域文化大字海报",nameEn:"Regional Culture Typography Poster",desc:"地域文化大字海报，超大字体，地域元素，撞色",scene:"文化海报、城市宣传",image:"images/68.jpg",positive:"地域文化大字海报风格，超大字体排版，地域文化元素，大胆撞色，文化宣传感，8K高清",positiveEn:"regional culture typography poster style, oversized typography, regional cultural elements, bold color clashing, cultural promotional feel, 8K ultra HD",negative:"水印, 极简, 低饱和, 写实照片, 可爱风格",negativeEn:"watermark, minimalist, low saturation, photorealistic, cute style"},
+{code:"SK28",cat:"skill",catLabel:"创意SKILL",name:"中山岐江公园复古水彩",nameEn:"Zhongshan Qijiang Park Retro Watercolor",desc:"中山岐江公园复古水彩，水彩晕染，怀旧色调，公园风景",scene:"城市风景、旅行海报",image:"images/69.jpg",positive:"中山岐江公园复古水彩风格，水彩晕染效果，怀旧色调，公园风景，城市记忆，水彩质感，8K高清",positiveEn:"Zhongshan Qijiang Park retro watercolor style, watercolor bleeding effect, nostalgic color tones, park landscape, city memory, watercolor texture, 8K ultra HD",negative:"水印, 油画, 高饱和, 写实, 暗黑",negativeEn:"watermark, oil painting, high saturation, photorealistic, dark"},
+{code:"SK29",cat:"skill",catLabel:"创意SKILL",name:"老街招牌记忆贴纸",nameEn:"Old Street Sign Memory Sticker",desc:"老街招牌记忆贴纸，复古招牌，贴纸风格，怀旧",scene:"城市记忆、复古海报",image:"images/70.jpg",positive:"老街招牌记忆贴纸风格，复古招牌元素，贴纸质感，怀旧氛围，老街记忆，复古美学，8K高清",positiveEn:"old street sign memory sticker style, vintage sign elements, sticker texture, nostalgic atmosphere, old street memory, vintage aesthetic, 8K ultra HD",negative:"水印, 现代设计, 高饱和, 写实, 极简",negativeEn:"watermark, modern design, high saturation, photorealistic, minimalist"},
+{code:"SK30",cat:"skill",catLabel:"创意SKILL",name:"复古城市等轴旅行海报",nameEn:"Retro City Isometric Travel Poster",desc:"复古城市等轴旅行海报，等轴视角，扁平插画，复古色调",scene:"旅行海报、城市宣传",image:"images/71.jpg",positive:"复古城市等轴旅行海报风格，等轴视角，扁平插画，复古色调，城市建筑，旅行宣传感，8K高清",positiveEn:"retro city isometric travel poster style, isometric perspective, flat illustration, retro color tones, urban architecture, travel promotional feel, 8K ultra HD",negative:"水印, 写实照片, 油画, 高饱和, 透视视角",negativeEn:"watermark, photorealistic, oil painting, high saturation, perspective view"},
+{code:"SK31",cat:"skill",catLabel:"创意SKILL",name:"三重音色城市建筑矢量",nameEn:"Triple Tone City Architecture Vector",desc:"三重音色城市建筑矢量，三种颜色，矢量插画，城市建筑",scene:"城市插画、建筑海报",image:"images/72.jpg",positive:"三重音色城市建筑矢量风格，三种有限颜色，矢量插画，城市建筑，几何构成，现代设计感，8K高清",positiveEn:"triple tone city architecture vector style, three limited colors, vector illustration, urban architecture, geometric composition, modern design feel, 8K ultra HD",negative:"水印, 写实照片, 油画, 高饱和, 复杂细节",negativeEn:"watermark, photorealistic, oil painting, high saturation, complex details"},
+{code:"SK32",cat:"skill",catLabel:"创意SKILL",name:"极简撕纸Zine风景海报",nameEn:"Minimal Torn Paper Zine Landscape",desc:"极简撕纸Zine风景海报，撕纸效果，Zine排版，风景",scene:"Zine海报、风景插画",image:"images/73.jpg",positive:"极简撕纸Zine风景海报风格，撕纸效果，Zine杂志排版，风景元素，极简构图，独立出版美学，8K高清",positiveEn:"minimal torn paper zine landscape poster style, torn paper effect, zine magazine layout, landscape elements, minimalist composition, indie publishing aesthetic, 8K ultra HD",negative:"水印, 写实照片, 油画, 高饱和, 复杂细节",negativeEn:"watermark, photorealistic, oil painting, high saturation, complex details"},
+{code:"SK33",cat:"skill",catLabel:"创意SKILL",name:"单色印刷编辑海报",nameEn:"Monochrome Editorial Print",desc:"单色印刷编辑海报，单色调，印刷质感，编辑排版",scene:"编辑海报、文化宣传",image:"images/81.jpg",positive:"单色印刷编辑海报风格，单一颜色印刷，印刷质感，编辑排版，纸张纹理，现代编辑美学，8K高清",positiveEn:"monochrome editorial print style, single color printing, print texture, editorial layout, paper texture, modern editorial aesthetic, 8K ultra HD",negative:"水印, 彩色, 高饱和, 写实照片, 3D渲染",negativeEn:"watermark, color, high saturation, photorealistic, 3D render"},
+{code:"SK34",cat:"skill",catLabel:"创意SKILL",name:"喜茶风儿童简笔画海报",nameEn:"Heytea Style Children's Illustration",desc:"喜茶风儿童简笔画，圆润线条，明亮配色，可爱童趣",scene:"儿童插画、品牌海报",image:"images/74.jpg",positive:"喜茶风儿童简笔画海报风格，圆润可爱线条，明亮配色，简单扁平形状，可爱卡通形象，柔和圆角，清新背景，童趣氛围，8K高清",positiveEn:"Heytea style children's illustration poster, round cute line art, bright cheerful colors, simple flat shapes, playful composition, cute cartoon character, soft rounded corners, minimal clean pastel background, cheerful warm atmosphere, poster format, 8K ultra HD",negative:"水印, 暗黑, 高饱和, 写实, 油画",negativeEn:"watermark, dark, high saturation, photorealistic, oil painting"},
+{code:"SK35",cat:"skill",catLabel:"创意SKILL",name:"复古物件贴纸写实",nameEn:"Vintage Object Sticker Realistic",desc:"复古物件贴纸写实，旧物件，贴纸风格，做旧质感",scene:"物件插画、复古海报",image:"images/75.jpg",positive:"复古物件贴纸写实风格，旧物件特写，贴纸质感，做旧效果，复古色调，物件细节，怀旧氛围，8K高清",positiveEn:"vintage object sticker realistic style, old object close-up, sticker texture, aged effect, retro color tones, object details, nostalgic atmosphere, 8K ultra HD",negative:"水印, 现代设计, 高饱和, 极简, 写实照片",negativeEn:"watermark, modern design, high saturation, minimalist, photorealistic"},
+{code:"SK36",cat:"skill",catLabel:"创意SKILL",name:"CRT复古像素界面",nameEn:"CRT Retro Pixel Interface",desc:"CRT复古像素界面，扫描线，像素字体，绿色荧光",scene:"科技海报、复古界面",image:"images/76.jpg",positive:"CRT复古像素界面风格，可见扫描线效果，绿色荧光在深色背景，像素字体显示，旧电脑终端美学，8-bit图形，怀旧电子感，CRT屏幕曲率暗角，界面布局，8K高清",positiveEn:"retro CRT computer interface, pixel art style, visible scanlines effect, green phosphor glow on dark black background, pixel font display, old computer terminal aesthetic, 8-bit graphics, nostalgic electronic feel, CRT monitor screen curvature vignette, interface layout with windows buttons and command lines, 8K ultra HD",negative:"水印, 现代UI, 高饱和, 写实, 油画",negativeEn:"watermark, modern UI, high saturation, photorealistic, oil painting"},
+{code:"SK37",cat:"skill",catLabel:"创意SKILL",name:"解构双色调海报",nameEn:"Deconstructed Duotone Poster",desc:"解构主义双色调海报，破碎重组，强烈对比，实验性排版",scene:"实验海报、艺术宣传",image:"images/77.jpg",positive:"解构双色调海报风格，解构主义设计，破碎重组构图，强烈色彩对比，实验性排版，双色调限制，现代艺术感，8K高清",positiveEn:"deconstructed duotone poster style, deconstructivist design, fragmented重组 composition, strong color contrast, experimental typography, duotone limitation, modern artistic feel, 8K ultra HD",negative:"水印, 极简, 低饱和, 写实照片, 可爱风格",negativeEn:"watermark, minimalist, low saturation, photorealistic, cute style"},
+{code:"SK38",cat:"skill",catLabel:"创意SKILL",name:"三重记忆三联画",nameEn:"Triple Memory Triptych",desc:"三重记忆三联画，三格并排，记忆碎片，怀旧叙事",scene:"艺术海报、叙事插画",image:"images/78.jpg",positive:"三重记忆三联画风格，三格竖版并排，怀旧记忆碎片，温暖复古褪色色调，柔焦绘画质感，每格不同记忆场景，色彩情绪统一，感伤安静氛围，8K高清",positiveEn:"triptych three-panel memory painting, three vertical panels side by side separated by thin white gaps, nostalgic memory fragments, warm vintage faded color palette, soft focus painterly style, each panel showing a different memory scene, connected by warm color and mood, sentimental quiet atmosphere, 8K ultra HD",negative:"水印, 单张照片, 高饱和, 写实, 暗黑",negativeEn:"watermark, single photo, high saturation, photorealistic, dark"},
+{code:"SK39",cat:"skill",catLabel:"创意SKILL",name:"梦幻动态杂志风",nameEn:"Dreamy Dynamic Magazine",desc:"梦幻动态杂志封面，柔焦光晕，流动感，时尚排版",scene:"杂志封面、时尚海报",image:"images/79.jpg",positive:"梦幻动态杂志风格，柔焦光晕效果，流动感构图，时尚杂志排版，梦幻色彩，时尚摄影感，8K高清",positiveEn:"dreamy dynamic magazine style, soft glow effect, fluid composition, fashion magazine layout, dreamy colors, fashion photography feel, 8K ultra HD",negative:"水印, 高对比, 锐利, 暗黑, 写实",negativeEn:"watermark, high contrast, sharp, dark, photorealistic"},
+{code:"SK40",cat:"skill",catLabel:"创意SKILL",name:"静谧日常几何叙事插画",nameEn:"Quiet Domestic Geometry Narrative",desc:"静谧日常几何叙事插画，厚重水粉丙烯质感，人物脸部立体感，旧纸张颗粒，无轮廓勾线，低饱和复古色调",scene:"日常人物、家居生活、城市街景",image:"images/80.jpg",positive:"静谧日常几何叙事插画风格，厚重水粉和丙烯颜料质感带可见笔触，人物脸部通过光影色块体现立体感，全局旧纸张颗粒纹理覆盖整个画面，绝对无轮廓勾线，低饱和柔和复古 muted 色调，直接手绘感，柔和自然形态，日常家居场景，温暖安静氛围，8K高清",positiveEn:"quiet domestic geometry narrative illustration, thick gouache and acrylic paint texture with visible brushstrokes, human face depth through light and shadow color blocks, global old paper grain texture over entire image, absolutely no outline lines anywhere, low saturation soft retro muted colors, direct hand-painted feel, soft natural forms, everyday domestic scene, warm and quiet atmosphere, 8K ultra HD",negative:"水印, 轮廓线, 高饱和, 写实照片, 3D渲染",negativeEn:"watermark, outline lines, high saturation, photorealistic, 3D render"},
+{code:"SK41",cat:"skill",catLabel:"创意SKILL",name:"橙线极简编辑插画",nameEn:"Orange Line Minimal Editorial",desc:"《纽约客》风格单格编辑插画，极简细黑墨线，纯白留白，唯一暖橙点缀，tiny人物",scene:"文章配图、公众号配图、概念隐喻",image:"images/82.jpg",positive:"橙线极简编辑插画风格，《纽约客》风格极简编辑插画，细黑墨轮廓线在纯白背景上，大量留白，唯一暖橙色仅用于一个小物体，tiny人物被物体衬托，一个清晰概念，干净稀疏构图，优雅机智杂志编辑插画风格，8K高清",positiveEn:"New Yorker style minimalist editorial line illustration, thin black ink contour lines on pure white background, vast negative space, single warm orange accent color used only for one small object, tiny human figure dwarfed by objects, one clear concept, clean and sparse composition, elegant and witty magazine editorial illustration style, 8K ultra HD",negative:"水印, 彩色, 复杂细节, 油画, 高饱和",negativeEn:"watermark, color, complex details, oil painting, high saturation"},
+{code:"SK42",cat:"skill",catLabel:"创意SKILL",name:"超现实波普拼贴",nameEn:"Surreal Pop Collage",desc:"照片主体去色黑白保留为现实锚，背景巨大平涂色形，唯一不可能巨物，超现实波普拼贴",scene:"照片超现实化、小红书海报",image:"images/83.jpg",positive:"超现实波普拼贴艺术，黑白半调照片人物作为现实锚在左侧，背景巨大扁平几何色形用大胆红蓝黄，唯一单一不可能巨物：悬浮复古电视机在中心，3-5个小重复云形，白色手绘涂鸦轮廓线，明亮大胆波普艺术调色板，超现实和俏皮构图，8K高清",positiveEn:"surreal pop collage art, black and white halftone photo of a man in suit as reality anchor on left, background with giant flat geometric color shapes in bold red blue yellow, one single impossible giant object: a floating vintage television set in center, 3-5 small repeated cloud shapes, white hand-drawn doodle outline lines, bright bold pop art color palette, surreal and playful composition, 8K ultra HD",negative:"水印, 单张照片, 低饱和, 写实, 极简",negativeEn:"watermark, single photo, low saturation, photorealistic, minimalist"},
+{code:"SK43",cat:"skill",catLabel:"创意SKILL",name:"淡彩明信片插画",nameEn:"Soft Watercolor Postcard Illustration",desc:"米白哑光特种纸质感，淡彩水彩明信片插画，保留原景物结构与色彩调性，弱化细节，柔和块面，轻盈水彩层次，自然晕染边缘，大面积留白，底部双行英文排版",scene:"旅行照片、城市街景、建筑、植物、海边、明信片、相册封面、竖版海报",image:"images/93.jpg",positive:"SK43淡彩明信片插画（soft-watercolor-postcard-illustration）。将原图转化为米白哑光特种纸质感、淡彩水彩明信片插画效果。保留原图中主要景物的结构关系和整体色彩调性，弱化复杂背景、杂物、厚重光影和细碎纹理，把景物简化为松弛柔和的块面造型，分层平涂搭配随性淡墨晕染笔触，边缘自然晕开，摒弃生硬轮廓线，只留存景物原生结构神韵。画面大面积留白，主体放置居中或略偏上位置。底部居中排布文字：首行优雅衬线手写英文标题，第二行小号无衬线英文短句。依托米白哑光纸张底色，大面积留白构图，兼具随性水墨气韵与干净克制的学术质感，不添加多余装饰元素。",positiveEn:"SK43 Soft Watercolor Postcard Illustration (soft-watercolor-postcard-illustration). Transform the original image into a soft watercolor postcard illustration on matte off-white specialty paper. Preserve the structural relationships and overall color tonality of the main subjects in the original image, weaken complex backgrounds, clutter, heavy lighting and fine textures, simplify subjects into relaxed soft block shapes, layered flat coloring with casual light ink bleeding brushstrokes, edges naturally bleed out, abandon hard outline lines, only retain the original structural charm of subjects. Large area of negative space in the image, subject placed centered or slightly upper. Text centered at the bottom: first line elegant serif handwritten English title, second line small sans-serif English short sentence. Relying on matte off-white paper background color, large negative space composition, combining casual ink wash charm with clean and restrained academic texture, no extra decorative elements added.",negative:"水印, 高饱和, 锐利轮廓, 写实照片, 复杂背景, 厚重光影",negativeEn:"watermark, high saturation, sharp outline, photorealistic, complex background, heavy lighting"},
+{code:"SK44",cat:"skill",catLabel:"创意SKILL",name:"单色印刷编辑海报",nameEn:"Monocolor Editorial Print (TAN V2)",desc:"双专色孔版印刷risograph编辑海报，做旧纸张褶皱质感，超大粗壮Heavy Condensed Grotesk英文标题视觉主导，丰富Microcopy七层文字层次，双色撞色每版明确角色，单焦点构图+安静留白区，易混词两次错误立即换词",scene:"音乐/演出/文化/民俗海报、单色双色印刷、risograph、做旧纸zine海报、古建/天坛/佛像/岭南/市井/广东食街/岭南建筑",image:"images/94.jpg",positive:"SK44单色印刷编辑海报（mono-color editorial print，TAN固化版V2，Skill: tan-mono-color-print）。双专色孔版印刷risograph编辑海报，≤2个印刷专色，做旧纸张褶皱质感（faint creases、soft wrinkle、subtle stains、略磨损边），超大粗壮Heavy Condensed Grotesk英文大写标题横贯页面上部视觉主导，双色撞色每版明确角色，单一焦点事件+一处安静留白区，丰富Microcopy七层文字层次：①超大标题 ②顶部信息带 ③4个关键词标签 ④5处部位标注带引线 ⑤侧边说明段落 ⑥手写圈注 ⑦底部信息带，25-55%留白，平面前向页面无边框。易混词两次渲染错误立即换更短更常见词。禁止第三色、渐变、矢量扁平、3D、阴影、复古道具堆砌、数字/hex代码入图、水印、角标、AI字样、乱码、二维码、LOGO。",positiveEn:"SK44 Monocolor Editorial Print (mono-color editorial print, TAN curated V2, Skill: tan-mono-color-print). Two-color risograph editorial poster, max 2 printing inks, aged paper with faint creases, soft wrinkles, subtle stains, slightly worn edges. Extremely large, heavy, thick, condensed grotesk uppercase headline dominating the top of the page. Two ink plates with clear roles each. Single focal point + one quiet release zone. Rich microcopy in seven layers: 1) oversized headline 2) top ruled data strip 3) four keyword labels 4) five specimen annotation lines with leader lines 5) side microcopy paragraph 6) handwritten circled note 7) bottom ruled data strip. 25-55% empty paper, flat front-facing page, no frame. Confusing words replaced immediately after two render errors with shorter, more common words. No third ink, gradients, vector flat, 3D, shadows, vintage props, numbers/hex codes in image, watermarks, logos, AI text, gibberish, QR codes.",negative:"第三色, 渐变, 矢量扁平, 3D, 阴影, 复古道具堆砌, 数字/hex代码入图, 水印, 角标, AI字样, 乱码, 二维码, LOGO, 米色生活方式极简, 单色水洗, 光泽样机, 电影光, 镜头虚化, 居中模板对称, 卡片网格, UI面板, 贴纸, 装饰斑点, 拼贴乱堆, 过度脏乱, 撕纸风格, 自动复古泛黄做旧, 长段落, 营销文案, CTA按钮, URL",negativeEn:"third ink, gradients, vector flat, 3D, shadows, vintage props, numbers/hex codes in image, watermarks, logos, AI text, gibberish, QR codes, beige lifestyle minimalism, monochrome wash, glossy mockup, cinematic lighting, lens blur, centered template symmetry, card grids, UI panels, stickers, decorative blobs, uncontrolled collage, grunge overload, torn paper, automatic vintage yellowing, long paragraphs, marketing copy, CTA buttons, URLs",constraints:["严格≤2色，每版明确角色","超大粗体Heavy Condensed Grotesk英文标题视觉主导","丰富Microcopy七层文字层次（部位标注+双信息带+侧边说明）","单一焦点+安静留白区，25-55%留白","做旧纸张褶皱质感","易混词两次错误立即换更短更常见词","Prompt禁写数字/百分比/hex（会被渲染成画面文字）","禁止第三色、渐变、矢量扁平、3D、水印、logo、乱码"]},
+{code:"C01",cat:"cinema",catLabel:"电影调色",name:"青橙电影调色",nameEn:"Teal Orange Cinema Grade",desc:"青橙撞色电影调色，高对比，冷暖分离",scene:"电影感画面、城市夜景",image:"images/84.jpg",positive:"青橙电影调色风格，青色阴影与橙色高光对比，高对比光影，电影级调色，冷暖色彩分离，氛围感画面，8K高清",positiveEn:"teal orange cinema grade style, teal shadows contrasting with orange highlights, high contrast lighting, cinematic color grade, warm-cool color separation, atmospheric scene, 8K ultra HD",negative:"水印, 色彩平淡, 低对比, 单色调",negativeEn:"watermark, flat colors, low contrast, monochrome"},
+{code:"C02",cat:"cinema",catLabel:"电影调色",name:"暗绿电影调色",nameEn:"Dark Green Cinema Grade",desc:"暗绿电影调色，低饱和，暗调氛围，深邃墨绿",scene:"氛围感人像、环境空间",image:"images/85.jpg",positive:"暗绿电影调色风格，低饱和度，暗调氛围，深邃墨绿色彩，柔和阴影，电影感光影，细腻胶片颗粒，8K高清",positiveEn:"dark green cinema grade style, low saturation, moody atmosphere, deep ink-green colors, soft shadows, cinematic lighting, fine film grain, 8K ultra HD",negative:"水印, 高饱和, 艳丽色彩, 过曝, 明亮色调",negativeEn:"watermark, high saturation, vivid colors, overexposed, bright tones"},
+{code:"C03",cat:"cinema",catLabel:"电影调色",name:"复古胶片调色",nameEn:"Vintage Film Grade",desc:"复古胶片调色，颗粒感，褪色，漏光，怀旧",scene:"人像、街景纪实",image:"images/86.jpg",positive:"复古胶片调色风格，老胶卷质感，明显颗粒感，轻微褪色，复古色彩偏移，漏光效果，纪实摄影，8K高清",positiveEn:"vintage film grade style, old film roll texture, prominent grain, slight fading, retro color shift, light leak effect, documentary photography, 8K ultra HD",negative:"水印, 数码清晰, 高饱和, 现代滤镜, 锐利",negativeEn:"watermark, digital clarity, high saturation, modern filter, sharp"},
+{code:"C04",cat:"cinema",catLabel:"电影调色",name:"赛博朋克调色",nameEn:"Cyberpunk Grade",desc:"赛博朋克调色，霓虹灯光，高饱和，雨夜都市",scene:"科幻城市、未来视觉",image:"images/87.jpg",positive:"赛博朋克调色风格，高饱和霓虹灯光，未来感建筑，光影炫彩，雨夜反射，科幻氛围，8K高清",positiveEn:"cyberpunk grade style, high saturation neon lights, futuristic architecture, dazzling light and color, rainy reflections, sci-fi atmosphere, 8K ultra HD",negative:"水印, 低饱和, 古典建筑, 日光场景, 朴素风格",negativeEn:"watermark, low saturation, classical architecture, daylight scene, plain style"},
+{code:"C05",cat:"cinema",catLabel:"电影调色",name:"黑白电影调色",nameEn:"B&W Cinema Grade",desc:"黑白电影调色，高对比，丰富灰阶，纪实颗粒",scene:"人文纪实、情绪画面",image:"images/88.jpg",positive:"黑白电影调色风格，高对比度，丰富灰阶，胶片颗粒，故事感，人文纪实，情绪画面，8K高清",positiveEn:"black and white cinema grade style, high contrast, rich grayscale, film grain, narrative feel, humanistic documentary, emotional scene, 8K ultra HD",negative:"水印, 彩色, 低对比, 柔和磨皮, 摆拍感",negativeEn:"watermark, color, low contrast, soft skin retouching, posed feel"},
+{code:"C06",cat:"cinema",catLabel:"电影调色",name:"暖调电影调色",nameEn:"Warm Cinema Grade",desc:"暖调电影调色，金黄色调，柔和光影，温暖氛围",scene:"人像、温暖场景",image:"images/89.jpg",positive:"暖调电影调色风格，金黄色调，柔和光影，温暖氛围，金色时刻，电影感，8K高清",positiveEn:"warm cinema grade style, golden yellow tones, soft lighting, warm atmosphere, golden hour, cinematic mood, 8K ultra HD",negative:"水印, 冷色调, 高饱和, 暗黑, 写实",negativeEn:"watermark, cool tones, high saturation, dark, photorealistic"},
+{code:"C07",cat:"cinema",catLabel:"电影调色",name:"冷调电影调色",nameEn:"Cool Cinema Grade",desc:"冷调电影调色，蓝灰色调，冷峻光影，疏离氛围",scene:"城市、冷峻场景",image:"images/90.jpg",positive:"冷调电影调色风格，蓝灰色调，冷峻光影，疏离氛围，冷色时刻，电影感，8K高清",positiveEn:"cool cinema grade style, blue-gray tones, cold lighting, detached atmosphere, cool color moment, cinematic mood, 8K ultra HD",negative:"水印, 暖色调, 高饱和, 可爱风格, 写实",negativeEn:"watermark, warm tones, high saturation, cute style, photorealistic"}
 ];
 
-let currentCat = 'all';
-let currentSearch = '';
+// 渲染封面浮动编号
+function renderCoverNumbers() {
+  const container = document.getElementById('coverNumbers');
+  const codes = STYLES.map(s => s.code);
+  codes.forEach((code, i) => {
+    const num = document.createElement('div');
+    num.className = 'cover-num';
+    const cat = STYLES[i].cat;
+    if (cat === 'general') num.classList.add('cat-g');
+    else if (cat === 'arch') num.classList.add('cat-a');
+    else if (cat === 'skill') num.classList.add('cat-s');
+    else if (cat === 'cinema') num.classList.add('cat-c');
+    num.textContent = code;
+    num.style.left = Math.random() * 90 + '%';
+    num.style.top = Math.random() * 90 + '%';
+    num.style.fontSize = (Math.random() * 40 + 20) + 'px';
+    num.style.animationDuration = (Math.random() * 10 + 10) + 's';
+    num.style.animationDelay = (Math.random() * 5) + 's';
+    container.appendChild(num);
+  });
+}
+renderCoverNumbers();
 
-const grid = document.getElementById('styleGrid');
-const filterGroup = document.getElementById('filterGroup');
-const searchInput = document.getElementById('searchInput');
-const galleryCount = document.getElementById('galleryCount');
-const galleryTitle = document.getElementById('galleryTitle');
-const overlay = document.getElementById('overlay');
-const drawer = document.getElementById('drawer');
-const drawerClose = document.getElementById('drawerClose');
-const dCode = document.getElementById('dCode');
-const dName = document.getElementById('dName');
-const dCat = document.getElementById('dCat');
-const drawerBody = document.getElementById('drawerBody');
-const dHero = document.getElementById('dHero');
+// 封面进入
+document.getElementById('coverEnter').addEventListener('click', function() {
+  const cover = document.getElementById('cover');
+  cover.classList.add('leaving');
+  setTimeout(() => cover.classList.add('cover-gone'), 900);
+});
 
-const catNames = {all:'全部风格',general:'通用插画 / 海报 / 摄影',arch:'建筑室内专项',skill:'创意 Skill 组',cinema:'电影调色专项'};
-const catColors = {general:'var(--cat-general)',arch:'var(--cat-arch)',skill:'var(--cat-skill)',cinema:'var(--cat-cinema)'};
-
-function renderGrid() {
+// 渲染风格卡片
+function renderStyles(filter = 'all', search = '') {
+  const grid = document.getElementById('styleGrid');
+  const title = document.getElementById('galleryTitle');
+  const count = document.getElementById('galleryCount');
+  grid.innerHTML = '';
   let filtered = STYLES;
-  if (currentCat !== 'all') filtered = filtered.filter(s => s.cat === currentCat);
-  if (currentSearch) {
-    const q = currentSearch.toLowerCase();
-    filtered = filtered.filter(s => s.code.toLowerCase().includes(q) || s.name.toLowerCase().includes(q) || s.desc.toLowerCase().includes(q) || s.scene.toLowerCase().includes(q));
+  if (filter !== 'all') filtered = filtered.filter(s => s.cat === filter);
+  if (search) {
+    const q = search.toLowerCase();
+    filtered = filtered.filter(s =>
+      s.code.toLowerCase().includes(q) ||
+      s.name.toLowerCase().includes(q) ||
+      s.nameEn.toLowerCase().includes(q) ||
+      s.desc.toLowerCase().includes(q)
+    );
   }
-  galleryCount.textContent = filtered.length + ' / 91';
-  galleryTitle.textContent = catNames[currentCat] + (currentSearch ? ' · 搜索结果' : '');
+  const catNames = {all:'全部风格', general:'通用插画 / 海报 / 摄影', arch:'建筑室内专项', skill:'创意 Skill 组', cinema:'电影调色专项'};
+  title.textContent = catNames[filter] || '全部风格';
+  count.textContent = filtered.length + ' / ' + STYLES.length;
   if (filtered.length === 0) {
-    grid.innerHTML = '<div class="empty-state"><div class="empty-state-icon">∅</div><p>没有找到匹配的风格，换个关键词试试</p></div>';
+    grid.innerHTML = '<div class="empty-state"><div class="empty-state-icon">?</div><p>没有找到匹配的风格</p></div>';
     return;
   }
-  const catLabelEn = {general:'General', arch:'Architecture', skill:'Creative Skill', cinema:'Cinema'};
-  grid.innerHTML = filtered.map((s, i) => {
-    const imgHtml = s.image ? `<img src="${s.image}" alt="${s.name}" loading="lazy">` : `<div class="card-img-placeholder">${s.code}</div>`;
-    const wideCls = s.code === 'SK28' ? ' card-wide' : '';
-    const cardImgStyle = s.code === 'SK28' ? ' style="aspect-ratio:21/9"' : '';
-    return `<div class="card cat-${s.cat}${wideCls}" style="--cat-color:${catColors[s.cat]};animation-delay:${Math.min(i*0.02,0.4)}s" data-code="${s.code}">
-      <div class="card-img"${cardImgStyle}>${imgHtml}</div>
-      <div class="card-body">
-        <div class="card-top"><span class="card-code">${s.code}</span><span class="card-cat-tag">${s.catLabel} · ${catLabelEn[s.cat]}</span></div>
-        <div class="card-name">${s.name}</div><div class="card-name-en">${s.nameEn}</div>
-        <div class="card-desc">${s.desc}</div>
-        <div class="card-tags">${s.scene.split(/[、,，]/).slice(0,3).map(t => `<span class="card-tag">${t.trim()}</span>`).join('')}</div>
+  filtered.forEach((style, i) => {
+    const card = document.createElement('div');
+    card.className = 'card cat-' + style.cat;
+    card.style.animationDelay = (i * 0.03) + 's';
+    card.innerHTML = `
+      <div class="card-img">
+        <img src="${style.image}" alt="${style.name}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=card-img-placeholder>${style.code}</div>'">
       </div>
-    </div>`;
-  }).join('');
-  grid.querySelectorAll('.card').forEach(card => { card.addEventListener('click', () => openDrawer(card.dataset.code)); });
-}
-
-function openDrawer(code) {
-  const s = STYLES.find(x => x.code === code);
-  if (!s) return;
-  dHero.innerHTML = s.image ? `<img src="${s.image}" alt="${s.name}">` : `<div class="drawer-hero-placeholder">${s.code}</div>`;
-  dCode.textContent = s.code;
-  dName.textContent = s.name;
-  if(s.nameEn) { dName.insertAdjacentHTML('afterend', '<div class="drawer-name-en">'+s.nameEn+'</div>'); }
-  dCat.textContent = s.catLabel + ' · ' + s.scene;
-  let html = '';
-  html += `<div class="drawer-section"><div class="drawer-section-title">核心效果</div><p class="drawer-desc">${s.desc}</p></div>`;
-  html += `<div class="drawer-section"><div class="drawer-section-title">适用场景</div><p class="drawer-scene">${s.scene}</p></div>`;
-  if (s.positive) {
-    html += `<div class="drawer-section"><div class="drawer-section-title">正向提示词 · Positive Prompt</div>
-      <div class="prompt-block positive"><button class="copy-btn" data-text="${encodeURIComponent(s.positive)}">复制中文</button><div class="prompt-text"><span class="prompt-lang">中文</span>${escapeHtml(s.positive)}</div></div>
-      ${s.positiveEn ? `<div class="prompt-block positive"><button class="copy-btn" data-text="${encodeURIComponent(s.positiveEn)}">Copy EN</button><div class="prompt-text"><span class="prompt-lang">EN</span>${escapeHtml(s.positiveEn)}</div></div>` : ''}
-    </div>`;
-  }
-  if (s.negative) {
-    html += `<div class="drawer-section"><div class="drawer-section-title">反向提示词 · Negative Prompt</div>
-      <div class="prompt-block negative"><button class="copy-btn" data-text="${encodeURIComponent(s.negative)}">复制中文</button><div class="prompt-text"><span class="prompt-lang">中文</span>${escapeHtml(s.negative)}</div></div>
-      ${s.negativeEn ? `<div class="prompt-block negative"><button class="copy-btn" data-text="${encodeURIComponent(s.negativeEn)}">Copy EN</button><div class="prompt-text"><span class="prompt-lang">EN</span>${escapeHtml(s.negativeEn)}</div></div>` : ''}
-    </div>`;
-  }
-  if (s.constraints && s.constraints.length) {
-    html += `<div class="drawer-section"><div class="drawer-section-title">硬性约束</div><ul class="constraint-list">${s.constraints.map(c => `<li>${escapeHtml(c)}</li>`).join('')}</ul></div>`;
-  }
-  drawerBody.innerHTML = html;
-  drawerBody.querySelectorAll('.copy-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const text = decodeURIComponent(btn.dataset.text);
-      navigator.clipboard.writeText(text).then(() => {
-        btn.textContent = '已复制'; btn.classList.add('copied');
-        setTimeout(() => { btn.textContent = '复制'; btn.classList.remove('copied'); }, 2000);
-      });
-    });
+      <div class="card-body">
+        <div class="card-top">
+          <div class="card-code">${style.code}</div>
+          <div class="card-cat-tag">${style.catLabel}</div>
+        </div>
+        <div class="card-name">${style.name}</div>
+        <div class="card-name-en">${style.nameEn}</div>
+        <div class="card-desc">${style.desc}</div>
+      </div>
+    `;
+    card.addEventListener('click', () => openDrawer(style));
+    grid.appendChild(card);
   });
-  overlay.classList.add('open');
+}
+renderStyles();
+
+// 筛选按钮
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    renderStyles(this.dataset.cat, document.getElementById('searchInput').value);
+  });
+});
+
+// 搜索
+document.getElementById('searchInput').addEventListener('input', function() {
+  const activeCat = document.querySelector('.filter-btn.active').dataset.cat;
+  renderStyles(activeCat, this.value);
+});
+
+// 详情抽屉
+function openDrawer(style) {
+  const drawer = document.getElementById('drawer');
+  const overlay = document.getElementById('overlay');
+  document.getElementById('dCode').textContent = style.code;
+  document.getElementById('dName').textContent = style.name;
+  document.getElementById('dCat').textContent = style.catLabel + ' · ' + style.nameEn;
+  document.getElementById('dHero').innerHTML = `<img src="${style.image}" alt="${style.name}" onerror="this.parentElement.innerHTML='<div class=drawer-hero-placeholder>${style.code}</div>'">`;
+  const constraintsHtml = style.constraints ? `<div class="drawer-section"><div class="drawer-section-title">硬性约束</div><ul class="constraint-list">${style.constraints.map(c => '<li>' + c + '</li>').join('')}</ul></div>` : '';
+  document.getElementById('drawerBody').innerHTML = `
+    <div class="drawer-section">
+      <div class="drawer-section-title">核心效果</div>
+      <p class="drawer-desc">${style.desc}</p>
+    </div>
+    <div class="drawer-section">
+      <div class="drawer-section-title">适用场景</div>
+      <p class="drawer-scene">${style.scene}</p>
+    </div>
+    <div class="drawer-section">
+      <div class="drawer-section-title">正向提示词</div>
+      <div class="prompt-block positive">
+        <button class="copy-btn" onclick="copyText(this, \`${style.positive.replace(/`/g, '\\`')}\`)">复制</button>
+        <div class="prompt-text">${style.positive}</div>
+      </div>
+      <div class="prompt-block positive">
+        <button class="copy-btn" onclick="copyText(this, \`${style.positiveEn.replace(/`/g, '\\`')}\`)">复制</button>
+        <div class="prompt-text">${style.positiveEn}</div>
+      </div>
+    </div>
+    <div class="drawer-section">
+      <div class="drawer-section-title">反向提示词</div>
+      <div class="prompt-block negative">
+        <button class="copy-btn" onclick="copyText(this, \`${style.negative.replace(/`/g, '\\`')}\`)">复制</button>
+        <div class="prompt-text">${style.negative + '，' + NEG_GLOBAL}</div>
+      </div>
+      <div class="prompt-block negative">
+        <button class="copy-btn" onclick="copyText(this, \`${style.negativeEn.replace(/`/g, '\\`')}\`)">复制</button>
+        <div class="prompt-text">${style.negativeEn + ', ' + NEG_GLOBAL}</div>
+      </div>
+    </div>
+    ${constraintsHtml}
+  `;
   drawer.classList.add('open');
+  overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 
 function closeDrawer() {
-  overlay.classList.remove('open');
-  drawer.classList.remove('open');
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
   document.body.style.overflow = '';
 }
+document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+document.getElementById('overlay').addEventListener('click', closeDrawer);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
 
-function escapeHtml(str) {
-  const div = document.createElement('div');
-  div.textContent = str;
-  return div.innerHTML;
+function copyText(btn, text) {
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '已复制';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '复制'; btn.classList.remove('copied'); }, 2000);
+  });
 }
-
-filterGroup.addEventListener('click', (e) => {
-  const btn = e.target.closest('.filter-btn');
-  if (!btn) return;
-  filterGroup.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  currentCat = btn.dataset.cat;
-  renderGrid();
-});
-searchInput.addEventListener('input', (e) => { currentSearch = e.target.value.trim(); renderGrid(); });
-overlay.addEventListener('click', closeDrawer);
-drawerClose.addEventListener('click', closeDrawer);
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
-
-renderGrid();
-
-// ===== 开场封面初始化 =====
-(function initCover() {
-  const cover = document.getElementById('cover');
-  const coverNumbers = document.getElementById('coverNumbers');
-  const coverEnter = document.getElementById('coverEnter');
-  if (!cover) return;
-  const catClass = { general: 'cat-g', arch: 'cat-a', skill: 'cat-s', cinema: 'cat-c' };
-  STYLES.forEach((s, i) => {
-    const el = document.createElement('div');
-    el.className = 'cover-num ' + (catClass[s.cat] || '');
-    el.textContent = s.code;
-    el.style.left = Math.random() * 92 + '%';
-    el.style.top = Math.random() * 90 + '%';
-    el.style.fontSize = (Math.random() * 36 + 14) + 'px';
-    el.style.animationDuration = (Math.random() * 8 + 6) + 's';
-    el.style.animationDelay = (Math.random() * 5) + 's';
-    coverNumbers.appendChild(el);
-  });
-  function enterGallery() {
-    cover.classList.add('leaving');
-    setTimeout(() => cover.classList.add('cover-gone'), 900);
-    document.body.style.overflow = '';
-  }
-  coverEnter.addEventListener('click', enterGallery);
-  cover.addEventListener('click', (e) => {
-    if (e.target === cover || e.target.classList.contains('cover-bg') || e.target.classList.contains('cover-numbers')) {
-      enterGallery();
-    }
-  });
-  document.addEventListener('keydown', (e) => {
-    if ((e.key === 'Enter' || e.key === ' ') && !cover.classList.contains('leaving')) enterGallery();
-  });
-  document.body.style.overflow = 'hidden';
-
-  // 互动小猫（橘猫：空闲打瞌睡/舔手，点击唤醒后瞳孔跟随鼠标）
-  const cat = document.getElementById('coverCat');
-  const pupilL = document.getElementById('pupilL');
-  const pupilR = document.getElementById('pupilR');
-  const catBubble = document.getElementById('catBubble');
-  const catWords = ['喵~', '摸摸我~', '你好呀', '再摸一下', '嘻嘻', '要进去吗？', '喵呜', '别摸啦~', '我醒啦~', '盯着你哦'];
-  let bubbleTimer, idleTimer;
-  let isAwake = false;
-
-  function setIdleState() {
-    cat.classList.remove('awake');
-    if (Math.random() > 0.5) {
-      cat.classList.remove('licking');
-      cat.classList.add('sleeping');
-    } else {
-      cat.classList.remove('sleeping');
-      cat.classList.add('licking');
-    }
-  }
-  function wakeUp() {
-    isAwake = true;
-    cat.classList.remove('sleeping', 'licking');
-    cat.classList.add('awake');
-    pupilL.style.transform = 'translate(0,0)';
-    pupilR.style.transform = 'translate(0,0)';
-    clearTimeout(idleTimer);
-    idleTimer = setTimeout(() => { isAwake = false; setIdleState(); }, 30000);
-  }
-
-  if (cat && pupilL && pupilR) {
-    setIdleState();
-    setInterval(() => { if (!isAwake) setIdleState(); }, 8000);
-
-    document.addEventListener('mousemove', (e) => {
-      if (!isAwake) return;
-      const eyeL = pupilL.parentElement.getBoundingClientRect();
-      const eyeR = pupilR.parentElement.getBoundingClientRect();
-      const cxL = eyeL.left + eyeL.width / 2, cyL = eyeL.top + eyeL.height / 2;
-      const angleL = Math.atan2(e.clientY - cyL, e.clientX - cxL);
-      const distL = Math.min(2.5, Math.hypot(e.clientX - cxL, e.clientY - cyL) / 50);
-      pupilL.style.transform = `translate(${Math.cos(angleL) * distL}px, ${Math.sin(angleL) * distL}px)`;
-      const cxR = eyeR.left + eyeR.width / 2, cyR = eyeR.top + eyeR.height / 2;
-      const angleR = Math.atan2(e.clientY - cyR, e.clientX - cxR);
-      const distR = Math.min(2.5, Math.hypot(e.clientX - cxR, e.clientY - cyR) / 50);
-      pupilR.style.transform = `translate(${Math.cos(angleR) * distR}px, ${Math.sin(angleR) * distR}px)`;
-    });
-
-    cat.addEventListener('click', (e) => {
-      e.stopPropagation();
-      wakeUp();
-      cat.classList.remove('jump');
-      void cat.offsetWidth;
-      cat.classList.add('jump');
-      catBubble.textContent = catWords[Math.floor(Math.random() * catWords.length)];
-      catBubble.classList.add('show');
-      clearTimeout(bubbleTimer);
-      bubbleTimer = setTimeout(() => catBubble.classList.remove('show'), 1500);
-    });
-  }
-})();
-
 </script>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
 </html>
