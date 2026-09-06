@@ -45,6 +45,7 @@ body {
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
+  
 .topbar-inner {
   max-width: 1280px; margin: 0 auto; padding: 14px 32px;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
@@ -966,7 +967,7 @@ function openDrawer(code) {
   if (!s) return;
   dHero.innerHTML = s.image ? `<img src="${s.image}" alt="${s.name}">` : `<div class="drawer-hero-placeholder">${s.code}</div>`;
   dCode.textContent = s.code;
-  dName.textContent = s.name;
+,  dName.textContent = s.name;
   if(s.nameEn) { dName.insertAdjacentHTML('afterend', '<div class="drawer-name-en">'+s.nameEn+'</div>'); }
   dCat.textContent = s.catLabel + ' · ' + s.scene;
   let html = '';
